@@ -9,6 +9,7 @@ import { catalogView } from './catalog-view.js';
 import { connectGamepad } from './gamepad.js';
 import { onDemandView } from './on-demand.js';
 import { connectMediaControls } from './media-controls.js';
+import { configureArtwork, squareArtwork } from './artwork.js';
 
 const files = [
   'catalog',
@@ -78,11 +79,6 @@ async function init() {
   const direct = !runtime.proxy;
   const scene = runtime.localScene ? 'assets/scenes/vice-city-dusk.webp' : artwork.scene;
   document.querySelector('.scenery').style.setProperty('--scene', 'url("' + scene + '")');
-  for (const station of catalog.stations) {
-    station.artwork = runtime.covers.includes(station.id)
-      ? 'assets/covers/' + station.id + '.webp'
-      : artwork.covers[station.id];
-  }
   const talk = Object.fromEntries(
     catalog.stations
       .filter((s) => s.kind === 'talk')
@@ -112,6 +108,9 @@ async function init() {
     receiver,
     demand,
     syncMedia;
+  configureArtwork(stations, artwork, runtime.covers, (source) => {
+    if (source === (demand?.active?.group.artwork ?? stations[index].artwork)) receiver?.emit(true);
+  });
   function message(state) {
     const gesture = state.phase === 'gesture',
       live = state.phase === 'live';
@@ -154,11 +153,11 @@ async function init() {
     const station = (live && stations.find((s) => s.id === state.audible)) || stations[index];
     syncMedia?.(episode ? {
       title: episode.item.title, artist: episode.group.name, album: 'Vicewave · On Demand',
-      artwork: episode.group.artwork, playing: enabled && !episode.audio.paused, episode,
+      artwork: squareArtwork(episode.group.artwork), playing: enabled && !episode.audio.paused, episode,
     } : {
       title: live && state.title ? state.title : station.name,
       artist: live ? [state.artist, station.name].filter((v, i, a) => v && a.indexOf(v) === i).join(' · ') : 'Vicewave',
-      album: 'Vicewave · Live radio', artwork: station.artwork, playing: enabled && Boolean(state.audible),
+      album: 'Vicewave · Live radio', artwork: squareArtwork(station.artwork), playing: enabled && Boolean(state.audible),
     });
   }
   const plans = stations.map((s) => buildStation(s, sources));

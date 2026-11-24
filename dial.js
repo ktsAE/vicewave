@@ -1,10 +1,11 @@
 import { esc, icon } from './ui.js';
+import { usesFrame } from './artwork.js';
 
 export function cover(station) {
   const label = '<span class="station-lettering">' + esc(station.name) + '</span>';
-  const image = station.artwork
-    ? '<img draggable="false" src="' + esc(station.artwork) + '" alt="">'
-    : '';
+  let image = '';
+  if (usesFrame(station.artwork)) image = '<station-picture data-frame="' + esc(station.artwork) + '"></station-picture>';
+  else if (station.artwork) image = '<img draggable="false" src="' + esc(station.artwork) + '" alt="">';
   return '<span class="station-cover" aria-hidden="true">' + image + label + '</span>';
 }
 export function dial(root, stations, initial, { change, activate, preview, live = false }) {
@@ -65,6 +66,7 @@ export function dial(root, stations, initial, { change, activate, preview, live 
       const b = tiles[i];
       b.hidden = !near;
       b.classList.toggle('center', i === selection);
+      b.classList.toggle('settled', i === selection && distance < 0.0001);
       b.setAttribute('aria-current', i === selection ? 'true' : 'false');
       if (!near) continue;
       const zoom =

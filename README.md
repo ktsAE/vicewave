@@ -28,6 +28,8 @@ The site runs directly from the repository root. In the repository’s **Setting
 
 On a static host, the browser streams audio and loads station artwork directly from the credited external sources. Availability and buffering depend on those hosts and on the browser’s audio codecs. The public repository contains the app, catalogs, source links and licensed fonts. Optional local media stays in the ignored assets folders. Rockstar Games, Take-Two and the respective rights holders retain their rights in the game, artwork and recordings.
 
+Seven dial covers use Rockstar’s 1600 × 1600 artwork. Another 17 use the 400 × 400 station square inside a 1280 × 720 station-mix image. The browser takes the square at its original pixel size and shares it with Tracklists, On Demand and system media controls. The Vault uses its existing pink icon. Source URLs and crop coordinates are in `data/artwork.json`. For offline use, the launcher recognizes the corresponding square at `assets/covers/<station-id>-400.webp`. [Rockstar station artwork](https://www.rockstargames.com/VI/music) · [Honey FM station mix](https://www.youtube.com/watch?v=W_e5eUNgIqE)
+
 ## On Demand
 
 Open **On Demand**, slide between show covers, and choose an episode from the selected collection. Browsing keeps the current audio playing. The library links 20 full episodes, totaling 3 hours, 36 minutes and 18 seconds. Each episode remembers its place in this browser. Finishing an episode or returning to the dial rejoins the live broadcast if the radio was on. The five WKTT and The Wipe specials use their original online talk-radio excerpts.

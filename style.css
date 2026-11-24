@@ -299,6 +299,11 @@ svg {
   border-color: #fff6ed;
   box-shadow: 0 2px 0 1px #ea64ac, 0 6px 30px #24102280;
 }
+/* Paint the settled cover at display resolution after the carousel animation. */
+.sleeve.settled {
+  will-change: auto;
+  backface-visibility: visible;
+}
 .station-cover,
 .station-cover img {
   width: 100%;
@@ -310,8 +315,10 @@ svg {
 }
 .station-cover {
   container-type: inline-size;
+  position: relative;
   background: linear-gradient(145deg, #402e45, #171a20 75%);
 }
+.station-cover station-picture { position: absolute; inset: 0; }
 .station-lettering {
   display: grid;
   place-content: center;

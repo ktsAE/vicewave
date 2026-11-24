@@ -17,14 +17,40 @@
     "stockyard-fm": "https://gta.guide/_next/static/media/gta6-stockyard-fm-logo.1yy975t2vchs4.png",
     "symphony-fm": "https://gta.guide/_next/static/media/gta6-symphony-fm-logo.1ge5cf8q34e2j.png",
     "the-chamber-106-6": "https://www.rockstargames.com/VI/_next/static/media/UI_ICON_THE_CHAMBER_106_RADIO_STATION.0sf.i4t38_g9_.jpg",
-    "the-sniper-of-la-perle": "https://gta.guide/_next/image?url=%2Fapi%2Ffiles%2Ffile%2F7d3d3fab7bb14a2d8db0e27aa1f97cee.jpg&w=640&q=75",
+    "the-sniper-of-la-perle": null,
     "the-vault-radio": "https://gta.guide/_next/static/media/gta6-the-vault-radio-logo.21gz3gac2uamf.png",
     "the-wipe": "https://gta.guide/_next/static/media/gta6-the-wipe-logo.3m4_vrz1_ou93.png",
-    "thrillbilly-mud-club-radio": "https://gta.wiki/images/thumb/ThrillbillyMudClub-GTAVI-Trailer1Logo.png/300px-ThrillbillyMudClub-GTAVI-Trailer1Logo.png?4321b",
+    "thrillbilly-mud-club-radio": "https://gta.wiki/images/ThrillbillyMudClub-GTAVI-Trailer1Logo.png",
     "v-rock": "https://gta.guide/_next/static/media/gta6-v-rock-logo.1x4un67z8ad8b.png",
     "vice-city-fm": "https://gta.guide/_next/static/media/gta6-vice-city-fm-logo.3s__8sj0sx3nh.png",
     "vice-city-rap-radio": "https://gta.guide/_next/static/media/gta6-vice-city-rap-radio-logo.13dg26cs3hiyf.png",
     "wktt": "https://gta.guide/_next/static/media/gta6-wktt-logo.0pqruqzbiu1iu.png",
     "worldwide-fm": "https://gta.guide/_next/static/media/gta6-worldwide-fm-logo.1xnzc7rpgmbuw.png"
+  },
+  "dialFrame": {
+    "width": 1280,
+    "height": 720,
+    "left": 440,
+    "top": 100,
+    "size": 400
+  },
+  "frames": {
+    "emotion-98-3": "https://i.ytimg.com/vi/Hr4UgN6UbSw/maxresdefault.jpg",
+    "gloriana-blues-radio": "https://i.ytimg.com/vi/-P5WQoSdhHg/maxresdefault.jpg",
+    "honey-fm": "https://i.ytimg.com/vi/W_e5eUNgIqE/maxresdefault.jpg",
+    "kaleidoscope-fm": "https://i.ytimg.com/vi/vSgT06Fwrb4/maxresdefault.jpg",
+    "leonida-jazz-radio": "https://i.ytimg.com/vi/13V3vbCH4cw/maxresdefault.jpg",
+    "radio-la-ola": "https://i.ytimg.com/vi/GqLYAUj9Gco/maxresdefault.jpg",
+    "radio-on-u": "https://i.ytimg.com/vi/HCpVk2SHjTs/maxresdefault.jpg",
+    "stockyard-fm": "https://i.ytimg.com/vi/kyaZvQSUF4k/maxresdefault.jpg",
+    "symphony-fm": "https://i.ytimg.com/vi/adG_RoLgOfo/maxresdefault.jpg",
+    "the-sniper-of-la-perle": "https://i.ytimg.com/vi/zYTQuZuzSqY/maxresdefault.jpg",
+    "the-wipe": "https://i.ytimg.com/vi/ur_PsGA1D4U/maxresdefault.jpg",
+    "thrillbilly-mud-club-radio": "https://i.ytimg.com/vi/3aHdUYVFH9g/maxresdefault.jpg",
+    "v-rock": "https://i.ytimg.com/vi/-RwK09PE-lw/maxresdefault.jpg",
+    "vice-city-fm": "https://i.ytimg.com/vi/ZF_ae0Nyb5A/maxresdefault.jpg",
+    "vice-city-rap-radio": "https://i.ytimg.com/vi/LxdLqlBJIV0/maxresdefault.jpg",
+    "wktt": "https://i.ytimg.com/vi/Yo0JCZsmN4E/maxresdefault.jpg",
+    "worldwide-fm": "https://i.ytimg.com/vi/5EEEOXYH4f4/maxresdefault.jpg"
   }
 }
