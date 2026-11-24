@@ -4,7 +4,7 @@ Vicewave is an unofficial, account-free GTA VI radio dial. Slide the station cov
 
 ## Listen
 
-Open the site in a browser, or run the local launcher with Python 3.9 or newer.
+[Listen to Vicewave](https://ktsae.github.io/vicewave/) in your browser, or run the local launcher with Python 3.9 or newer.
 
 ```sh
 python3 radio.py
