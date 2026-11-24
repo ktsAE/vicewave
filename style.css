@@ -25,7 +25,8 @@
   color-scheme: dark;
   --ink: #faf7ec;
   --muted: #c0b9c1;
-  --accent: #dbf583;
+  --accent: #ffadda;
+  --hot: #f24fa9;
   --line: #f5ebef33;
   --mono: Plex, ui-monospace, monospace;
   --sans: DM, Arial, sans-serif;
@@ -112,7 +113,7 @@ svg {
 }
 .mast {
   height: 76px;
-  background: #131318df;
+  background: #17101bdf;
   border-bottom: 1px solid #ffffff24;
   backdrop-filter: blur(15px);
 }
@@ -180,13 +181,13 @@ svg {
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid #a9b68a6b;
+  border: 1px solid #e6a7c879;
   padding: 8px 14px;
   border-radius: 22px;
   font-size: 13px;
   font-weight: 600;
   color: var(--accent);
-  background: #bddd7810;
+  background: #fa95ba13;
 }
 .power[aria-pressed='false'] {
   color: #ded6de;
@@ -276,7 +277,7 @@ svg {
   width: var(--size);
   height: var(--size);
   padding: 0;
-  border-radius: 8px;
+  border-radius: 3px;
   transform-origin: center;
   will-change: transform, opacity;
   backface-visibility: hidden;
@@ -291,11 +292,12 @@ svg {
   content: '';
   inset: -6px;
   border: 2px solid transparent;
-  border-radius: 11px;
+  border-radius: 5px;
   pointer-events: none;
 }
 .sleeve.center:before {
-  border-color: var(--accent);
+  border-color: #fff6ed;
+  box-shadow: 0 2px 0 1px #ea64ac, 0 6px 30px #24102280;
 }
 .station-cover,
 .station-cover img {
@@ -495,8 +497,8 @@ svg {
   gap: 3px;
   align-items: center;
   justify-content: center;
-  background: #d2ef7f12;
-  border: 1px solid #d2ef7f40;
+  background: #e477bc15;
+  border: 1px solid #ec93b94d;
   border-radius: 5px;
 }
 .wave i {
@@ -588,7 +590,7 @@ svg {
   background: var(--accent);
   height: 27px;
   width: 3px;
-  box-shadow: 0 0 8px #cded9166;
+  box-shadow: 0 0 8px #fe83be66;
 }
 .scale button.selected span {
   visibility: hidden;
@@ -1055,128 +1057,6 @@ dialog p {
   }
 }
 
-.demand-groups {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(28px, 6vw, 96px);
-  margin: 28px 0 50px;
-}
-.demand-groups h2,
-.special-stations h2,
-.episode-copy h2 {
-  font:
-    700 clamp(28px, 4vw, 44px)/1.05 Barlow,
-    sans-serif;
-  margin: 0 0 14px;
-}
-.special-stations {
-  margin-bottom: 45px;
-}
-#special-stations {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  column-gap: 24px;
-}
-#special-stations button {
-  justify-content: flex-start;
-}
-#special-stations .station-cover {
-  flex: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 4px;
-}
-.episode-row {
-  display: flex;
-  gap: 14px;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 15px 2px;
-  text-align: left;
-  border-top: 1px solid var(--line);
-}
-.episode-row strong,
-.episode-row small {
-  display: block;
-}
-.episode-row small {
-  font-size: 13px;
-  color: var(--muted);
-  margin-top: 4px;
-}
-.episode-length {
-  font: 11px var(--mono);
-  color: var(--muted);
-  white-space: nowrap;
-}
-.episode-row:hover strong,
-.episode-row[aria-pressed='true'] strong {
-  color: var(--accent);
-}
-.episode-panel {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-  margin: 22px 0 0;
-  padding: 20px;
-  background: #232429;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-.episode-copy .kicker {
-  margin: 0 0 8px;
-}
-.episode-copy p {
-  color: var(--muted);
-}
-.podcast-count {
-  margin: -5px 0 15px;
-  color: var(--muted);
-  font-size: 14px;
-}
-.podcast-series {
-  border-top: 1px solid var(--line);
-}
-.podcast-series summary {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 18px 2px;
-  cursor: pointer;
-  list-style: none;
-}
-.podcast-series summary::-webkit-details-marker { display: none; }
-.podcast-series summary::after {
-  content: '';
-  width: 7px;
-  height: 7px;
-  flex: none;
-  border-right: 1.5px solid var(--muted);
-  border-bottom: 1.5px solid var(--muted);
-  transform: rotate(45deg);
-  margin: 0 5px 3px 0;
-}
-.podcast-series[open] summary::after { transform: rotate(225deg); }
-.podcast-series summary span { margin-left: auto; white-space: nowrap; color: var(--muted); font: 12px var(--mono); }
-.podcast-series[open] summary strong { color: var(--accent); }
-.podcast-series .episode-row { padding: 12px 6px 12px 18px; }
-@media (max-width: 660px) {
-  .demand-groups,
-  #special-stations {
-    grid-template-columns: 1fr;
-  }
-  .episode-panel {
-    display: block;
-  }
-  .mast nav {
-    gap: 10px;
-  }
-  .mast-inner {
-    gap: 8px;
-  }
-}
 @media (max-width: 370px) {
   .brand strong {
     font-size: 20px;
@@ -1202,10 +1082,136 @@ dialog p {
     gap: 12px;
   }
 }
-@media (max-width: 480px) {
-  #demand-view .guide-heading {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 9px;
-  }
+/* The two dials share the same sleeves, tuning band and city backdrop. */
+.mast-controls { display: flex; justify-self: end; align-items: center; gap: 10px; }
+.dash-toggle, .power { min-height: 44px; }
+.dash-toggle {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 0 10px; color: #d6cbd8; border-radius: 6px; font-size: 13px;
 }
+.dash-toggle[aria-pressed='true'] { color: var(--accent); background: #ef90ba13; }
+.step { width: 48px; height: 48px; background: #221723dc; }
+body.guide-open .horizon { display: none; }
+.horizon { min-height: 48px; }
+.receiver { min-height: calc(100svh - 124px); }
+.scale-panel { position: relative; }
+.scale-heading { text-transform: uppercase; }
+.scale-heading span:last-child { font-variant-numeric: tabular-nums; }
+.tiny-rule { background: linear-gradient(90deg, transparent, #fa83c0); }
+.tiny-rule:last-child { transform: rotate(180deg); }
+#radio-view .scale-panel::before, #demand-view .scale-panel::before {
+  content: ''; display: block; width: 100%; height: 17px; margin-bottom: 8px; opacity: .65;
+  background: repeating-linear-gradient(90deg, transparent 0 5px, #19151b 5px 7px),
+    repeating-linear-gradient(0deg, transparent 0 3px, #19151b 3px 4px),
+    linear-gradient(90deg, #c349bd, #f277a5 25%, #805172 50%, #f277a5 75%, #c349bd);
+  clip-path: polygon(0 35%,2% 60%,3% 0,4% 65%,6% 20%,8% 71%,10% 35%,12% 75%,16% 60%,18% 83%,22% 69%,26% 88%,31% 74%,35% 90%,42% 82%,50% 94%,58% 82%,65% 90%,69% 74%,74% 88%,78% 69%,82% 83%,84% 60%,88% 75%,90% 35%,92% 71%,94% 20%,96% 65%,97% 0,98% 60%,100% 35%,100% 100%,0 100%);
+}
+#demand-view .tuner-body { flex: none; padding-bottom: 12px; }
+#demand-view .strip { --size: clamp(155px, min(22vw, 26vh), 290px); }
+#demand-view .station-info h1 { font-size: clamp(40px, min(6vw, 7vh), 80px); }
+.demand-library {
+  width: min(1000px, calc(100% - 8vw)); margin: 0 auto 30px;
+  background: #17131dd9; border: 1px solid var(--line); border-radius: 8px; padding: 0 20px;
+}
+.library-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.library-heading h2 { font: 700 25px Barlow, sans-serif; margin: 12px 0; }
+.library-heading a, #episode-source { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); font-size: 14px; }
+#episode-list, #special-stations { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 24px; }
+.episode-row {
+  display: flex; gap: 10px; align-items: center; justify-content: space-between; width: 100%; min-height: 54px;
+  border-top: 1px solid var(--line); padding: 9px 4px; text-align: left;
+}
+.episode-row strong, .episode-row small, .episode-copy strong, .episode-copy small, #episode-status { display: block; }
+.episode-row small, #episode-status { color: #cfc4ce; font-size: 13px; }
+.episode-length { flex: none; color: var(--muted); font: 12px var(--mono); }
+.episode-row:hover strong, .episode-row[aria-pressed='true'] strong { color: var(--accent); }
+#special-stations button { justify-content: flex-start; }
+#special-stations .station-cover { width: 44px; height: 44px; flex: none; border-radius: 3px; }
+.episode-panel { display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding: 12px 0; }
+.episode-panel .wave { flex: none; }
+.episode-panel.live .wave i { animation: pulse .8s ease-in-out infinite alternate; }
+.episode-copy { flex: 1; }
+.episode-copy small { color: var(--accent); font: 11px var(--mono); text-transform: uppercase; }
+#demand-view .scale-panel { padding-bottom: 10px; }
+@media (max-width: 780px) {
+  .dash-toggle span:last-child { display: none; }
+  .dash-toggle, .power { width: 44px; min-width: 44px; padding: 0; }
+  .power span:last-child { display: none; }
+  .mast-controls { gap: 2px; }
+}
+@media (max-width: 660px) {
+  .mast nav { gap: 10px; }
+  .mast-inner { gap: 6px; }
+  .receiver { min-height: calc(100svh - 108px); }
+  #demand-view .station-info { min-height: 0; }
+  #demand-view .strip { --size: clamp(146px, 43vw, 235px); }
+  .demand-library { width: calc(100% - 32px); padding: 0 12px; }
+  #episode-list, #special-stations { grid-template-columns: 1fr; }
+  .step { width: 44px; height: 44px; }
+}
+.dashboard .mast { height: 62px; }
+.dashboard .mast nav a { min-height: 48px; font-size: 16px; }
+.dashboard .horizon { min-height: 32px; }
+.dashboard .power, .dashboard .dash-toggle { min-height: 48px; min-width: 48px; }
+.dashboard .step { width: 56px; height: 56px; border-radius: 12px; }
+.dashboard .step svg { width: 22px; height: 22px; }
+.dashboard .episode-row { min-height: 60px; font-size: 18px; }
+.dashboard .on-air strong { font-size: 20px; }
+.dashboard .mast-inner, .dashboard .horizon { width: calc(100% - 36px); }
+@media (min-width: 540px) {
+  body.dashboard { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+  .dashboard .receiver { min-height: calc(100svh - 94px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
+  .dashboard .tuner-body { padding: 0; }
+  .dashboard #radio-view .tuner-body {
+    display: grid; grid-template-columns: minmax(0,1.18fr) minmax(0,1fr);
+    grid-template-rows: 1fr auto auto 1fr; align-content: center;
+  }
+  .dashboard #radio-view .tune-heading { grid-column: 1; grid-row: 1; align-self: end; justify-self: center; }
+  .dashboard #radio-view .strip { grid-column: 1; grid-row: 2 / 4; }
+  .dashboard #radio-view .station-info { grid-column: 2; grid-row: 2; align-self: end; }
+  .dashboard #radio-view .on-air { grid-column: 2; grid-row: 3; align-self: start; margin: 12px 16px 0; }
+  .dashboard .strip, .dashboard #demand-view .strip {
+    --size: clamp(100px, min(27vw, 42svh), 300px); height: calc(var(--size) + 20px); margin: 4px 0;
+  }
+  .dashboard .step.left { left: 8px; }
+  .dashboard .step.right { right: 8px; }
+  .dashboard #radio-view .station-info { min-height: 0; text-align: left; }
+  .dashboard #radio-view .id-line { justify-content: flex-start; }
+  .dashboard .station-info h1 { margin: 4px 0; font-size: clamp(44px,6vw,82px); }
+  .dashboard .station-info h1.long { font-size: clamp(32px,4.8vw,65px); }
+  .dashboard .on-air { min-width: 0; max-width: 100%; }
+  .dashboard .on-air > div { min-width: 0; }
+  .dashboard .on-air strong { max-width: 100%; white-space: normal; line-height: 1.18; }
+  .dashboard .scale-panel { display: none; }
+  .dashboard #demand-view {
+    display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); align-items: center;
+    gap: 12px; padding: 0 18px 10px 0;
+  }
+  .dashboard #demand-view .station-info { min-height: 0; }
+  .dashboard #demand-view .station-info h1 { font-size: clamp(30px,4.5vw,66px); }
+  .dashboard .demand-library { margin: 0; padding: 0 14px; width: 100%; max-height: calc(100svh - 108px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); overflow: auto; }
+  .dashboard #episode-list, .dashboard #special-stations { grid-template-columns: 1fr; }
+  .dashboard .library-heading { position: sticky; top: 0; z-index: 1; background: #1c1720; }
+}
+@media (max-width: 539px) {
+  .dashboard .mast nav a { font-size: 13px; }
+  .dashboard .mast-inner { width: calc(100% - 20px); }
+}
+@media (max-width: 660px) {
+  .mast nav [data-icon] { display: none; }
+}
+@media (max-width: 375px) {
+  .mast .brand { display: none; }
+  .mast-inner, .dashboard .mast-inner { width: calc(100% - 16px); grid-template-columns: 1fr auto; }
+  .mast nav { justify-self: start; gap: 12px; }
+}
+@media (min-width: 781px) and (max-width: 900px) {
+  .dashboard .dash-toggle span:last-child { display: none; }
+}
+@media (min-width: 540px) {
+  .dashboard .scenery:after { background: linear-gradient(90deg, #18102030 25%, #18102066 62%, #120d188c); }
+  .dashboard .mast nav a { min-width: 48px; justify-content: center; }
+}
+.dashboard .tune-heading, .dashboard .id-line, .dashboard .on-air small { font-size: 13px; letter-spacing: .1em; }
+.dashboard .station-info p { font-size: 16px; }
+.dashboard #demand-view .tuner-body { padding-bottom: 2px; }

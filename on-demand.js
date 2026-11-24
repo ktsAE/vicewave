@@ -1,4 +1,5 @@
 import { el, esc, norm, read, save } from './ui.js';
+import { dial } from './dial.js';
 
 const slug = (value) => norm(value).replaceAll(' ', '-');
 const stamp = (seconds) => Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2, '0');
@@ -29,63 +30,73 @@ export function savedPosition(item) {
   return Number.isFinite(value) && value > 1 && value < item.duration - 2 ? value : 0;
 }
 
-export function onDemandView(programs, { runtime, takeOver, release }) {
+export function onDemandView(programs, { runtime, stations, takeOver, release, changed }) {
   const items = onDemandItems(programs, runtime);
-  const podcasts = items.filter((item) => item.kind === 'podcast');
-  const series = [...new Set(podcasts.map((item) => item.series))];
-  let active = null;
-
-  function episodeRow(item) {
-    const label = item.kind === 'show' ? item.station + ' · ' + item.episodeLabel : item.episodeLabel;
-    return (
-      '<button type="button" class="episode-row" data-episode="' +
-      esc(item.id) +
-      '" aria-pressed="false"><span><strong>' +
-      esc(item.title) +
-      '</strong>' +
-      (label ? '<small>' + esc(label) + '</small>' : '') +
-      '</span><span class="episode-length"></span></button>'
-    );
+  const collections = [];
+  for (const item of items) {
+    const name = item.series || item.station;
+    let group = collections.find((g) => g.name === name);
+    if (!group) {
+      const podcast = item.kind === 'podcast';
+      const id = slug(name);
+      group = {
+        id, name, kind: podcast ? 'Podcast' : 'Talk radio', episodes: [],
+        artwork: podcast ? 'assets/shows/' + id + '.webp' : stations.find((s) => s.name === name)?.artwork,
+      };
+      collections.push(group);
+    }
+    group.episodes.push(item);
   }
-  el('podcasts').innerHTML = series
-    .map((name) => {
-      const episodes = podcasts.filter((item) => item.series === name);
-      return (
-        '<details class="podcast-series"><summary><strong>' +
-        esc(name) +
-        '</strong><span>' +
-        episodes.length +
-        ' episodes</span></summary>' +
-        episodes.map(episodeRow).join('') +
-        '</details>'
-      );
-    })
-    .join('');
-  el('specials').innerHTML = items
-    .filter((item) => item.kind === 'show')
-    .map(episodeRow)
-    .join('');
-  el('podcast-count').textContent = podcasts.length + ' episodes across ' + series.length + ' series';
-  const buttons = new Map(
-    [...el('demand-view').querySelectorAll('[data-episode]')].map((b) => [b.dataset.episode, b]),
-  );
+  collections.sort((a, b) => Number(b.kind === 'Podcast') - Number(a.kind === 'Podcast'));
+  const specials = { id: 'special-stations', name: 'Special Stations', kind: 'Live radio',
+    artwork: 'assets/shows/special-stations.webp', stations: stations.filter((s) => s.unlockable || s.local) };
+  collections.push(specials);
+  let browsing = Math.max(0, collections.findIndex((c) => c.id === read('show-collection', 'drunk-kings')));
+  let active = null;
+  const buttons = new Map();
+  for (const item of items) {
+    const row = document.createElement('button');
+    row.type = 'button';
+    row.className = 'episode-row';
+    row.dataset.episode = item.id;
+    const label = item.episodeLabel;
+    row.innerHTML = '<span><strong>' + esc(item.title) + '</strong>' +
+      (label ? '<small>' + esc(label) + '</small>' : '') + '</span><span class="episode-length"></span>';
+    buttons.set(item.id, row);
+    updateRow(item);
+  }
+
+  function display(index) {
+    browsing = index;
+    const group = collections[index];
+    const isLive = group === specials;
+    el('series-title').textContent = group.name;
+    el('series-title').classList.toggle('long', group.name.length > 16);
+    el('series-kind').textContent = group.kind;
+    el('series-count').textContent = isLive ? group.stations.length + ' stations' : group.episodes.length + ' episodes';
+    el('series-number').textContent = (index + 1) + ' / ' + collections.length;
+    el('collection-heading').textContent = isLive ? 'Tune live' : 'Episodes';
+    el('special-stations').hidden = !isLive;
+    el('episode-list').replaceChildren(...(group.episodes || []).map((item) => buttons.get(item.id)));
+    save('show-collection', group.id);
+  }
+  const carousel = dial(el('demand-view'), collections, browsing, { change: display });
+  display(browsing);
+
   function updateRow(item) {
     const button = buttons.get(item.id);
     const selected = active?.item === item;
     button.setAttribute('aria-pressed', String(selected));
     const pos = savedPosition(item);
     button.querySelector('.episode-length').textContent = selected
-      ? 'Selected'
-      : pos
-        ? 'Resume at ' + stamp(pos)
-        : stamp(item.duration);
+      ? active.paused ? 'Paused' : 'Selected'
+      : pos ? 'Resume at ' + stamp(pos) : stamp(item.duration);
   }
-
   function position(s) {
     return Math.max(0, Math.min(s.item.duration, s.audio.currentTime - s.item.startSeconds));
   }
   function remember(s, force = false) {
-    if (!s.played) return;
+    if (!s.played || s.audio.seeking) return;
     const n = position(s);
     if (!Number.isFinite(n) || (!force && Math.abs(n - s.saved) < 3)) return;
     save('episode:' + s.item.id, n);
@@ -103,6 +114,7 @@ export function onDemandView(programs, { runtime, takeOver, release }) {
     s.audio.load();
     el('episode-panel').hidden = true;
     updateRow(s.item);
+    changed();
   }
   function finish(s) {
     if (active !== s) return;
@@ -117,70 +129,109 @@ export function onDemandView(programs, { runtime, takeOver, release }) {
     if (position(s) >= s.item.duration - 0.06) finish(s);
     else remember(s);
   }
-  function listen(id) {
+  function requestPlay(s) {
+    s.paused = false;
+    updateRow(s.item);
+    changed();
+    s.audio.play().catch((error) => {
+      if (active !== s || error.name === 'AbortError') return;
+      s.paused = true;
+      updateRow(s.item);
+      status(s, 'Select the episode again to retry, or open its source.');
+      changed();
+    });
+  }
+  function listen(id, startPaused = false) {
     const item = items.find((x) => x.id === id);
     if (!item) return;
+    const index = collections.findIndex((g) => g.episodes?.includes(item));
+    if (index !== browsing) carousel.jump(index);
+    if (active?.item === item && !active.audio.error) {
+      if (active.paused) requestPlay(active);
+      return;
+    }
     stop();
     const pos = savedPosition(item);
     const a = new Audio();
-    const s = (active = { item, audio: a, saved: pos, played: false });
+    const s = (active = { item, group: collections[index], audio: a, saved: pos, played: false, paused: startPaused });
     takeOver();
-    updateRow(item);
-    const group = buttons.get(id).closest('details');
-    if (group) group.open = true;
     el('episode-panel').hidden = false;
     el('episode-title').textContent = item.title;
-    el('episode-title').focus({ preventScroll: true });
-    el('episode-kind').textContent =
-      item.kind === 'show'
-        ? item.station + ' · Recorded excerpt'
-        : [item.series, item.episodeLabel].filter(Boolean).join(' · ');
+    el('episode-kind').textContent = item.series || item.station;
     el('episode-source').href = item.source;
-    el('episode-source').textContent = 'Recording source';
+    el('episode-panel').classList.remove('live');
     status(s, 'Loading recording…');
-    a.preload = 'auto';
+    a.preload = startPaused ? 'metadata' : 'auto';
     const start = item.startSeconds + pos;
     a.addEventListener('loadedmetadata', () => {
       if (active === s && Math.abs(a.currentTime - start) > 0.2) a.currentTime = start;
     });
     a.addEventListener('playing', () => {
-      if (active !== s) return;
+      if (active !== s || s.paused) return;
       s.played = true;
-      status(
-        s,
-        item.kind === 'podcast' ? 'Listening to the podcast.' : 'Listening to the recorded broadcast.',
-      );
+      el('episode-panel').classList.add('live');
+      status(s, item.kind === 'podcast' ? 'Listening to the podcast.' : 'Listening to the recorded broadcast.');
       clearTimeout(s.deadline);
       s.deadline = setTimeout(() => progress(s), Math.max(0, item.endSeconds - a.currentTime) * 1000);
+      changed();
     });
     a.addEventListener('waiting', () => {
+      if (active !== s || s.paused) return;
       clearTimeout(s.deadline);
+      el('episode-panel').classList.remove('live');
       status(s, 'Buffering the recording…');
     });
     a.addEventListener('timeupdate', () => progress(s));
-    a.addEventListener('pause', () => progress(s));
-    a.addEventListener('ended', () => finish(s));
-    a.addEventListener('error', () =>
-      status(s, 'The recording could not load. Select it again to retry, or open its source.'),
-    );
-    a.src = item.kind === 'show' ? item.url + '#t=' + start + ',' + item.endSeconds : item.url;
-    a.play().catch((error) => {
-      if (error.name !== 'AbortError') status(s, 'Select the recording again to listen, or open its source.');
+    a.addEventListener('seeked', () => { if (active === s) changed(); });
+    a.addEventListener('pause', () => {
+      if (active === s && a.paused && !a.ended) pause();
     });
-    el('episode-panel').scrollIntoView({ block: 'nearest' });
+    a.addEventListener('ended', () => finish(s));
+    a.addEventListener('error', () => {
+      if (active !== s) return;
+      pause();
+      status(s, 'The recording could not load. Select it again to retry, or open its source.');
+    });
+    a.src = item.kind === 'show' ? item.url + '#t=' + start + ',' + item.endSeconds : item.url;
+    if (startPaused) {
+      status(s, 'Paused');
+      updateRow(item);
+      changed();
+    } else requestPlay(s);
   }
-  for (const id of ['podcasts', 'specials'])
-    el(id).onclick = (e) => {
-      const button = e.target.closest('[data-episode]');
-      if (button) listen(button.dataset.episode);
-    };
+  function pause() {
+    const s = active;
+    if (!s || s.paused) return;
+    s.paused = true;
+    clearTimeout(s.deadline);
+    s.audio.pause();
+    remember(s, true);
+    updateRow(s.item);
+    el('episode-panel').classList.remove('live');
+    status(s, 'Paused');
+    changed();
+  }
+  function resume() {
+    if (active?.paused) listen(active.item.id);
+  }
+  function skip(direction) {
+    if (!active) return;
+    const episodes = active.group.episodes;
+    listen(episodes[(episodes.indexOf(active.item) + direction + episodes.length) % episodes.length].id, active.paused);
+  }
+  el('episode-list').onclick = (e) => {
+    const row = e.target.closest('[data-episode]');
+    if (row) listen(row.dataset.episode);
+  };
   window.addEventListener('pagehide', () => stop());
-  items.forEach(updateRow);
   return {
-    listen,
-    stop,
-    get active() {
-      return Boolean(active);
+    listen, stop, pause, resume, skip, carousel,
+    seek(seconds, relative) {
+      const s = active;
+      if (!s || !s.audio.readyState || !Number.isFinite(seconds)) return;
+      const offset = relative ? position(s) + seconds : seconds;
+      s.audio.currentTime = s.item.startSeconds + Math.max(0, Math.min(s.item.duration, offset));
     },
+    get active() { return active; },
   };
 }

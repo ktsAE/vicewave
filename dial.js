@@ -7,10 +7,12 @@ export function cover(station) {
     : '';
   return '<span class="station-cover" aria-hidden="true">' + image + label + '</span>';
 }
-export function dial(stations, initial, change, activate, preview) {
-  const strip = document.getElementById('strip'),
-    sleeves = document.getElementById('sleeves'),
-    scale = document.getElementById('scale');
+export function dial(root, stations, initial, { change, activate, preview, live = false }) {
+  const strip = root.querySelector('.strip'),
+    sleeves = strip.querySelector('.sleeves'),
+    scale = root.querySelector('.scale');
+  const previous = strip.querySelector('.step.left'), next = strip.querySelector('.step.right');
+  const action = live ? 'Tune to ' : 'Browse ';
   const n = stations.length,
     wrap = (i) => ((i % n) + n) % n;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
@@ -25,19 +27,17 @@ export function dial(stations, initial, change, activate, preview) {
       (s, i) =>
         '<button type="button" class="sleeve" data-index="' +
         i +
-        '" tabindex="-1" aria-label="Tune to ' +
+        '" tabindex="-1" aria-label="' + action +
         esc(s.name) +
         '"><span class="artwork">' +
         cover(s) +
-        '</span><span class="plate">' +
-        icon('antenna') +
-        ' TUNED</span></button>',
+        '</span>' + (live ? '<span class="plate">' + icon('antenna') + ' TUNED</span>' : '') + '</button>',
     )
     .join('');
   scale.innerHTML = stations
     .map(
       (s, i) =>
-        '<button aria-label="Tune to ' +
+        '<button aria-label="' + action +
         esc(s.name) +
         '" title="' +
         esc(s.name) +
@@ -112,18 +112,20 @@ export function dial(stations, initial, change, activate, preview) {
     frame(start);
   }
   function step(amount) {
-    activate();
+    activate?.();
     animate(Math.round(target) + amount);
   }
   function jump(i) {
-    activate();
+    activate?.();
     const base = Math.round(target);
     animate(base + wrap(i - wrap(base) + n / 2) - n / 2);
   }
   strip.addEventListener('pointerdown', (e) => {
     if (e.button !== 0 || e.target.closest('.step')) return;
     cancelAnimationFrame(animation);
-    activate();
+    activate?.();
+    if (!pitch) measure();
+    if (!pitch) return;
     drag = {
       id: e.pointerId,
       start: e.clientX,
@@ -185,20 +187,20 @@ export function dial(stations, initial, change, activate, preview) {
     },
     { passive: false },
   );
-  document.getElementById('previous').onclick = () => step(-1);
-  document.getElementById('next').onclick = () => step(1);
+  previous.onclick = () => step(-1);
+  next.onclick = () => step(1);
   let hoverTimer;
   function hint(e) {
     const button = e.target.closest('button');
     if (!button || button.contains(e.relatedTarget)) return;
-    const offset = button.id === 'previous' ? -1 : button.id === 'next' ? 1 : 0;
+    const offset = button === previous ? -1 : button === next ? 1 : 0;
     const i = offset ? wrap(selection + offset) : Number(button.dataset.index);
     clearTimeout(hoverTimer);
     if (!Number.isInteger(i) || i === selection) return;
     if (e.type === 'pointerover') hoverTimer = setTimeout(() => preview(i), 90);
     else preview(i);
   }
-  for (const area of [strip, scale]) {
+  for (const area of preview ? [strip, scale] : []) {
     area.addEventListener('pointerover', hint);
     area.addEventListener('focusin', hint);
     area.addEventListener('pointerleave', () => clearTimeout(hoverTimer));
@@ -211,5 +213,5 @@ export function dial(stations, initial, change, activate, preview) {
   ticks[initial].setAttribute('aria-pressed', 'true');
   new ResizeObserver(measure).observe(strip);
   measure();
-  return { step, jump, layout };
+  return { step, jump, layout: measure };
 }

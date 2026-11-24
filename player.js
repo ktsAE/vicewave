@@ -17,7 +17,7 @@ function downloading(bank) {
 }
 
 export class Receiver {
-  constructor(stations, onChange, epoch = stationOrigin(), archives = [], { direct = false } = {}) {
+  constructor(stations, onChange, epoch = stationOrigin(), archives = [], { direct = false, onInterruption } = {}) {
     this.stations = stations;
     this.onChange = onChange;
     this.epoch = epoch;
@@ -46,6 +46,14 @@ export class Receiver {
         queued: false,
       };
       audio.addEventListener('ended', () => this.tick());
+      audio.addEventListener('pause', () => {
+        // An OS pause on the audible deck must silence the receiver. Banks also
+        // pause on every normal handoff, after they have given up ownership.
+        if (this.live === bank && bank.key && !bank.retired && audio.paused && !audio.ended && !audio.error) {
+          this.power(false);
+          onInterruption?.();
+        }
+      });
       audio.addEventListener('playing', () => {
         bank.waiting = false;
       });

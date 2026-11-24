@@ -107,6 +107,22 @@ test('a slow channel releases the old station after the short handoff', async (t
   assert.equal(old.audio.paused, true);
 });
 
+test('only an external pause on the audible deck turns off the receiver', async (t) => {
+  const { r, setTime } = receiver(t);
+  await settle();
+  const standby = r.banks.find((b) => b !== r.live);
+  standby.audio.dispatchEvent(new Event('pause'));
+  assert.equal(r.powered, true);
+  const audible = r.live.audio;
+  audible.pause();
+  audible.dispatchEvent(new Event('pause'));
+  assert.equal(r.powered, false);
+  setTime(22);
+  r.power(true);
+  await settle();
+  assert.equal(JSON.parse(r.lastState).title, 'Second song');
+});
+
 test('a previously live archive that runs out of audio can recover through the game track', async (t) => {
   const { r, setTime } = receiver(t);
   await settle();

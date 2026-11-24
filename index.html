@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-    <meta name="theme-color" content="#19151b" />
+    <meta name="theme-color" content="#1b1320" />
     <meta
       name="description"
       content="Slide through the radio stations of Grand Theft Auto VI. Tune into the music, voices and commercials of Leonida."
     />
     <title>Vicewave • Leonida Radio</title>
     <link rel="icon" href="assets/mark.svg" />
+    <link rel="apple-touch-icon" href="assets/icon-192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,19 +23,24 @@
         >
         <nav aria-label="Main navigation">
           <a id="nav-radio" href="#radio"><span data-icon="antenna"></span>Radio</a
-          ><a id="nav-demand" href="#on-demand">On Demand</a
+          ><a id="nav-demand" href="#on-demand"><span data-icon="headphones"></span>On Demand</a
           ><a id="nav-guide" href="#tracklists"><span data-icon="list"></span>Tracklists</a>
         </nav>
-        <button class="power" id="power" aria-label="Turn radio on" aria-pressed="false">
-          <span data-icon="power"></span><span id="power-text">Radio off</span>
-        </button>
+        <div class="mast-controls">
+          <button class="dash-toggle" id="dash-toggle" type="button" aria-label="Use dashboard layout" aria-pressed="false" title="Use dashboard layout">
+            <span data-icon="dashboard"></span><span>Dash view</span>
+          </button>
+          <button class="power" id="power" aria-label="Turn radio on" aria-pressed="false">
+            <span data-icon="power"></span><span id="power-text">Radio off</span>
+          </button>
+        </div>
       </div>
     </header>
-    <main id="radio-view" class="receiver">
-      <div class="horizon">
+    <div class="horizon">
         <span><span data-icon="pin"></span> VICE CITY, LEONIDA</span
         ><span><span class="clock-glyph" data-icon="clock"></span><time id="clock"></time> ET</span>
       </div>
+    <main id="radio-view" class="receiver">
       <div class="tuner-body">
         <div class="tune-heading">
           <span class="tiny-rule"></span> STATION SELECT <span class="tiny-rule"></span>
@@ -46,7 +53,7 @@
           aria-roledescription="carousel"
           aria-label="Radio stations. Swipe, use the arrow keys, or select a station."
         >
-          <div id="sleeves"></div>
+          <div id="sleeves" class="sleeves"></div>
           <button class="step left" id="previous" aria-label="Previous station" title="Previous station">
             <span data-icon="chevron"></span>
           </button>
@@ -74,33 +81,34 @@
         </div>
       </div>
     </main>
-    <main id="demand-view" class="guide" hidden>
-      <header class="guide-heading">
-        <h1>On Demand</h1>
-        <a href="#radio" class="guide-live" id="demand-back">Back to radio</a>
-      </header>
-      <section id="episode-panel" class="episode-panel" hidden aria-labelledby="episode-title">
-        <div class="episode-copy">
-          <p class="kicker" id="episode-kind"></p>
-          <h2 id="episode-title" tabindex="-1"></h2>
-          <p id="episode-status" role="status"></p>
-          <div class="links"><a href="#radio">Return to live radio</a><a id="episode-source"></a></div>
+    <main id="demand-view" class="receiver" hidden>
+      <div class="tuner-body">
+        <div class="tune-heading"><span class="tiny-rule"></span> ON DEMAND <span class="tiny-rule"></span></div>
+        <div class="strip" id="show-strip" tabindex="0" role="region" aria-roledescription="carousel"
+          aria-label="On Demand collections. Swipe or use the arrow keys to browse.">
+          <div class="sleeves"></div>
+          <button class="step left" aria-label="Previous collection"><span data-icon="chevron"></span></button>
+          <button class="step right" aria-label="Next collection"><span data-icon="chevron"></span></button>
         </div>
-      </section>
-      <div class="demand-groups">
-        <section>
-          <h2>Podcasts</h2>
-          <p id="podcast-count" class="podcast-count"></p>
-          <div id="podcasts"></div>
-        </section>
-        <section>
-          <h2>Talk-radio specials</h2>
-          <div id="specials"></div>
-        </section>
+        <div class="station-info" aria-live="polite" aria-atomic="true">
+          <div class="id-line"><span id="series-kind" class="ch"></span><span id="series-count"></span></div>
+          <h1 id="series-title"></h1>
+        </div>
       </div>
-      <section class="special-stations">
-        <h2>Special stations</h2>
-        <div id="special-stations"></div>
+      <div class="scale-panel">
+        <div class="scale-heading"><span>Collections</span><span id="series-number"></span></div>
+        <div class="scale" role="group" aria-label="Select a collection"></div>
+      </div>
+      <section class="demand-library" aria-labelledby="collection-heading">
+        <header class="library-heading"><h2 id="collection-heading">Episodes</h2><a href="#radio" id="demand-back">Back to radio</a></header>
+        <section id="episode-panel" class="episode-panel" hidden aria-labelledby="episode-title">
+          <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <div class="episode-copy"><small id="episode-kind"></small><strong id="episode-title"></strong>
+            <span id="episode-status" role="status"></span></div>
+          <a id="episode-source" aria-label="Open recording source" target="_blank" rel="noopener">Source</a>
+        </section>
+        <div id="episode-list"></div>
+        <div id="special-stations" hidden></div>
       </section>
     </main>
     <main id="guide-view" class="guide" hidden>

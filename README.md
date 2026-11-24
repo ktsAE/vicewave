@@ -16,6 +16,12 @@ Open **Tracklists** at the top to search all stations by track, artist, show or 
 
 To keep the browser closed on startup, run `python3 radio.py --no-browser`. To choose another port, add `--port 6178`. Use the same browser and address to retain imported audio and the last selected station.
 
+## Driving controls
+
+Add Vicewave to your phone’s home screen for a standalone view. **Dash view** gives the two dials larger tuning arrows and a side-by-side layout on wide screens. It turns on automatically on short landscape displays. The header switch lets you choose a layout. On Demand keeps its own dial selection when you return to live radio.
+
+On browsers with Media Session support, the lock screen and compatible Bluetooth stereos can show the station, track or episode. Next and Previous tune the live dial or move between episodes of the current show. Pause switches live radio off, and Play rejoins its broadcast clock. Episodes pause and resume in place. Supported system seek controls operate within the selected episode, including for excerpts of longer talk recordings. A plain AUX cable carries audio. The website runs in the browser on the phone or display.
+
 ## GitHub Pages
 
 The site runs directly from the repository root. In the repository’s **Settings → Pages**, choose **Deploy from a branch**, select **main** and **/(root)**, and save. The station dial, tracklists and On Demand work under the repository URL without a build step or API key. [GitHub Pages setup](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
@@ -24,7 +30,7 @@ On a static host, the browser streams audio and loads station artwork directly f
 
 ## On Demand
 
-Open **On Demand** and expand a series to choose an episode. The library links 20 full episodes, totaling 3 hours, 36 minutes and 18 seconds. Each episode remembers its place in this browser. Finishing an episode or returning to the dial rejoins the live broadcast if the radio was on. The five WKTT and The Wipe specials use their original online talk-radio excerpts.
+Open **On Demand**, slide between show covers, and choose an episode from the selected collection. Browsing keeps the current audio playing. The library links 20 full episodes, totaling 3 hours, 36 minutes and 18 seconds. Each episode remembers its place in this browser. Finishing an episode or returning to the dial rejoins the live broadcast if the radio was on. The five WKTT and The Wipe specials use their original online talk-radio excerpts.
 
 | Podcast | Episodes included |
 | --- | --- |
@@ -36,7 +42,7 @@ Open **On Demand** and expand a series to choose an episode. The library links 2
 
 Episode titles come from the English media text in Xbox build 1.0.2.1 (table 1111). The source audio index groups these unnamed files with Radio La Ola. The shows, guests and stories can be identified in the recordings themselves. Each podcast entry in `data/programs.json` links to its original Opus file. When a local MP3 exists at the episode’s `audioUrl` path under `assets/podcasts/`, the Python launcher uses that copy and the episode also works offline. [Game text index](https://github.com/psviethoa/gta6-text-en/tree/6c4cd177a46fa4cb08eac4da69dffcfc8bf01949) · [Original audio index](https://six.mics.dev/explorer/data/radio_music.json) · [Rockstar credits](https://www.rockstargames.com/VI/credits#gta-media)
 
-The **Special stations** shortcuts tune directly to The Vault Radio, The Sniper of La Perle or the local Thrillbilly Mud Club Radio signal.
+The **Special Stations** collection tunes directly to The Vault Radio, The Sniper of La Perle or the local Thrillbilly Mud Club Radio signal.
 
 ## What you hear
 
@@ -64,3 +70,11 @@ Music assignments and official previews come from Rockstar. The guide links the 
 The Python launcher streams cataloged audio from its source and serves browser byte-range requests. It binds to the loopback address. It keeps recently heard game recordings in a 64 MiB memory cache for quick seeks. While audio is playing, the dial gradually requests the first 64 KiB of each station mix so the launcher can answer future MP3 seek-table requests locally. Data Saver skips speculative station and header requests. For sequential sources the archive cache uses `$XDG_CACHE_HOME/vicewave/broadcasts-v1` or `~/.cache/vicewave/broadcasts-v1` and evicts inactive files above a 1 GiB target.
 
 The project ships its source indexes in `data/`. The optional catalog refresh tools in `scripts/` use Requests and Beautiful Soup. The media refresh can use ffprobe to verify durations.
+
+<details>
+<summary>Original On Demand cover art</summary>
+
+The six fan-designed covers in `assets/shows/` were generated as one sheet with the built-in ImageGen tool and exported as square WebP images. WKTT and The Wipe use their station art.
+
+An original Vice City-inspired radio artwork sheet for the Vicewave fan radio project. Landscape 3:2 aspect ratio, EXACTLY three equal columns and two equal rows, six square album covers packed edge-to-edge with perfectly straight boundaries, no gutters, no borders or cast shadows between covers. Each mini sleeve is a different professionally art-directed, bold, screenprinted Florida radio poster, vintage halftone, slightly worn ink, frontal flat art, high-contrast and instantly recognizable in a car. Render ONLY each specified title, with exact spelling. Upper left: 'DRUNK KINGS', gold blackletter and a gold trophy goblet tilted against near-black and purple with bold yellow rays. Upper middle: 'FINAL ACT', large icy white condensed cinema lettering at the bottom, a dramatically spotlit empty red theatre chair and midnight blue backstage velvet. Upper right: 'FUCK, MARRY, MURDER', bold stacked hot-magenta typography and a red lipstick kiss on torn cream tabloid paper. Lower left: 'THE SAFE TRAP', bold cream lettering over an orange dusk, a small isolated illustrated wooden cabin and deep green pines. Lower middle: 'VICE CITY TRUE STORIES', black heavy title with hand-lettered smaller 'True Stories', a lilac and teal halftoned South Florida skyline with a palm silhouette on aged ivory. Lower right: 'SPECIAL STATIONS', burgundy and coral with a stylized chrome car aerial rising over the Florida coast at night, cream block lettering. No other lettering, no UI, no device mockups. Keep every title within the central 80% of its own square, and make typography substantial.
+</details>

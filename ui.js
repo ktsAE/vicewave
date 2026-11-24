@@ -1,4 +1,6 @@
 const drawings = {
+  dashboard: '<path d="M3 15a9 9 0 0 1 18 0v3H3zM12 15l4-5M6.5 12l1 .6m4.5-5v1.5m5.5 3l-1 .6"/><circle cx="12" cy="15" r="1"/>',
+  headphones: '<path d="M4 15v-3a8 8 0 0 1 16 0v3M4 14h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 1-2Zm16 0h-3v6h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-1-2Z"/>',
   power: '<path d="M12 2v9M6.3 5.8a8.5 8.5 0 1 0 11.4 0"/>',
   clock: '<circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/>',
   antenna:

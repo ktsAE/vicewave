@@ -8,6 +8,7 @@ import { cover, dial } from './dial.js';
 import { catalogView } from './catalog-view.js';
 import { connectGamepad } from './gamepad.js';
 import { onDemandView } from './on-demand.js';
+import { connectMediaControls } from './media-controls.js';
 
 const files = [
   'catalog',
@@ -36,6 +37,24 @@ function clock() {
   }).format(Date.now());
 }
 decorate();
+const landscapeDash = matchMedia('(min-width: 540px) and (max-height: 740px) and (min-aspect-ratio: 8/5)');
+let dashPreference = read('dashboard', null);
+function dashboardLayout() {
+  const enabled = dashPreference ?? landscapeDash.matches;
+  document.body.classList.toggle('dashboard', enabled);
+  const toggle = el('dash-toggle');
+  toggle.setAttribute('aria-pressed', String(enabled));
+  toggle.title = enabled ? 'Use standard layout' : 'Use dashboard layout';
+  toggle.setAttribute('aria-label', toggle.title);
+}
+el('dash-toggle').onclick = () => {
+  const enabled = !document.body.classList.contains('dashboard');
+  dashPreference = enabled === landscapeDash.matches ? null : enabled;
+  save('dashboard', dashPreference);
+  dashboardLayout();
+};
+landscapeDash.addEventListener('change', dashboardLayout);
+dashboardLayout();
 document.addEventListener('error', (event) => {
   if (event.target.matches?.('.station-cover img')) event.target.remove();
 }, true);
@@ -91,7 +110,8 @@ async function init() {
     importTarget,
     libraryScope = '',
     receiver,
-    demand;
+    demand,
+    syncMedia;
   function message(state) {
     const gesture = state.phase === 'gesture',
       live = state.phase === 'live';
@@ -126,25 +146,37 @@ async function init() {
       : standby[state.phase];
     el('on-air').classList.toggle('live', live);
     document.body.classList.toggle('radio-live', live);
-    const episode = Boolean(demand?.active);
-    const enabled = episode || (state.powered && !gesture);
+    const episode = demand?.active;
+    const enabled = episode ? !episode.paused : state.powered && !gesture;
     el('power').setAttribute('aria-pressed', String(enabled));
-    el('power-text').textContent = episode ? 'Audio on' : enabled ? 'Radio on' : 'Radio off';
-    el('power').setAttribute(
-      'aria-label',
-      episode ? 'Turn audio off' : enabled ? 'Turn radio off' : 'Turn radio on',
-    );
+    el('power-text').textContent = (episode ? 'Audio ' : 'Radio ') + (enabled ? 'on' : 'off');
+    el('power').setAttribute('aria-label', 'Turn ' + (episode ? 'audio ' : 'radio ') + (enabled ? 'off' : 'on'));
+    const station = (live && stations.find((s) => s.id === state.audible)) || stations[index];
+    syncMedia?.(episode ? {
+      title: episode.item.title, artist: episode.group.name, album: 'Vicewave · On Demand',
+      artwork: episode.group.artwork, playing: enabled && !episode.audio.paused, episode,
+    } : {
+      title: live && state.title ? state.title : station.name,
+      artist: live ? [state.artist, station.name].filter((v, i, a) => v && a.indexOf(v) === i).join(' · ') : 'Vicewave',
+      album: 'Vicewave · Live radio', artwork: station.artwork, playing: enabled && Boolean(state.audible),
+    });
   }
   const plans = stations.map((s) => buildStation(s, sources));
   const archives = direct ? [] : broadcasts.filter((b) => b.nativeRange).map((b) => [b.stationId, b.audioUrl]);
-  receiver = new Receiver(plans, message, stationOrigin(plans[index]), archives, { direct });
+  receiver = new Receiver(plans, message, stationOrigin(plans[index]), archives, {
+    direct,
+    onInterruption: () => {
+      wanted = false;
+      save('power', false);
+    },
+  });
   receiver.selected = index;
   function restoreRadio() {
     receiver.power(wanted);
     receiver.emit(true);
   }
   demand = onDemandView(programs, {
-    runtime,
+    runtime, stations, changed: () => receiver.emit(true),
     takeOver: () => {
       receiver.unlock();
       receiver.power(false);
@@ -157,18 +189,18 @@ async function init() {
     receiver.unlock();
     receiver.power(true, true);
   }
-  function togglePower() {
+  function setPower(on) {
     if (demand.active) {
-      demand.stop();
-      wanted = false;
-      save('power', false);
-      restoreRadio();
+      if (on) demand.resume();
+      else demand.pause();
       return;
     }
-    const needsGesture = receiver.phase === 'gesture';
-    wanted = needsGesture || !wanted;
+    wanted = on;
     save('power', wanted);
-    receiver.power(wanted, true);
+    receiver.power(wanted, on);
+  }
+  function togglePower() {
+    setPower(demand.active ? demand.active.paused : receiver.phase === 'gesture' || !wanted);
   }
   function display(next) {
     index = next;
@@ -193,7 +225,24 @@ async function init() {
     el('demand-back').textContent = 'Back to ' + s.name;
     receiver.tune(index);
   }
-  const carousel = dial(stations, index, display, listenGesture, (i) => receiver.preview(i));
+  const carousel = dial(el('radio-view'), stations, index, {
+    live: true, change: display, activate: listenGesture, preview: (i) => receiver.preview(i),
+  });
+  syncMedia = connectMediaControls({
+    play: () => setPower(true), pause: () => setPower(false),
+    stop: () => {
+      wanted = false;
+      save('power', false);
+      demand.stop();
+      receiver.power(false);
+      receiver.emit(true);
+    },
+    skip: (direction) => {
+      if (demand.active) demand.skip(direction);
+      else carousel.step(direction);
+    },
+    seek: (seconds, relative) => demand.seek(seconds, relative),
+  });
   for (const [i, station] of stations.entries()) {
     if (!station.unlockable && !station.local) continue;
     const button = document.createElement('button');
@@ -234,18 +283,22 @@ async function init() {
     const library = ['#library', '#tracklists'].includes(location.hash);
     const shows = location.hash === '#on-demand';
     if (!shows && demand.active) {
+      if (demand.active.paused) {
+        wanted = false;
+        save('power', false);
+      }
       demand.stop();
       restoreRadio();
     }
     el('demand-view').hidden = !shows;
     el('radio-view').hidden = library || shows;
     el('guide-view').hidden = !library;
-    document.body.classList.toggle('guide-open', library || shows);
+    document.body.classList.toggle('guide-open', library);
     el('nav-radio').setAttribute('aria-current', library || shows ? 'false' : 'page');
     el('nav-demand').setAttribute('aria-current', shows ? 'page' : 'false');
     el('nav-guide').setAttribute('aria-current', library ? 'page' : 'false');
     if (library) guide.open(libraryScope);
-    else requestAnimationFrame(() => carousel.layout());
+    else requestAnimationFrame(() => (shows ? demand.carousel : carousel).layout());
     window.scrollTo(0, 0);
   }
   el('nav-guide').onclick = () => {
@@ -263,7 +316,7 @@ async function init() {
   addEventListener('keydown', (e) => {
     if (
       el('details').open ||
-      el('radio-view').hidden ||
+      !el('guide-view').hidden ||
       e.altKey ||
       e.ctrlKey ||
       e.metaKey ||
@@ -272,10 +325,12 @@ async function init() {
       return;
     if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
       e.preventDefault();
-      carousel.step(e.key === 'ArrowLeft' ? -1 : 1);
+      if (e.target.closest('#episode-list, #special-stations')) el('show-strip').focus({ preventScroll: true });
+      activeDial().step(e.key === 'ArrowLeft' ? -1 : 1);
     }
   });
-  connectGamepad({ isOpen: () => !el('radio-view').hidden, browse: (d) => carousel.step(d), togglePower });
+  function activeDial() { return el('demand-view').hidden ? carousel : demand.carousel; }
+  connectGamepad({ isOpen: () => el('guide-view').hidden, browse: (d) => activeDial().step(d), togglePower });
   el('strip').addEventListener('pointerup', listenGesture);
   async function localPlans(affected) {
     const keys = new Set(await recording('keys')),
