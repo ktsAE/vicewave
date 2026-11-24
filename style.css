@@ -323,6 +323,11 @@ svg {
 .station-cover img + .station-lettering {
   display: none;
 }
+.station-cover img[src*="ThrillbillyMudClub-GTAVI-Trailer1Logo"] {
+  object-fit: contain;
+  padding: 6%;
+  background: #c75715;
+}
 .sleeve .artwork {
   overflow: hidden;
   display: block;
