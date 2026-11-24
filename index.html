@@ -22,9 +22,9 @@
           ><img src="assets/mark.svg" alt="" /><strong>VICEWAVE</strong></a
         >
         <nav aria-label="Main navigation">
-          <a id="nav-radio" href="#radio"><span data-icon="antenna"></span>Radio</a
-          ><a id="nav-demand" href="#on-demand"><span data-icon="headphones"></span>On Demand</a
-          ><a id="nav-guide" href="#tracklists"><span data-icon="list"></span>Tracklists</a>
+          <a id="nav-radio" href="#radio" aria-label="Radio" title="Radio"><span data-icon="antenna"></span><span class="nav-label">Radio</span></a
+          ><a id="nav-demand" href="#on-demand" aria-label="On Demand" title="On Demand"><span data-icon="headphones"></span><span class="nav-label">On Demand</span></a
+          ><a id="nav-guide" href="#tracklists" aria-label="Tracklists" title="Tracklists"><span data-icon="list"></span><span class="nav-label">Tracklists</span></a>
         </nav>
         <div class="mast-controls">
           <button class="dash-toggle" id="dash-toggle" type="button" aria-label="Use dashboard layout" aria-pressed="false" title="Use dashboard layout">
@@ -36,39 +36,35 @@
         </div>
       </div>
     </header>
-    <div class="horizon">
-        <span><span data-icon="pin"></span> VICE CITY, LEONIDA</span
-        ><span><span class="clock-glyph" data-icon="clock"></span><time id="clock"></time> ET</span>
-      </div>
     <main id="radio-view" class="receiver">
       <div class="tuner-body">
-        <div class="tune-heading">
-          <span class="tiny-rule"></span> STATION SELECT <span class="tiny-rule"></span>
+        <div class="dial-stage">
+          <div
+            class="strip"
+            id="strip"
+            tabindex="0"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Radio stations. Swipe, use the arrow keys, or select a station."
+          >
+            <div id="sleeves" class="sleeves"></div>
+            <button class="step left" id="previous" aria-label="Previous station" title="Previous station">
+              <span data-icon="chevron"></span>
+            </button>
+            <button class="step right" id="next" aria-label="Next station" title="Next station">
+              <span data-icon="chevron"></span>
+            </button>
+          </div>
         </div>
-        <div
-          class="strip"
-          id="strip"
-          tabindex="0"
-          role="region"
-          aria-roledescription="carousel"
-          aria-label="Radio stations. Swipe, use the arrow keys, or select a station."
-        >
-          <div id="sleeves" class="sleeves"></div>
-          <button class="step left" id="previous" aria-label="Previous station" title="Previous station">
-            <span data-icon="chevron"></span>
-          </button>
-          <button class="step right" id="next" aria-label="Next station" title="Next station">
-            <span data-icon="chevron"></span>
-          </button>
-        </div>
-        <div class="station-info" aria-live="polite" aria-atomic="true">
-          <div class="id-line"><span class="ch" id="channel">CH 08</span><span id="genre"></span></div>
-          <h1 id="station-title">Flash FM</h1>
-          <p id="hosts"></p>
-        </div>
-        <div class="on-air" id="on-air" role="status">
-          <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-          <div><small id="air-label">RECEIVER</small><strong id="air-title">Tuning the dial…</strong></div>
+        <div class="station-details">
+          <div class="station-info" aria-live="polite" aria-atomic="true">
+            <div class="id-line"><span class="ch" id="channel">CH 08</span><span id="genre"></span></div>
+            <h1 id="station-title">Flash FM</h1>
+          </div>
+          <div class="on-air" id="on-air" role="status">
+            <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <div><small id="air-label">RECEIVER</small><strong id="air-title">Tuning the dial…</strong></div>
+          </div>
         </div>
       </div>
       <div class="scale-panel">
@@ -77,27 +73,31 @@
         <div class="scale-foot">
           <span class="desktop-tip"><kbd>←</kbd><kbd>→</kbd> Switch station</span
           ><span class="touch-tip">Swipe to switch station</span
-          ><a href="#tracklists" id="station-guide">Station tracklist <span data-icon="list"></span></a>
+          ><span class="dial-location">Vice City <span aria-hidden="true">·</span> <time id="clock"></time> ET</span>
+          <a href="#tracklists" id="station-guide">Station tracklist <span data-icon="list"></span></a>
         </div>
       </div>
     </main>
     <main id="demand-view" class="receiver" hidden>
-      <div class="tuner-body">
-        <div class="tune-heading"><span class="tiny-rule"></span> ON DEMAND <span class="tiny-rule"></span></div>
-        <div class="strip" id="show-strip" tabindex="0" role="region" aria-roledescription="carousel"
-          aria-label="On Demand collections. Swipe or use the arrow keys to browse.">
-          <div class="sleeves"></div>
-          <button class="step left" aria-label="Previous collection"><span data-icon="chevron"></span></button>
-          <button class="step right" aria-label="Next collection"><span data-icon="chevron"></span></button>
+      <div class="collection-picker">
+        <div class="tuner-body">
+          <div class="dial-stage">
+            <div class="strip" id="show-strip" tabindex="0" role="region" aria-roledescription="carousel"
+              aria-label="On Demand collections. Swipe or use the arrow keys to browse.">
+              <div class="sleeves"></div>
+              <button class="step left" aria-label="Previous collection"><span data-icon="chevron"></span></button>
+              <button class="step right" aria-label="Next collection"><span data-icon="chevron"></span></button>
+            </div>
+          </div>
+          <div class="station-info" aria-live="polite" aria-atomic="true">
+            <div class="id-line"><span id="series-kind" class="ch"></span><span id="series-count"></span></div>
+            <h1 id="series-title"></h1>
+          </div>
         </div>
-        <div class="station-info" aria-live="polite" aria-atomic="true">
-          <div class="id-line"><span id="series-kind" class="ch"></span><span id="series-count"></span></div>
-          <h1 id="series-title"></h1>
+        <div class="scale-panel">
+          <div class="scale-heading"><span>Collections</span><span id="series-number"></span></div>
+          <div class="scale" role="group" aria-label="Select a collection"></div>
         </div>
-      </div>
-      <div class="scale-panel">
-        <div class="scale-heading"><span>Collections</span><span id="series-number"></span></div>
-        <div class="scale" role="group" aria-label="Select a collection"></div>
       </div>
       <section class="demand-library" aria-labelledby="collection-heading">
         <header class="library-heading"><h2 id="collection-heading">Episodes</h2><a href="#radio" id="demand-back">Back to radio</a></header>

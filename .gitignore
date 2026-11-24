@@ -1,7 +1,8 @@
 __pycache__/
 *.pyc
 assets/podcasts/
-assets/covers/
+assets/covers/*
+!assets/covers/*-restored.webp
 assets/logos/
 assets/scenes/
 .env

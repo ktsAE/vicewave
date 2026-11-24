@@ -1,4 +1,4 @@
-import { esc, icon } from './ui.js';
+import { esc } from './ui.js';
 import { stationFrame } from './artwork.js';
 
 export function cover(station) {
@@ -33,7 +33,7 @@ export function dial(root, stations, initial, { change, activate, preview, live 
         esc(s.name) +
         '"><span class="artwork">' +
         cover(s) +
-        '</span>' + (live ? '<span class="plate">' + icon('antenna') + ' TUNED</span>' : '') + '</button>',
+        '</span></button>',
     )
     .join('');
   scale.innerHTML = stations
@@ -91,7 +91,7 @@ export function dial(root, stations, initial, { change, activate, preview, live 
   function measure() {
     const size = tiles[selection].offsetWidth;
     if (!size || !strip.clientWidth) return;
-    const spacing = Math.min(size * 1.01, strip.clientWidth * 0.275 + (strip.clientWidth < 600 ? 48 : 0));
+    const spacing = Math.min(size * 0.95, (strip.clientWidth + size) * 0.245);
     if (pitch === spacing) return;
     pitch = spacing;
     if (motion) animate(target);

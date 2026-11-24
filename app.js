@@ -9,7 +9,7 @@ import { catalogView } from './catalog-view.js';
 import { connectGamepad } from './gamepad.js';
 import { onDemandView } from './on-demand.js';
 import { connectMediaControls } from './media-controls.js';
-import { configureArtwork, squareArtwork, stationFrame } from './artwork.js';
+import { configureArtwork, fallbackArtwork, squareArtwork, stationFrame } from './artwork.js';
 
 const files = [
   'catalog',
@@ -38,7 +38,7 @@ function clock() {
   }).format(Date.now());
 }
 decorate();
-const landscapeDash = matchMedia('(min-width: 540px) and (max-height: 740px) and (min-aspect-ratio: 8/5)');
+const landscapeDash = matchMedia('(min-width: 30rem) and (max-height: 46.25rem) and (min-aspect-ratio: 8/5)');
 let dashPreference = read('dashboard', null);
 function dashboardLayout() {
   const enabled = dashPreference ?? landscapeDash.matches;
@@ -57,9 +57,10 @@ el('dash-toggle').onclick = () => {
 landscapeDash.addEventListener('change', dashboardLayout);
 dashboardLayout();
 function fallbackCover(img) {
-  const fallback = stationFrame(img.getAttribute('src'))?.fallback;
+  const fallback = fallbackArtwork(img.getAttribute('src'));
   if (fallback) {
-    img.classList.remove('station-frame', 'ready');
+    img.classList.remove('ready');
+    img.classList.toggle('station-frame', Boolean(stationFrame(fallback)));
     img.src = fallback;
   } else img.remove();
 }
@@ -222,16 +223,6 @@ async function init() {
     el('channel').textContent = 'CH ' + String(index + 1).padStart(2, '0');
     el('scale-count').textContent = String(index + 1).padStart(2, '0') + ' / ' + stations.length;
     el('genre').textContent = genre(s);
-    el('hosts').textContent = s.hosts.length
-      ? 'With ' +
-        s.hosts
-          .slice(0, 3)
-          .map((host) => {
-            const [performer, character] = host.split(' as ');
-            return character && !/^(himself|herself|themselves)$/i.test(character) ? character : performer;
-          })
-          .join(' & ')
-      : 'Thrillbilly Mud Club, Leonida';
     el('back-to-station').textContent = 'Back to ' + s.name;
     el('demand-back').textContent = 'Back to ' + s.name;
     receiver.tune(index);
@@ -309,7 +300,7 @@ async function init() {
     el('nav-demand').setAttribute('aria-current', shows ? 'page' : 'false');
     el('nav-guide').setAttribute('aria-current', library ? 'page' : 'false');
     if (library) guide.open(libraryScope);
-    else requestAnimationFrame(() => (shows ? demand.carousel : carousel).layout());
+    else (shows ? demand.carousel : carousel).layout();
     window.scrollTo(0, 0);
   }
   el('nav-guide').onclick = () => {

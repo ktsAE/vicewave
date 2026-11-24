@@ -1,6 +1,7 @@
 // Each station frame contains a square cover inside a landscape image.
 // Display the crop directly. Only system media controls need a separate square file.
 const frames = new Map();
+const localFallbacks = new Map();
 let mediaSource, mediaTimer;
 
 export function squareArtwork(source) {
@@ -16,6 +17,10 @@ export function squareArtwork(source) {
 
 export function stationFrame(source) {
   return frames.get(source);
+}
+
+export function fallbackArtwork(source) {
+  return localFallbacks.get(source) || frames.get(source)?.fallback;
 }
 
 async function extractSquare(source, box) {
@@ -62,11 +67,15 @@ export function configureArtwork(stations, catalog, localCovers, changed) {
       station.artwork = fallback;
       continue;
     }
-    const cached = id + '-' + catalog.dialFrame.size;
-    if (localCovers.includes(cached)) station.artwork = local(cached);
-    else {
-      station.artwork = frame;
-      frames.set(frame, { source: frame, fallback, box: catalog.dialFrame, changed });
+    frames.set(frame, { source: frame, fallback, box, changed });
+    station.artwork = frame;
+    for (const suffix of [box.size, 'mix', 'restored']) {
+      const name = id + '-' + suffix;
+      if (localCovers.includes(name)) {
+        const source = local(name);
+        localFallbacks.set(source, station.artwork);
+        station.artwork = source;
+      }
     }
   }
 }

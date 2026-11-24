@@ -1,1 +1,26 @@
-{"proxy":false,"podcasts":[],"opusPodcasts":[],"covers":[],"localScene":false}
+{
+  "proxy": false,
+  "podcasts": [],
+  "opusPodcasts": [],
+  "covers": [
+    "emotion-98-3-restored",
+    "gloriana-blues-radio-restored",
+    "honey-fm-restored",
+    "kaleidoscope-fm-restored",
+    "leonida-jazz-radio-restored",
+    "radio-la-ola-restored",
+    "radio-on-u-restored",
+    "stockyard-fm-restored",
+    "symphony-fm-restored",
+    "the-sniper-of-la-perle-restored",
+    "the-vault-radio-restored",
+    "the-wipe-restored",
+    "thrillbilly-mud-club-radio-restored",
+    "v-rock-restored",
+    "vice-city-fm-restored",
+    "vice-city-rap-radio-restored",
+    "wktt-restored",
+    "worldwide-fm-restored"
+  ],
+  "localScene": false
+}
