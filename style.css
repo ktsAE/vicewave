@@ -316,9 +316,18 @@ svg {
 .station-cover {
   container-type: inline-size;
   position: relative;
+  overflow: hidden;
   background: linear-gradient(145deg, #402e45, #171a20 75%);
 }
-.station-cover station-picture { position: absolute; inset: 0; }
+.station-cover img.station-frame {
+  position: absolute;
+  left: var(--frame-left);
+  top: var(--frame-top);
+  width: var(--frame-width);
+  height: var(--frame-height);
+  max-width: none;
+  border-radius: 0;
+}
 .station-lettering {
   display: grid;
   place-content: center;
@@ -329,7 +338,9 @@ svg {
   text-transform: uppercase;
   font: italic 800 15cqw/0.95 Barlow, sans-serif;
 }
-.station-cover img + .station-lettering {
+.station-cover img { position: absolute; inset: 0; }
+.station-cover img:not(.ready) { opacity: 0; }
+.station-cover img.ready + .station-lettering {
   display: none;
 }
 .station-cover img[src*="ThrillbillyMudClub-GTAVI-Trailer1Logo"] {

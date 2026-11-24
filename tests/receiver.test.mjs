@@ -231,3 +231,33 @@ test('turning back during the crossfade reuses the fading deck at once', async (
   assert.equal(first.audio.paused, false);
   assert.ok(r.banks.every((bank) => bank === first || bank.audio.paused));
 });
+
+test('a cold jump requests the matched song first and falls back if it stays slow', async (t) => {
+  const next = structuredClone(station('distant', '/station-mix'));
+  next.cuts[0].chapters[0].game.url = '/slow-song';
+  const { r } = receiver(t, [singleCut('a'), singleCut('b'), next, singleCut('d'), singleCut('e')]);
+  await settle();
+  r.tune(2);
+  assert.equal(r.candidate.audio.src, '/slow-song');
+  assert.ok(!r.banks.some((b) => b.audio.src === '/station-mix'));
+  r.switchedAt = performance.now() - 500;
+  r.tick();
+  await settle();
+  assert.equal(r.live.audio.src, '/station-mix');
+});
+
+test('a buffered neighbor can join between warm passes without another seek', async (t) => {
+  const plans = ['a', 'b', 'c'].map((id) => singleCut(id));
+  const { r, setTime } = receiver(t, plans);
+  await settle();
+  const next = r.banks.find((bank) => bank.target?.id === 'b');
+  next.audio.buffered = { length: 1, start: () => 0, end: () => 100 };
+  r.prepare(locate(plans[1], 2.7), false);
+  const prepared = next.audio.currentTime;
+  setTime(3.2);
+  r.tune(1);
+  await settle();
+  assert.equal(r.live, next);
+  assert.equal(next.audio.currentTime, prepared);
+  assert.ok(Math.abs(prepared - 3.2) < 0.72);
+});

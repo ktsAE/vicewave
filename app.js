@@ -9,7 +9,7 @@ import { catalogView } from './catalog-view.js';
 import { connectGamepad } from './gamepad.js';
 import { onDemandView } from './on-demand.js';
 import { connectMediaControls } from './media-controls.js';
-import { configureArtwork, squareArtwork } from './artwork.js';
+import { configureArtwork, squareArtwork, stationFrame } from './artwork.js';
 
 const files = [
   'catalog',
@@ -56,8 +56,21 @@ el('dash-toggle').onclick = () => {
 };
 landscapeDash.addEventListener('change', dashboardLayout);
 dashboardLayout();
-document.addEventListener('error', (event) => {
-  if (event.target.matches?.('.station-cover img')) event.target.remove();
+function fallbackCover(img) {
+  const fallback = stationFrame(img.getAttribute('src'))?.fallback;
+  if (fallback) {
+    img.classList.remove('station-frame', 'ready');
+    img.src = fallback;
+  } else img.remove();
+}
+document.addEventListener('load', ({ target: img }) => {
+  if (!img.matches?.('.station-cover img')) return;
+  const box = stationFrame(img.getAttribute('src'))?.box;
+  if (box && (img.naturalWidth !== box.width || img.naturalHeight !== box.height)) fallbackCover(img);
+  else img.classList.add('ready');
+}, true);
+document.addEventListener('error', ({ target: img }) => {
+  if (img.matches?.('.station-cover img')) fallbackCover(img);
 }, true);
 clock();
 setInterval(clock, 15000);
@@ -184,9 +197,8 @@ async function init() {
     release: restoreRadio,
   });
   function listenGesture() {
-    if (!wanted) return;
-    receiver.unlock();
-    receiver.power(true, true);
+    if (wanted && (!receiver.powered || !receiver.context || receiver.context.state === 'suspended' || receiver.phase === 'gesture'))
+      receiver.power(true, true);
   }
   function setPower(on) {
     if (demand.active) {

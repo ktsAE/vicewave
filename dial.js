@@ -1,11 +1,11 @@
 import { esc, icon } from './ui.js';
-import { usesFrame } from './artwork.js';
+import { stationFrame } from './artwork.js';
 
 export function cover(station) {
   const label = '<span class="station-lettering">' + esc(station.name) + '</span>';
-  let image = '';
-  if (usesFrame(station.artwork)) image = '<station-picture data-frame="' + esc(station.artwork) + '"></station-picture>';
-  else if (station.artwork) image = '<img draggable="false" src="' + esc(station.artwork) + '" alt="">';
+  const frame = stationFrame(station.artwork);
+  const image = station.artwork ? '<img draggable="false" decoding="async" loading="lazy" ' +
+    (frame ? 'class="station-frame" ' : '') + 'src="' + esc(station.artwork) + '" alt="">' : '';
   return '<span class="station-cover" aria-hidden="true">' + image + label + '</span>';
 }
 export function dial(root, stations, initial, { change, activate, preview, live = false }) {
@@ -20,15 +20,16 @@ export function dial(root, stations, initial, { change, activate, preview, live 
   let position = initial,
     target = initial,
     selection = initial,
-    animation,
+    motion,
+    dragFrame,
     drag = null,
-    lastWheel = 0;
+    lastWheel = -Infinity, lastWheelStep = -Infinity, wheelDirection = 0, wheelTravel = 0;
   sleeves.innerHTML = stations
     .map(
       (s, i) =>
         '<button type="button" class="sleeve" data-index="' +
         i +
-        '" tabindex="-1" aria-label="' + action +
+        '" tabindex="-1" aria-current="false" aria-label="' + action +
         esc(s.name) +
         '"><span class="artwork">' +
         cover(s) +
@@ -38,7 +39,7 @@ export function dial(root, stations, initial, { change, activate, preview, live 
   scale.innerHTML = stations
     .map(
       (s, i) =>
-        '<button aria-label="' + action +
+        '<button aria-pressed="false" aria-label="' + action +
         esc(s.name) +
         '" title="' +
         esc(s.name) +
@@ -52,66 +53,88 @@ export function dial(root, stations, initial, { change, activate, preview, live 
   const tiles = [...sleeves.children],
     ticks = [...scale.children];
   let pitch = 0;
+  const distanceFrom = (i, at) => wrap(i - at + n / 2) - n / 2;
+  function pose(delta) {
+    const distance = Math.min(Math.abs(delta), 4);
+    const inner = Math.min(distance, 1);
+    const middle = Math.min(Math.max(distance - 1, 0), 1);
+    const outer = Math.max(distance - 2, 0);
+    const zoom = 1 - inner * 0.245 - middle * 0.165 - Math.min(outer, 1) * 0.1;
+    const x = Math.sign(delta) * pitch * (inner + middle * 0.77 + outer * 0.58);
+    return {
+      transform: 'translate(-50%,-50%) translateX(' + x.toFixed(2) + 'px) scale(' + zoom.toFixed(4) + ')',
+      opacity: String(Math.max(0, 1 - inner * 0.24 - Math.max(0, distance - 1) * 0.22)),
+    };
+  }
+  function layout(from = position) {
+    for (const [i, tile] of tiles.entries()) {
+      const delta = distanceFrom(i, position), distance = Math.abs(delta);
+      let oldDelta = distanceFrom(i, from);
+      const visible = distance < 3.6 || (motion && Math.abs(oldDelta) < 3.6);
+      if (tile.hidden !== !visible) tile.hidden = !visible;
+      if (!visible) continue;
+      // A sleeve wrapping around the back of the dial enters from its nearest edge.
+      if (Math.abs(oldDelta - delta) > n / 2) oldDelta = Math.sign(delta) * 4;
+      const end = pose(delta);
+      tile.style.transform = end.transform;
+      tile.style.opacity = end.opacity;
+      tile.style.setProperty('--brightness', String(Math.max(0.53, 1 - distance * 0.15)));
+      tile.style.zIndex = String(Math.round(8 - Math.min(distance, 3) * 2));
+      tile.classList.toggle('settled', !motion && i === selection && distance < 0.0001);
+      if (motion) {
+        motion.effects.push(tile.animate([pose(oldDelta), end], {
+          duration: motion.duration, easing: 'cubic-bezier(.333333,1,.666667,1)',
+        }));
+      }
+    }
+  }
   function measure() {
     const size = tiles[selection].offsetWidth;
     if (!size || !strip.clientWidth) return;
-    pitch = Math.min(size * 1.01, strip.clientWidth * 0.275 + (strip.clientWidth < 600 ? 48 : 0));
-    layout();
+    const spacing = Math.min(size * 1.01, strip.clientWidth * 0.275 + (strip.clientWidth < 600 ? 48 : 0));
+    if (pitch === spacing) return;
+    pitch = spacing;
+    if (motion) animate(target);
+    else layout();
   }
-  function layout() {
-    for (let i = 0; i < n; i++) {
-      const delta = wrap(i - position + n / 2) - n / 2,
-        distance = Math.abs(delta),
-        near = distance < 3.6;
-      const b = tiles[i];
-      b.hidden = !near;
-      b.classList.toggle('center', i === selection);
-      b.classList.toggle('settled', i === selection && distance < 0.0001);
-      b.setAttribute('aria-current', i === selection ? 'true' : 'false');
-      if (!near) continue;
-      const zoom =
-        1 -
-        Math.min(distance, 1) * 0.245 -
-        Math.min(Math.max(distance - 1, 0), 1) * 0.165 -
-        Math.min(Math.max(distance - 2, 0), 1) * 0.1;
-      const x =
-        Math.sign(delta) *
-        pitch *
-        (Math.min(distance, 1) +
-          Math.min(Math.max(distance - 1, 0), 1) * 0.77 +
-          Math.max(distance - 2, 0) * 0.58);
-      b.style.transform =
-        'translate(-50%,-50%) translateX(' + x.toFixed(2) + 'px) scale(' + zoom.toFixed(4) + ')';
-      b.style.opacity = String(
-        Math.max(0, 1 - Math.min(distance, 1) * 0.24 - Math.max(0, distance - 1) * 0.22),
-      );
-      b.style.setProperty('--brightness', String(Math.max(0.53, 1 - distance * 0.15)));
-      b.style.zIndex = String(Math.round(8 - Math.min(distance, 3) * 2));
-    }
+  function mark(i, selected) {
+    tiles[i].classList.toggle('center', selected);
+    tiles[i].setAttribute('aria-current', String(selected));
+    ticks[i].classList.toggle('selected', selected);
+    ticks[i].setAttribute('aria-pressed', String(selected));
   }
   function select(next) {
     if (next === selection) return;
+    mark(selection, false);
     selection = next;
-    ticks.forEach((b, i) => {
-      b.classList.toggle('selected', i === next);
-      b.setAttribute('aria-pressed', String(i === next));
-    });
+    mark(next, true);
     change(next);
   }
+  function interrupt() {
+    if (!motion) return;
+    const progress = Math.min(1, (performance.now() - motion.start) / motion.duration);
+    position = motion.from + (target - motion.from) * (1 - (1 - progress) ** 3);
+    clearTimeout(motion.timer);
+    for (const effect of motion.effects) effect.cancel();
+    motion = null;
+  }
   function animate(dest) {
-    cancelAnimationFrame(animation);
-    target = dest;
+    interrupt();
+    cancelAnimationFrame(dragFrame);
+    dragFrame = null;
+    const from = position;
+    position = target = dest;
     select(wrap(Math.round(dest)));
-    const from = position,
-      start = performance.now(),
-      duration = reduce.matches ? 0 : 245;
-    function frame(t) {
-      const progress = duration ? Math.max(0, Math.min(1, (t - start) / duration)) : 1;
-      position = from + (dest - from) * (1 - (1 - progress) ** 3);
+    if (reduce.matches || Math.abs(dest - from) < 0.001) {
       layout();
-      if (progress < 1) animation = requestAnimationFrame(frame);
+      return;
     }
-    frame(start);
+    motion = { from, start: performance.now(), duration: 185, effects: [] };
+    layout(from);
+    motion.timer = setTimeout(() => {
+      motion = null;
+      layout();
+    }, motion.duration);
   }
   function step(amount) {
     activate?.();
@@ -124,7 +147,10 @@ export function dial(root, stations, initial, { change, activate, preview, live 
   }
   strip.addEventListener('pointerdown', (e) => {
     if (e.button !== 0 || e.target.closest('.step')) return;
-    cancelAnimationFrame(animation);
+    if (motion) {
+      interrupt();
+      layout();
+    }
     activate?.();
     if (!pitch) measure();
     if (!pitch) return;
@@ -145,8 +171,11 @@ export function dial(root, stations, initial, { change, activate, preview, live 
     if (drag.moved) {
       position = drag.origin - dx / pitch;
       target = position;
-      select(wrap(Math.round(position)));
-      layout();
+      if (dragFrame == null) dragFrame = requestAnimationFrame(() => {
+        dragFrame = null;
+        select(wrap(Math.round(position)));
+        layout();
+      });
     }
   });
   function release(e) {
@@ -182,9 +211,16 @@ export function dial(root, stations, initial, { change, activate, preview, live 
       const d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
       if (Math.abs(d) < 3 || e.ctrlKey) return;
       e.preventDefault();
-      if (performance.now() - lastWheel > 260) {
-        lastWheel = performance.now();
-        step(Math.sign(d));
+      const now = performance.now(), direction = Math.sign(d);
+      const newGesture = direction !== wheelDirection || now - lastWheel > 110;
+      lastWheel = now;
+      wheelDirection = direction;
+      wheelTravel = newGesture ? Math.abs(d) : wheelTravel + Math.abs(d);
+      if (e.deltaMode !== WheelEvent.DOM_DELTA_PIXEL || newGesture ||
+          (wheelTravel >= 64 && now - lastWheelStep >= 135)) {
+        lastWheelStep = now;
+        wheelTravel = 0;
+        step(direction);
       }
     },
     { passive: false },
@@ -199,10 +235,15 @@ export function dial(root, stations, initial, { change, activate, preview, live 
     const i = offset ? wrap(selection + offset) : Number(button.dataset.index);
     clearTimeout(hoverTimer);
     if (!Number.isInteger(i) || i === selection) return;
-    if (e.type === 'pointerover') hoverTimer = setTimeout(() => preview(i), 90);
-    else preview(i);
+    const prime = () => {
+      const img = tiles[i].querySelector('img');
+      if (img) img.loading = 'eager';
+      preview?.(i);
+    };
+    if (e.type === 'pointerover') hoverTimer = setTimeout(prime, 90);
+    else prime();
   }
-  for (const area of preview ? [strip, scale] : []) {
+  for (const area of [strip, scale]) {
     area.addEventListener('pointerover', hint);
     area.addEventListener('focusin', hint);
     area.addEventListener('pointerleave', () => clearTimeout(hoverTimer));
@@ -211,8 +252,7 @@ export function dial(root, stations, initial, { change, activate, preview, live 
     const b = e.target.closest('[data-index]');
     if (b) jump(+b.dataset.index);
   };
-  ticks[initial].classList.add('selected');
-  ticks[initial].setAttribute('aria-pressed', 'true');
+  mark(initial, true);
   new ResizeObserver(measure).observe(strip);
   measure();
   return { step, jump, layout: measure };

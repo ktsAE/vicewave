@@ -6,6 +6,8 @@ import { recording } from './recordings.js';
 const JOIN = 0.12;
 const JOIN_TOLERANCE = 0.72;
 const PRELOAD = 12;
+const SONG_HEAD_START_MS = 450;
+const WARM_INTERVAL_MS = 450;
 const SWITCH_GRACE_MS = 250;
 const BUFFER_GRACE_MS = 350;
 
@@ -263,8 +265,21 @@ export class Receiver {
       held.stamp = performance.now();
       held.target = cue;
       if (held !== this.live && !held.queued && !held.retired) {
-        const tolerance = wanted ? JOIN_TOLERANCE : ready(held) ? 1.1 : 5;
-        this.seek(held, cue.time, tolerance);
+        let time = cue.time, tolerance = wanted ? JOIN_TOLERANCE : ready(held) ? 1.1 : 5;
+        if (!wanted && ready(held) && cue.left > 1) {
+          // A paused neighbor needs to be ready throughout the next warm interval.
+          // Seek ahead only inside downloaded audio so this never forces a new range request.
+          const ahead = time + WARM_INTERVAL_MS / 2000;
+          const ranges = held.audio.buffered;
+          for (let i = 0; i < (ranges?.length ?? 0); i++) {
+            if (ranges.start(i) <= time && ahead < ranges.end(i)) {
+              time = ahead;
+              tolerance = WARM_INTERVAL_MS / 1000;
+              break;
+            }
+          }
+        }
+        this.seek(held, time, tolerance);
       }
       return held;
     }
@@ -406,7 +421,7 @@ export class Receiver {
   }
   warm(now, scheduled, cue) {
     const stamp = performance.now();
-    if (this.lastWarm != null && stamp - this.lastWarm < 450) return;
+    if (this.lastWarm != null && stamp - this.lastWarm < WARM_INTERVAL_MS) return;
     this.lastWarm = stamp;
     const keep = new Set([scheduled.key, cue.key, songAt(scheduled)?.key]);
     const prime = (next) => {
@@ -490,12 +505,16 @@ export class Receiver {
         if (!stalled || !ready(this.prepare(scheduled, true))) cue = alternate;
       } else {
         const mix = this.banks.find((b) => b.key === scheduled.key);
-        const song = this.banks.find((b) => b.key === alternate.key);
+        const freshTune = performance.now() - this.switchedAt < SONG_HEAD_START_MS;
+        // On a cold jump, give the matching song the first network request.
+        // A ready mix can still join immediately, or race a slow song after the head start.
+        const song = this.banks.find((b) => b.key === alternate.key) ||
+          (!mix && freshTune ? this.prepare(alternate, true) : null);
         // Choose the game file over a ready mix only when the edit length
         // matches and it can join the broadcast without another seek.
         const alignedOriginal = alternate.sameLength && ready(song) && !song.waiting &&
           Math.abs(song.audio.currentTime - alternate.time) <= JOIN_TOLERANCE;
-        const warmingSong = !ready(mix) && song && (ready(song) || performance.now() - this.switchedAt < 450);
+        const warmingSong = !ready(mix) && song && (ready(song) || freshTune);
         if (alignedOriginal || warmingSong) cue = alternate;
         else if (!ready(this.prepare(scheduled, true)) && this.prepare(alternate, true)) cue = alternate;
       }

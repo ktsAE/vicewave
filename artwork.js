@@ -1,16 +1,21 @@
 // Each station frame contains a square cover inside a landscape image.
-// Decode the square once and share it with the dial, tracklists and media controls.
+// Display the crop directly. Only system media controls need a separate square file.
 const frames = new Map();
+let mediaSource, mediaTimer;
 
 export function squareArtwork(source) {
   const frame = frames.get(source);
-  if (!frame) return source;
-  loadSquare(frame);
-  return frame.square || frame.fallback;
+  if (mediaSource !== source) {
+    mediaSource = source;
+    clearTimeout(mediaTimer);
+    // Rapid tuning only needs system artwork for the station the listener lands on.
+    if (frame && !frame.pending) mediaTimer = setTimeout(() => loadSquare(frame), 200);
+  }
+  return frame ? frame.square || frame.fallback : source;
 }
 
-export function usesFrame(source) {
-  return frames.has(source);
+export function stationFrame(source) {
+  return frames.get(source);
 }
 
 async function extractSquare(source, box) {
@@ -40,6 +45,14 @@ function loadSquare(frame) {
 }
 
 export function configureArtwork(stations, catalog, localCovers, changed) {
+  const box = catalog.dialFrame;
+  if (box) {
+    const style = document.documentElement.style;
+    style.setProperty('--frame-width', 100 * box.width / box.size + '%');
+    style.setProperty('--frame-height', 100 * box.height / box.size + '%');
+    style.setProperty('--frame-left', -100 * box.left / box.size + '%');
+    style.setProperty('--frame-top', -100 * box.top / box.size + '%');
+  }
   const local = (key) => 'assets/covers/' + key + '.webp';
   for (const station of stations) {
     const id = station.id;
@@ -56,27 +69,4 @@ export function configureArtwork(stations, catalog, localCovers, changed) {
       frames.set(frame, { source: frame, fallback, box: catalog.dialFrame, changed });
     }
   }
-  const observer = 'IntersectionObserver' in window ? new IntersectionObserver((entries) => {
-    for (const { isIntersecting, target } of entries) {
-      if (!isIntersecting) continue;
-      observer.unobserve(target);
-      target.show();
-    }
-  }, { rootMargin: '0px 160px' }) : null;
-  customElements.define('station-picture', class extends HTMLElement {
-    connectedCallback() {
-      if (observer) observer.observe(this);
-      else this.show();
-    }
-    disconnectedCallback() { observer?.unobserve(this); }
-    async show() {
-      const url = await loadSquare(frames.get(this.dataset.frame));
-      if (!url || !this.isConnected) return;
-      const img = new Image();
-      img.draggable = false;
-      img.alt = '';
-      img.onload = () => this.replaceWith(img);
-      img.src = url;
-    }
-  });
 }
