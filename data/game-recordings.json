@@ -1,0 +1,6851 @@
+{
+ "source": "https://six.mics.dev/radio",
+ "sourceIndex": "https://six.mics.dev/explorer/data/radio_music.json",
+ "checked": "2026-11-24",
+ "audioBase": "https://six.mics.dev/explorer/assets/radio_music/",
+ "tracks": [
+  {
+   "file": "radio_05816167.ogg",
+   "duration": 328.6,
+   "title": "Assanssan",
+   "artist": "Alafia",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_1AA8AC2F.ogg",
+   "duration": 264.1,
+   "title": "Accuse",
+   "artist": "Alaska",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_188AAA8C.ogg",
+   "duration": 149.0,
+   "title": "Joha",
+   "artist": "Asake",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_081590D0.ogg",
+   "duration": 227.2,
+   "title": "Government",
+   "artist": "Balcony Mix Africa, Lady Du, Focalistic, Major League DJz, LuuDadeejay, Aunty Gelato",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_13D79FED.ogg",
+   "duration": 170.0,
+   "title": "Giza",
+   "artist": "Burna Boy ft. Seyi Vibez",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_09353424.ogg",
+   "duration": 343.7,
+   "title": "Isaka (6am)",
+   "artist": "Ciza, Jazzwrld, Thukuthela",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_1A266457.ogg",
+   "duration": 322.0,
+   "title": "Oe Batla Kae",
+   "artist": "De Mogul Sa ft. Ms Mo & Makhensa",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_17BF3211.ogg",
+   "duration": 204.9,
+   "title": "Shay'sana",
+   "artist": "DJ Lag, Robot Boii, Kamo Mphela",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_0C7E9345.ogg",
+   "duration": 278.4,
+   "title": "Milandu Bhe (Dr Moruti Remix)",
+   "artist": "Penny Penny",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_092DBEDD.ogg",
+   "duration": 179.2,
+   "title": "Kakalika",
+   "artist": "DopeNation",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_0E4885C4.ogg",
+   "duration": 265.2,
+   "title": "From London to Lagos (Bayaka Remix)",
+   "artist": "Eparapo, Dele Sosimi, Bayaka (IT)",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_025B3E4E.ogg",
+   "duration": 179.8,
+   "title": "YAWA",
+   "artist": "Fireboy DML",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_02F3A755.ogg",
+   "duration": 301.2,
+   "title": "Run No More (A Vuo Mo)",
+   "artist": "Hugh Masekela",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_05D74DC6.ogg",
+   "duration": 310.6,
+   "title": "Keep On Dancing",
+   "artist": "Kiki Gyan",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_175A10FC.ogg",
+   "duration": 305.1,
+   "title": "Goro City",
+   "artist": "Manu Dibango",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_0186885D.ogg",
+   "duration": 157.0,
+   "title": "HOW FAR",
+   "artist": "NO11 & Ayjay bobo ft. Monochrome",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_0B0729DB.ogg",
+   "duration": 260.7,
+   "title": "Tomorrow",
+   "artist": "Ntombi Ndaba",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_194AB03D.ogg",
+   "duration": 188.4,
+   "title": "Burning Jungle",
+   "artist": "Ofege",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_1704C2C9.ogg",
+   "duration": 184.6,
+   "title": "Holy Ghost",
+   "artist": "Omah Lay",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_015C3767.ogg",
+   "duration": 306.8,
+   "title": "Disco Hi-Life",
+   "artist": "Orlando Julius",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_03F9D3E5.ogg",
+   "duration": 214.5,
+   "title": "Sarama",
+   "artist": "Oumou Sangaré",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_190EE811.ogg",
+   "duration": 314.6,
+   "title": "Gye Wani",
+   "artist": "Pat Thomas, Ebo Taylor",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_0FCE1866.ogg",
+   "duration": 138.0,
+   "title": "Do I (Remix)",
+   "artist": "Phyno & Burna Boy",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_05F9D1F8.ogg",
+   "duration": 315.7,
+   "title": "Bi Magni",
+   "artist": "Souley Kanté",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_10A4CF8E.ogg",
+   "duration": 308.5,
+   "title": "No Discrimination",
+   "artist": "Tony Allen & The Afro Messengers",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_07943A19.ogg",
+   "duration": 257.0,
+   "title": "Wadibusa",
+   "artist": "Uncle Waffles ft. Royal MusiQ, OHP Sage, Pcee",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_1D8AB539.ogg",
+   "duration": 276.4,
+   "title": "Fantastic Man",
+   "artist": "William Onyeabor",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_06D9FD47.ogg",
+   "duration": 177.8,
+   "title": "Black Pepper",
+   "artist": "Yoruba Singers",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_1590A230.ogg",
+   "duration": 144.2,
+   "title": "SEX BILLS BASS THRILLS",
+   "artist": "Ayra Starr",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_0B59FD44.ogg",
+   "duration": 166.9,
+   "title": "Bigger",
+   "artist": "Burna Boy",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_13A9E430.ogg",
+   "duration": 114.0,
+   "title": "Guap Up",
+   "artist": "Zaylevelten",
+   "stations": [
+    "afrobank-fm"
+   ]
+  },
+  {
+   "file": "radio_1FE02072.ogg",
+   "duration": 188.0,
+   "title": "Let Your Love Flow",
+   "artist": "The Bellamy Brothers",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1B45DB42.ogg",
+   "duration": 171.4,
+   "title": "Need a Little Time Off for Bad Behavior",
+   "artist": "David Allan Coe",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1D3652C5.ogg",
+   "duration": 181.5,
+   "title": "You Can Have Her",
+   "artist": "George Jones, Johnny Paycheck",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_013A95DD.ogg",
+   "duration": 150.0,
+   "title": "The Fireman",
+   "artist": "George Strait",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_0BA83560.ogg",
+   "duration": 178.6,
+   "title": "Rhinestone Cowboy",
+   "artist": "Glen Campbell",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_167F6004.ogg",
+   "duration": 217.8,
+   "title": "I've Been Down",
+   "artist": "Hank Williams, Jr.",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_0FFD04E2.ogg",
+   "duration": 252.4,
+   "title": "A Country Boy Can Survive",
+   "artist": "Hank Williams, Jr.",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1D200021.ogg",
+   "duration": 224.6,
+   "title": "The Conversation",
+   "artist": "Hank Williams, Jr., Waylon Jennings",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_14AA5D97.ogg",
+   "duration": 132.2,
+   "title": "When You're Hot, You're Hot",
+   "artist": "Jerry Reed",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_0822CBD7.ogg",
+   "duration": 157.6,
+   "title": "Is There Any Way (You'd Stay Forever)",
+   "artist": "Jessi Colter",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_00DDD680.ogg",
+   "duration": 204.3,
+   "title": "Pickup Man",
+   "artist": "Joe Diffie",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1FE3628A.ogg",
+   "duration": 168.9,
+   "title": "Someone to Give My Love To",
+   "artist": "Johnny Paycheck",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1027807C.ogg",
+   "duration": 126.0,
+   "title": "Don't Come Home A-Drinkin' (With Lovin' On Your Mind)",
+   "artist": "Loretta Lynn",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1B119FAD.ogg",
+   "duration": 130.8,
+   "title": "Louisiana Saturday Night",
+   "artist": "Mel McDaniel",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1D115770.ogg",
+   "duration": 192.8,
+   "title": "Stop The World And Let Me Off",
+   "artist": "Merle Haggard",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_092F79A1.ogg",
+   "duration": 181.6,
+   "title": "Tennessee Flat Top Box",
+   "artist": "Rosanne Cash",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_0CC28C8E.ogg",
+   "duration": 199.6,
+   "title": "Talkin' to Myself Again",
+   "artist": "Tammy Wynette",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_0841F640.ogg",
+   "duration": 216.5,
+   "title": "Polk Salad Annie",
+   "artist": "Tony Joe White",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_11082931.ogg",
+   "duration": 224.0,
+   "title": "Love Is Alive",
+   "artist": "The Judds",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_115D5D20.ogg",
+   "duration": 215.3,
+   "title": "Walk Softly On This Heart Of Mine",
+   "artist": "The Kentucky Headhunters",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_10402093.ogg",
+   "duration": 155.6,
+   "title": "Waymore's Blues",
+   "artist": "Waylon Jennings",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_09F6A7EA.ogg",
+   "duration": 225.3,
+   "title": "Gold Dust Woman",
+   "artist": "Waylon Jennings",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_0F7A74FD.ogg",
+   "duration": 161.4,
+   "title": "Just to Satisfy You",
+   "artist": "Waylon Jennings, Willie Nelson",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1043C5FE.ogg",
+   "duration": 160.3,
+   "title": "Thanks To The Cathouse (I'm In The Doghouse With You)",
+   "artist": "Waylon Jennings",
+   "stations": [
+    "back-country-radio"
+   ]
+  },
+  {
+   "file": "radio_1A83CF15.ogg",
+   "duration": 353.3,
+   "title": "I Am the Law",
+   "artist": "Anthrax",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_1DC63B6F.ogg",
+   "duration": 291.3,
+   "title": "I",
+   "artist": "Black Sabbath",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_1F5C0174.ogg",
+   "duration": 252.0,
+   "title": "We Rock",
+   "artist": "Dio",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_0D5AA741.ogg",
+   "duration": 196.9,
+   "title": "Bonded by Blood",
+   "artist": "Exodus",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_18C2EAB7.ogg",
+   "duration": 349.5,
+   "title": "Hammerhead",
+   "artist": "Flotsam & Jetsam",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_1E559A1D.ogg",
+   "duration": 251.2,
+   "title": "The Trooper",
+   "artist": "Iron Maiden",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_16D66ADE.ogg",
+   "duration": 262.3,
+   "title": "Freewheel Burning",
+   "artist": "Judas Priest",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_1A133856.ogg",
+   "duration": 228.9,
+   "title": "Blood and Thunder",
+   "artist": "Mastodon",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_0D551F84.ogg",
+   "duration": 229.6,
+   "title": "Symphony of Destruction",
+   "artist": "Megadeth",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_04D2BBE4.ogg",
+   "duration": 503.3,
+   "title": "Master of Puppets",
+   "artist": "Metallica",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_16846CBD.ogg",
+   "duration": 411.1,
+   "title": "Seek & Destroy",
+   "artist": "Metallica",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_1DBB3C7F.ogg",
+   "duration": 300.4,
+   "title": "Rotten to the Core",
+   "artist": "Overkill",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_00AB6E57.ogg",
+   "duration": 241.4,
+   "title": "I'm Broken",
+   "artist": "Pantera",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_0AB7BA00.ogg",
+   "duration": 287.6,
+   "title": "Territory",
+   "artist": "Sepultura",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_138FA00C.ogg",
+   "duration": 176.8,
+   "title": "Raining Blood",
+   "artist": "Slayer",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_0BCDFA5D.ogg",
+   "duration": 182.5,
+   "title": "Payback",
+   "artist": "Slayer",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_17E2C6EF.ogg",
+   "duration": 154.0,
+   "title": "Sugar",
+   "artist": "System Of A Down",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_1B218414.ogg",
+   "duration": 245.7,
+   "title": "Over the Wall",
+   "artist": "Testament",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_02CD277D.ogg",
+   "duration": 302.0,
+   "title": "Sober",
+   "artist": "TOOL",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_14E9DB6C.ogg",
+   "duration": 221.6,
+   "title": "Countess Bathory",
+   "artist": "Venom",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_155FBE2B.ogg",
+   "duration": 186.6,
+   "title": "Panorama",
+   "artist": "Voivod",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_00E5085C.ogg",
+   "duration": 221.5,
+   "title": "Mutual Death Warrant",
+   "artist": "Power Trip",
+   "stations": [
+    "the-chamber-106-6"
+   ]
+  },
+  {
+   "file": "radio_0BD534C8.ogg",
+   "duration": 198.5,
+   "title": "Silver Lines",
+   "artist": "ANOTR ft. Emily Warren",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_02D62A1D.ogg",
+   "duration": 167.7,
+   "title": "Positive",
+   "artist": "Jamback",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_1EB9D29B.ogg",
+   "duration": 214.3,
+   "title": "Turbo Rosso",
+   "artist": "Jimi Jules",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0CE64552.ogg",
+   "duration": 230.5,
+   "title": "MYSTERY OF RAW",
+   "artist": "Michael Bibi & KETTAMA",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0D6CBF4C.ogg",
+   "duration": 221.7,
+   "title": "COLLECT THE COMMAS",
+   "artist": "PAWSA",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_091F0BB6.ogg",
+   "duration": 190.5,
+   "title": "This Rhythm",
+   "artist": "Prospa ft. RAHH",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_1D1BBFAF.ogg",
+   "duration": 228.6,
+   "title": "The Attention Deficit Track",
+   "artist": "Skream & Jackmaster",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0AF99D88.ogg",
+   "duration": 280.5,
+   "title": "Floral",
+   "artist": "Skream",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_1D0246C1.ogg",
+   "duration": 194.0,
+   "title": "CLOWN",
+   "artist": "The Ghostbusters",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_1766DD59.ogg",
+   "duration": 215.7,
+   "title": "Home Now",
+   "artist": "Aline Umber & Krol ft. Tillmann Ostendarp",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0FA44BC6.ogg",
+   "duration": 230.3,
+   "title": "Coming Back To Life",
+   "artist": "Aline Umber, Maxime dB ft. André Baum",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_1AF317EC.ogg",
+   "duration": 211.2,
+   "title": "Bickering (Max Dean Remix)",
+   "artist": "Black Lounge",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0EB2E49C.ogg",
+   "duration": 196.5,
+   "title": "Last Night",
+   "artist": "Carlita & Bakar",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_017D7C28.ogg",
+   "duration": 363.4,
+   "title": "I FEEL LOVE",
+   "artist": "Chloé Caillet & MYD",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_17340934.ogg",
+   "duration": 223.1,
+   "title": "We On This Ride",
+   "artist": "CHRIS STASSY",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_10834F57.ogg",
+   "duration": 190.6,
+   "title": "Never Look Back",
+   "artist": "DJ Tennis ft. Tomike",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_1ABC7247.ogg",
+   "duration": 243.5,
+   "title": "Don't Break My Heart",
+   "artist": "Jimi Jules",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_13CA69F0.ogg",
+   "duration": 219.8,
+   "title": "Addicted",
+   "artist": "Larry Latenight",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0B210E4F.ogg",
+   "duration": 196.5,
+   "title": "ROCKMI",
+   "artist": "Map.ache",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0FF64AFB.ogg",
+   "duration": 218.0,
+   "title": "Rhythm of the Night",
+   "artist": "Michael Bibi",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_17C69422.ogg",
+   "duration": 212.4,
+   "title": "Let It Go",
+   "artist": "Mind Against",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_05EF1714.ogg",
+   "duration": 161.6,
+   "title": "Body Rock FM",
+   "artist": "PAWSA & Fast Eddie",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_1980B10F.ogg",
+   "duration": 219.3,
+   "title": "CeeSeeMee",
+   "artist": "Pional",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0FFD0BDD.ogg",
+   "duration": 212.7,
+   "title": "The Church (DJ Lag & Palms Trax Remix)",
+   "artist": "Rampa",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_15CA31C4.ogg",
+   "duration": 219.8,
+   "title": "Deep n Sexy",
+   "artist": "Rossi. & Demi",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_174C4B8C.ogg",
+   "duration": 205.8,
+   "title": "Bootlicker",
+   "artist": "Seth Troxler",
+   "stations": [
+    "circoloco-records-radio"
+   ]
+  },
+  {
+   "file": "radio_0C852A78.ogg",
+   "duration": 187.2,
+   "title": "Amanece",
+   "artist": "Anuel AA, Haze",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_16C1DC42.ogg",
+   "duration": 212.7,
+   "title": "Si Es Trucho Es Trucho (Remix)",
+   "artist": "Axel Rulay ft. Farruko & El Alfa",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_00DA73B3.ogg",
+   "duration": 220.7,
+   "title": "Otra Noche en Miami",
+   "artist": "Bad Bunny",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0A58F7DA.ogg",
+   "duration": 204.3,
+   "title": "EoO",
+   "artist": "Bad Bunny",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_19996F66.ogg",
+   "duration": 114.5,
+   "title": "Malvada",
+   "artist": "Bb Trickz",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_170EC651.ogg",
+   "duration": 148.0,
+   "title": "Dumbai",
+   "artist": "CA7RIEL & Paco Amoroso",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_16A7CC3F.ogg",
+   "duration": 200.3,
+   "title": "Suave Mix (Blass Remix)",
+   "artist": "Calle 13",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_070E1150.ogg",
+   "duration": 167.0,
+   "title": "Se Me Nota (Agarrame) (Prod by B-One)",
+   "artist": "Chimbala, Omega",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_1867A60C.ogg",
+   "duration": 168.8,
+   "title": "Intocable",
+   "artist": "Don Omar",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_1A46B5E5.ogg",
+   "duration": 212.5,
+   "title": "La Mamá de la Mamá",
+   "artist": "El Alfa, CJ, Chael Produciendo, El Cherry Scom",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_1FADD664.ogg",
+   "duration": 207.9,
+   "title": "Nuestra Canción",
+   "artist": "Elvis Crespo",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0693D352.ogg",
+   "duration": 282.4,
+   "title": "Pepas",
+   "artist": "Farruko",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_08D07032.ogg",
+   "duration": 154.5,
+   "title": "CHORRITO PA LAS ANIMAS",
+   "artist": "FEID",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0A5C2C43.ogg",
+   "duration": 176.0,
+   "title": "Besito",
+   "artist": "Judeline",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_08FFF34E.ogg",
+   "duration": 189.4,
+   "title": "EL MAKINON",
+   "artist": "KAROL G, Mariah Angeliq",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_01EB38FD.ogg",
+   "duration": 144.6,
+   "title": "Hecho para ti",
+   "artist": "Latin Mafia & Omar Apollo",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_1E6201ED.ogg",
+   "duration": 157.8,
+   "title": "La Pari",
+   "artist": "MJ Nebreda",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0E361225.ogg",
+   "duration": 180.4,
+   "title": "Girl",
+   "artist": "Myke Towers",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0446DF3A.ogg",
+   "duration": 217.6,
+   "title": "mariposas en el estómago",
+   "artist": "RaiNao & El Laberinto del Coco",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0DDC8FB9.ogg",
+   "duration": 224.3,
+   "title": "Canalla",
+   "artist": "Romeo Santos, El Chaval de la Bachata",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_124E6C8C.ogg",
+   "duration": 195.8,
+   "title": "Sin Dormir",
+   "artist": "Slow Jamz",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0F199A17.ogg",
+   "duration": 225.8,
+   "title": "MOJABI GHOST",
+   "artist": "Tainy, Bad Bunny",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_054BB8A1.ogg",
+   "duration": 151.0,
+   "title": "CELOS",
+   "artist": "Tokischa, Bulin 47",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_00BD6CBF.ogg",
+   "duration": 178.5,
+   "title": "Ni le cabe",
+   "artist": "Young Miko",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_08CE966C.ogg",
+   "duration": 162.0,
+   "title": "Sandunguea",
+   "artist": "Arca",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_1901B4C3.ogg",
+   "duration": 95.8,
+   "title": "Suzuki",
+   "artist": "Fuerza Regida",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_165496AE.ogg",
+   "duration": 196.2,
+   "title": "Largate",
+   "artist": "Kali Uchis & Helado Negro",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_1303A5E5.ogg",
+   "duration": 190.8,
+   "title": "X",
+   "artist": "Jhayco",
+   "stations": [
+    "cocoteo-fm"
+   ]
+  },
+  {
+   "file": "radio_0560E7F8.ogg",
+   "duration": 238.0,
+   "title": "No Lie",
+   "artist": "2 Chainz, Drake",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_03F08BE0.ogg",
+   "duration": 162.0,
+   "title": "Still Ballin' (Nitty Remix)",
+   "artist": "2Pac, Trick Daddy",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_09A9C338.ogg",
+   "duration": 307.7,
+   "title": "Bling Bling",
+   "artist": "B.G. ft. Hot Boys & Big Tymers",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_00775F7E.ogg",
+   "duration": 282.4,
+   "title": "#1 Stunna",
+   "artist": "Big Tymers, Juvenile, Lil Wayne",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_18DC4B8F.ogg",
+   "duration": 200.4,
+   "title": "Pop Bottles",
+   "artist": "Birdman, Lil Wayne",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_0D522156.ogg",
+   "duration": 143.9,
+   "title": "Bitch I'm Me",
+   "artist": "Brisco",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_15AE1A40.ogg",
+   "duration": 306.3,
+   "title": "Holidae In",
+   "artist": "Chingy, Ludacris, Snoop Dogg",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_067EB57E.ogg",
+   "duration": 252.0,
+   "title": "Choppa Style",
+   "artist": "Choppa Style ft. Master P",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_16FA6B4A.ogg",
+   "duration": 206.7,
+   "title": "Knuck If You Buck",
+   "artist": "Crime Mob ft. Lil Scrappy",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_11987C49.ogg",
+   "duration": 254.2,
+   "title": "White Tee",
+   "artist": "Dem Franchize Boyz",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_079A9BB9.ogg",
+   "duration": 252.8,
+   "title": "Born N Raised",
+   "artist": "DJ Khaled, Trick Daddy, Rick Ross, Pitbull",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_1D901C80.ogg",
+   "duration": 203.4,
+   "title": "Step In The Arena",
+   "artist": "Gang Starr",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_00B228DD.ogg",
+   "duration": 260.9,
+   "title": "Where Dem Dollas At",
+   "artist": "Gangsta Boo ft. DJ Paul & Juicy J",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_1358680F.ogg",
+   "duration": 193.9,
+   "title": "Damn It Feels Good to Be a Gangsta",
+   "artist": "Geto Boys",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_00932092.ogg",
+   "duration": 201.5,
+   "title": "HelluvaLife",
+   "artist": "Gorilla Zoe, Gucci Mane, OJ da Juiceman",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_0D56E8B8.ogg",
+   "duration": 247.0,
+   "title": "Lemonade",
+   "artist": "Gucci Mane",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_0CF4FDEE.ogg",
+   "duration": 217.5,
+   "title": "Freaky Girl",
+   "artist": "Gucci Mane",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_0A12B7D3.ogg",
+   "duration": 266.3,
+   "title": "Big Pimpin'",
+   "artist": "JAŸ-Z, UGK",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_0FBBEE78.ogg",
+   "duration": 192.2,
+   "title": "Seen It All",
+   "artist": "Jeezy, JAŸ-Z",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_02CF57CB.ogg",
+   "duration": 222.1,
+   "title": "Who Dat",
+   "artist": "JT Money ft. Solé",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_11839A63.ogg",
+   "duration": 246.5,
+   "title": "Slow Motion",
+   "artist": "Juvenile, Soulja Slim",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_1601CAE6.ogg",
+   "duration": 203.1,
+   "title": "Skrilla",
+   "artist": "Kodak Black",
+   "stations": [
+    "dirty-south-classics",
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0C0210DA.ogg",
+   "duration": 207.4,
+   "title": "A Milli",
+   "artist": "Lil Wayne",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_10C595F4.ogg",
+   "duration": 295.8,
+   "title": "What U Gon' Do",
+   "artist": "Lil Jon & the Eastside Boyz ft. Lil Scrappy",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_09F2E1B4.ogg",
+   "duration": 242.6,
+   "title": "Back Then",
+   "artist": "Mike Jones",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_1730FB6F.ogg",
+   "duration": 258.1,
+   "title": "Player's Ball",
+   "artist": "Outkast",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_0C1DA6CE.ogg",
+   "duration": 184.9,
+   "title": "Freek-A-Leek",
+   "artist": "Petey Pablo",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_05B2914A.ogg",
+   "duration": 242.9,
+   "title": "Hustlin'",
+   "artist": "Rick Ross",
+   "stations": [
+    "dirty-south-classics",
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_05DA3B63.ogg",
+   "duration": 207.5,
+   "title": "Push It",
+   "artist": "Rick Ross",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_02B9F7B3.ogg",
+   "duration": 192.3,
+   "title": "Dey Know",
+   "artist": "Shawty Lo",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_11B83962.ogg",
+   "duration": 262.7,
+   "title": "Rubber Band Man",
+   "artist": "T.I.",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_01BB0B45.ogg",
+   "duration": 160.0,
+   "title": "Hard Out Here for a Pimp",
+   "artist": "Three 6 Mafia, Paula Campbell",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_1105B82C.ogg",
+   "duration": 242.5,
+   "title": "I'm a Thug",
+   "artist": "Trick Daddy",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_1D1DDC68.ogg",
+   "duration": 191.7,
+   "title": "Da Baddest Bitch",
+   "artist": "Trina",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_047310E6.ogg",
+   "duration": 251.3,
+   "title": "What's Happenin!",
+   "artist": "Ying Yang Twins, Trick Daddy",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_08B2D749.ogg",
+   "duration": 258.3,
+   "title": "Shorty Wanna Ride",
+   "artist": "Young Buck",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_12C2310A.ogg",
+   "duration": 230.6,
+   "title": "It's Goin' Down",
+   "artist": "Yung Joc, Nitti",
+   "stations": [
+    "dirty-south-classics"
+   ]
+  },
+  {
+   "file": "radio_0CC116B1.ogg",
+   "duration": 184.2,
+   "title": "How Long",
+   "artist": "Ace",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0AD53B55.ogg",
+   "duration": 232.8,
+   "title": "All Out of Love",
+   "artist": "Air Supply",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0B1318D9.ogg",
+   "duration": 240.9,
+   "title": "The Way It Is",
+   "artist": "Bruce Hornsby And The Range",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_11C674B1.ogg",
+   "duration": 243.2,
+   "title": "But I Think It's A Dream",
+   "artist": "Captain & Tennille",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_113685EC.ogg",
+   "duration": 207.5,
+   "title": "Coming Around Again",
+   "artist": "Carly Simon",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1C1A3F8A.ogg",
+   "duration": 315.3,
+   "title": "The Flame",
+   "artist": "Cheap Trick",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_120BCC41.ogg",
+   "duration": 303.8,
+   "title": "Hard to Say I'm Sorry / Get Away",
+   "artist": "Chicago",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1A621C8E.ogg",
+   "duration": 248.8,
+   "title": "Lie To Me",
+   "artist": "Chris Isaak",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0E5DAF67.ogg",
+   "duration": 271.3,
+   "title": "Fool (If You Think It's Over)",
+   "artist": "Chris Rea",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_17FB9AC2.ogg",
+   "duration": 207.0,
+   "title": "Devil Woman",
+   "artist": "Cliff Richard",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_08744FBD.ogg",
+   "duration": 304.3,
+   "title": "Love Bites",
+   "artist": "Def Leppard",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0D92787B.ogg",
+   "duration": 260.8,
+   "title": "The Captain of Her Heart",
+   "artist": "Double",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_10FE00F3.ogg",
+   "duration": 160.0,
+   "title": "When You're in Love With a Beautiful Woman",
+   "artist": "Dr. Hook",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1C5F930C.ogg",
+   "duration": 277.8,
+   "title": "I Guess That's Why They Call It The Blues",
+   "artist": "Elton John",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0C312072.ogg",
+   "duration": 257.9,
+   "title": "All By Myself",
+   "artist": "Eric Carmen",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1AFE8237.ogg",
+   "duration": 204.9,
+   "title": "Kiss You All Over",
+   "artist": "Exile",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_03CBFD65.ogg",
+   "duration": 195.7,
+   "title": "Dream Weaver",
+   "artist": "Gary Wright",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0A331973.ogg",
+   "duration": 328.9,
+   "title": "Father Figure",
+   "artist": "George Michael",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1921FFA8.ogg",
+   "duration": 521.0,
+   "title": "Tonight, Tonight, Tonight",
+   "artist": "Genesis",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_048E24B9.ogg",
+   "duration": 210.5,
+   "title": "Alone",
+   "artist": "Heart",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_16DF9BD8.ogg",
+   "duration": 240.6,
+   "title": "Angel Of The Morning",
+   "artist": "Juice Newton",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0EFE6091.ogg",
+   "duration": 212.1,
+   "title": "Trouble",
+   "artist": "Lindsey Buckingham",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1C2A2084.ogg",
+   "duration": 273.8,
+   "title": "On My Own",
+   "artist": "Patti Labelle, Michael McDonald",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0335FA20.ogg",
+   "duration": 280.0,
+   "title": "In the Air Tonight",
+   "artist": "Phil Collins",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1B9552CD.ogg",
+   "duration": 193.0,
+   "title": "Against All Odds (Take a Look at Me Now)",
+   "artist": "Phil Collins",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_1ED59096.ogg",
+   "duration": 241.1,
+   "title": "In The Mood",
+   "artist": "Robert Plant",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0C04CD8D.ogg",
+   "duration": 237.0,
+   "title": "Stranger In My House",
+   "artist": "Ronnie Milsap",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0A90E208.ogg",
+   "duration": 305.5,
+   "title": "Listen to Your Heart",
+   "artist": "Roxette",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_04C94751.ogg",
+   "duration": 296.4,
+   "title": "Voices",
+   "artist": "Russ Ballard",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_19B92A1A.ogg",
+   "duration": 259.2,
+   "title": "Overnite",
+   "artist": "Scritti Politti",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_073253EA.ogg",
+   "duration": 228.0,
+   "title": "Drive",
+   "artist": "The Cars",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_0CE0ECD9.ogg",
+   "duration": 235.9,
+   "title": "It Keeps You Runnin'",
+   "artist": "The Doobie Brothers",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_17615E55.ogg",
+   "duration": 327.6,
+   "title": "No Regrets",
+   "artist": "The Walker Brothers",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_03912B99.ogg",
+   "duration": 236.8,
+   "title": "Baby, I Love Your Way / Freebird",
+   "artist": "Will to Power",
+   "stations": [
+    "emotion-98-3"
+   ]
+  },
+  {
+   "file": "radio_137A3105.ogg",
+   "duration": 181.6,
+   "title": "Fame is a Gun",
+   "artist": "Addison Rae",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0751646B.ogg",
+   "duration": 183.2,
+   "title": "Mine O' Mine",
+   "artist": "Aluna, Jayda G",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_087D6710.ogg",
+   "duration": 213.9,
+   "title": "Break Free",
+   "artist": "Ariana Grande, Zedd",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0B5291E7.ogg",
+   "duration": 174.3,
+   "title": "LUNCH",
+   "artist": "Billie Eilish",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1522C401.ogg",
+   "duration": 192.1,
+   "title": "Shine",
+   "artist": "Booty Luv",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_080A23E3.ogg",
+   "duration": 183.2,
+   "title": "Prove It To You",
+   "artist": "Brittany Howard",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0F95F88F.ogg",
+   "duration": 200.6,
+   "title": "Feels",
+   "artist": "Calvin Harris, Pharrell Williams, Katy Perry, Big Sean",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0DA200AB.ogg",
+   "duration": 213.6,
+   "title": "Cola",
+   "artist": "CamelPhat, Elderbrook",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_12F07336.ogg",
+   "duration": 248.1,
+   "title": "Run Away With Me",
+   "artist": "Carly Rae Jepsen",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1332D9BC.ogg",
+   "duration": 180.7,
+   "title": "HOT TO GO!",
+   "artist": "Chappell Roan",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_049913B4.ogg",
+   "duration": 132.2,
+   "title": "Good Ones",
+   "artist": "Charli xcx",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0777820E.ogg",
+   "duration": 173.6,
+   "title": "oyster",
+   "artist": "chloe moriondo",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_08828879.ogg",
+   "duration": 217.3,
+   "title": "Love Sex Magic",
+   "artist": "Ciara, Justin Timberlake",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1C2D75A2.ogg",
+   "duration": 254.0,
+   "title": "Adventure of a Lifetime",
+   "artist": "Coldplay",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1431DBAA.ogg",
+   "duration": 231.0,
+   "title": "Around The World",
+   "artist": "Daft Punk",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_11AE6F1E.ogg",
+   "duration": 248.4,
+   "title": "Jaded",
+   "artist": "Disclosure",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1F73AC36.ogg",
+   "duration": 162.3,
+   "title": "Persuasive",
+   "artist": "Doechii, SZA",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_116A7A24.ogg",
+   "duration": 203.6,
+   "title": "Hold On, We're Going Home",
+   "artist": "Drake, Majid Jordan",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_01879D47.ogg",
+   "duration": 182.5,
+   "title": "Houdini",
+   "artist": "Dua Lipa",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_08D0B0EB.ogg",
+   "duration": 209.2,
+   "title": "Cool Kids",
+   "artist": "Echosmith",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0FE8F9FF.ogg",
+   "duration": 202.2,
+   "title": "Be Her",
+   "artist": "Ella Langley",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_095627B0.ogg",
+   "duration": 215.7,
+   "title": "Pumped Up Kicks",
+   "artist": "Foster the People",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_10509B0F.ogg",
+   "duration": 212.8,
+   "title": "Lost",
+   "artist": "Frank Ocean",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_128C744F.ogg",
+   "duration": 219.0,
+   "title": "Only Happy When It Rains",
+   "artist": "Garbage",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1A1636E1.ogg",
+   "duration": 260.9,
+   "title": "Fastlove, Pt. 1",
+   "artist": "George Michael",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0997DBF6.ogg",
+   "duration": 209.6,
+   "title": "Strict Machine",
+   "artist": "Goldfrapp",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0D3A0484.ogg",
+   "duration": 244.1,
+   "title": "DARE",
+   "artist": "Gorillaz, Shaun Ryder, Roses Gabor",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_024EBC94.ogg",
+   "duration": 196.1,
+   "title": "What You Waiting For?",
+   "artist": "Gwen Stefani",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_013AA7B4.ogg",
+   "duration": 206.5,
+   "title": "Rich Girl",
+   "artist": "Gwen Stefani, Eve",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_15B7A890.ogg",
+   "duration": 189.4,
+   "title": "Crush",
+   "artist": "Jennifer Paige",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_062138F2.ogg",
+   "duration": 143.2,
+   "title": "Wild Ones",
+   "artist": "Jessie Murph, Jelly Roll",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_18C2E5A9.ogg",
+   "duration": 188.3,
+   "title": "earthquake",
+   "artist": "JISOO",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1B47F694.ogg",
+   "duration": 230.6,
+   "title": "DVNO",
+   "artist": "Justice",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1DE5B9C3.ogg",
+   "duration": 184.8,
+   "title": "Friends",
+   "artist": "Justin Bieber, BloodPop®",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1217EBDE.ogg",
+   "duration": 192.7,
+   "title": "Gabriela",
+   "artist": "KATSEYE",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0053A493.ogg",
+   "duration": 265.1,
+   "title": "Tenderoni",
+   "artist": "Kele",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0C6C596D.ogg",
+   "duration": 226.7,
+   "title": "Motivation",
+   "artist": "Kelly Rowland, Lil Wayne",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0EF86D8A.ogg",
+   "duration": 216.2,
+   "title": "Mr. Cool",
+   "artist": "Kenya Grace",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_00DE3D39.ogg",
+   "duration": 187.2,
+   "title": "Turn Me On",
+   "artist": "Kevin Lyttle",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_11D8CC90.ogg",
+   "duration": 182.0,
+   "title": "Spinning Around",
+   "artist": "Kylie Minogue",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1BEFAB7B.ogg",
+   "duration": 190.8,
+   "title": "Bulletproof",
+   "artist": "La Roux",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_13973A5F.ogg",
+   "duration": 232.4,
+   "title": "Green Light",
+   "artist": "Lorde",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0DE1FBED.ogg",
+   "duration": 200.9,
+   "title": "Give Me All Your Luvin'",
+   "artist": "Madonna, Nicki Minaj, M.I.A.",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_00B80B25.ogg",
+   "duration": 167.9,
+   "title": "Lean On",
+   "artist": "Major Lazer, DJ Snake, MØ",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1C47B4A0.ogg",
+   "duration": 182.7,
+   "title": "Candy",
+   "artist": "Mandy Moore",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1E387B8D.ogg",
+   "duration": 233.2,
+   "title": "Someday",
+   "artist": "Mariah Carey",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0766CCB9.ogg",
+   "duration": 217.4,
+   "title": "Electric Feel",
+   "artist": "MGMT",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0B3503EF.ogg",
+   "duration": 236.0,
+   "title": "Unwritten",
+   "artist": "Natasha Bedingfield",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0E510966.ogg",
+   "duration": 225.0,
+   "title": "Got Your Money",
+   "artist": "Ol' Dirty Bastard, Kelis",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0FA36BB9.ogg",
+   "duration": 169.6,
+   "title": "good 4 u",
+   "artist": "Olivia Rodrigo",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1DBB218C.ogg",
+   "duration": 190.5,
+   "title": "1901",
+   "artist": "Phoenix",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_02B1E186.ogg",
+   "duration": 167.1,
+   "title": "Blow My Mind (CA7RIEL & Paco Amoroso Version)",
+   "artist": "Robyn, CA7RIEL & Paco Amoroso",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0FC41D84.ogg",
+   "duration": 297.0,
+   "title": "People Watching",
+   "artist": "Sam Fender",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1E149330.ogg",
+   "duration": 270.5,
+   "title": "Disparate Youth",
+   "artist": "Santigold",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_06CED19F.ogg",
+   "duration": 183.0,
+   "title": "Cheap Thrills",
+   "artist": "Sia",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_04A256CF.ogg",
+   "duration": 163.5,
+   "title": "Sports Car",
+   "artist": "Tate McRae",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1553551D.ogg",
+   "duration": 214.8,
+   "title": "Inner Smile",
+   "artist": "Texas",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_01B56B0B.ogg",
+   "duration": 183.2,
+   "title": "No Rain, No Flowers",
+   "artist": "The Black Keys",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0B01C598.ogg",
+   "duration": 278.0,
+   "title": "That's Not My Name",
+   "artist": "The Ting Tings",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_16DC7A3D.ogg",
+   "duration": 283.4,
+   "title": "Wanderlust",
+   "artist": "The Weeknd",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1EEB7478.ogg",
+   "duration": 194.5,
+   "title": "HEAT",
+   "artist": "Tove Lo, SG Lewis",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1EDDD4F0.ogg",
+   "duration": 204.1,
+   "title": "Girls",
+   "artist": "TSHA, Rose Gray",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1C776303.ogg",
+   "duration": 262.4,
+   "title": "Lemon",
+   "artist": "U2",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_19E66352.ogg",
+   "duration": 219.0,
+   "title": "DJ Got Us Fallin' In Love",
+   "artist": "Usher, Pitbull",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_065D2192.ogg",
+   "duration": 214.5,
+   "title": "Move Your Body",
+   "artist": "Xpansions",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_13CE75B6.ogg",
+   "duration": 235.0,
+   "title": "Lazy",
+   "artist": "X-Press 2, David Byrne",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0B08A29A.ogg",
+   "duration": 168.4,
+   "title": "Midnight Sun (Girls Trip)",
+   "artist": "Zara Larsson, PinkPantheress",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_1B183B51.ogg",
+   "duration": 178.2,
+   "title": "Sweet Like Candy",
+   "artist": "Camila Cabello",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_00C1BDE3.ogg",
+   "duration": 191.1,
+   "title": "Go Easy",
+   "artist": "Dua Lipa",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0EF34764.ogg",
+   "duration": 190.1,
+   "title": "Sexy Magic",
+   "artist": "CA7RIEL & Paco Amoroso, PinkPantheress, Fred again.., Etienne de Crécy",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0137B33B.ogg",
+   "duration": 195.4,
+   "title": "Power Trip",
+   "artist": "JENNIE",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_05E97193.ogg",
+   "duration": 216.0,
+   "title": "Crazy For You",
+   "artist": "Lana Del Rey",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_002ED124.ogg",
+   "duration": 188.2,
+   "title": "Last Thing You Need",
+   "artist": "Morgan Wallen",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_0C93234A.ogg",
+   "duration": 158.2,
+   "title": "So Hot",
+   "artist": "Prospa ft. Halsey",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_03451E42.ogg",
+   "duration": 154.9,
+   "title": "TRDWFE",
+   "artist": "Rina Sawayama",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_10A4554F.ogg",
+   "duration": 215.3,
+   "title": "All Again",
+   "artist": "Rose Gray",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_077DC7F9.ogg",
+   "duration": 143.4,
+   "title": "Blood In Your Eyes",
+   "artist": "Tove Lo",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_00B1BC6B.ogg",
+   "duration": 171.2,
+   "title": "Fast Emotion",
+   "artist": "Zara Larsson",
+   "stations": [
+    "flash-fm"
+   ]
+  },
+  {
+   "file": "radio_029379EF.ogg",
+   "duration": 187.5,
+   "title": "Ice Pick",
+   "artist": "Albert Collins",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_1B027C86.ogg",
+   "duration": 293.0,
+   "title": "Chains and Things",
+   "artist": "B.B. King",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_03AFBB80.ogg",
+   "duration": 249.0,
+   "title": "Bumble Bee",
+   "artist": "Big Mama Thornton",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_140FCE04.ogg",
+   "duration": 162.2,
+   "title": "I'm a Man",
+   "artist": "Bo Diddley",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_0B37D7AA.ogg",
+   "duration": 177.0,
+   "title": "Stone Crazy",
+   "artist": "Buddy Guy",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_19BA632F.ogg",
+   "duration": 247.0,
+   "title": "One Scotch, One Bourbon, One Beer",
+   "artist": "Champion Jack Dupree",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_02629650.ogg",
+   "duration": 158.0,
+   "title": "Blue Guitar",
+   "artist": "Earl Hooker",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_16E769CC.ogg",
+   "duration": 212.2,
+   "title": "Trouble In Mind",
+   "artist": "Ella Fitzgerald",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_1CFE19F2.ogg",
+   "duration": 198.5,
+   "title": "Yonder Wall",
+   "artist": "Freddie King",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_0F9EED63.ogg",
+   "duration": 183.0,
+   "title": "Smokestack Lightnin'",
+   "artist": "Howlin' Wolf",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_154DB4CF.ogg",
+   "duration": 166.0,
+   "title": "That's All Right",
+   "artist": "Jimmy Rogers",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_152ED807.ogg",
+   "duration": 187.1,
+   "title": "Boogie Chillen'",
+   "artist": "John Lee Hooker",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_0C82F50B.ogg",
+   "duration": 130.0,
+   "title": "Dimples",
+   "artist": "John Lee Hooker",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_11EE4C5D.ogg",
+   "duration": 131.5,
+   "title": "Feels So Good #1",
+   "artist": "Junior Kimbrough",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_0C079583.ogg",
+   "duration": 222.5,
+   "title": "I Got What It Takes",
+   "artist": "Koko Taylor",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_1B17300F.ogg",
+   "duration": 200.2,
+   "title": "Back to New Orleans",
+   "artist": "Lightnin' Hopkins",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_1D5536AD.ogg",
+   "duration": 192.4,
+   "title": "Hoodoo Blues",
+   "artist": "Lightnin' Slim",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_02EAE431.ogg",
+   "duration": 166.9,
+   "title": "Got My Mojo Working",
+   "artist": "Muddy Waters",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_12D84F21.ogg",
+   "duration": 154.4,
+   "title": "Didn't It Rain",
+   "artist": "Sister Rosetta Tharpe, Marie Knight, Sam Price Trio",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_0BF6BF2D.ogg",
+   "duration": 170.2,
+   "title": "Baby Scratch My Back",
+   "artist": "Slim Harpo",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_1653ED8B.ogg",
+   "duration": 152.0,
+   "title": "Bring It On Home",
+   "artist": "Sonny Boy Williamson II",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_1352B7D5.ogg",
+   "duration": 200.9,
+   "title": "Bright Lights, Big City",
+   "artist": "Keith Richards",
+   "stations": [
+    "gloriana-blues-radio"
+   ]
+  },
+  {
+   "file": "radio_082E1DBB.ogg",
+   "duration": 225.3,
+   "title": "Locked Up",
+   "artist": "Akon, Styles P",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_0EAAB54F.ogg",
+   "duration": 252.5,
+   "title": "Whip Appeal",
+   "artist": "Babyface",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_0C823175.ogg",
+   "duration": 220.1,
+   "title": "Hit 'Em up Style (Oops!)",
+   "artist": "Blu Cantrell",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_04DBC490.ogg",
+   "duration": 344.1,
+   "title": "Humpin' Around",
+   "artist": "Bobby Brown",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1DD10C05.ogg",
+   "duration": 193.6,
+   "title": "Baby",
+   "artist": "Brandy",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_077DCA03.ogg",
+   "duration": 259.4,
+   "title": "The Boy Is Mine",
+   "artist": "Brandy, Monica",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1EB3B90A.ogg",
+   "duration": 205.4,
+   "title": "Pullin' Me Back",
+   "artist": "Chingy, Tyrese",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1E86E704.ogg",
+   "duration": 272.5,
+   "title": "I Adore Mi Amor",
+   "artist": "Color Me Badd",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1594B2E0.ogg",
+   "duration": 244.0,
+   "title": "Lady",
+   "artist": "D'Angelo",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1C5D3CC7.ogg",
+   "duration": 263.1,
+   "title": "Love Like This",
+   "artist": "Faith Evans",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_14C8F564.ogg",
+   "duration": 218.2,
+   "title": "Tell Me",
+   "artist": "Groove Theory",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_01ECE19E.ogg",
+   "duration": 214.2,
+   "title": "Where The Party At ft. Nelly",
+   "artist": "Jagged Edge",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1AB50390.ogg",
+   "duration": 311.5,
+   "title": "Feenin'",
+   "artist": "Jodeci",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_0ADB19A4.ogg",
+   "duration": 291.6,
+   "title": "Looking For A New Love",
+   "artist": "Jody Watley",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1BF712C4.ogg",
+   "duration": 217.4,
+   "title": "Ride Wit U",
+   "artist": "Joe, G-Unit",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_04934244.ogg",
+   "duration": 241.9,
+   "title": "Twisted",
+   "artist": "Keith Sweat",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_0A220A46.ogg",
+   "duration": 240.1,
+   "title": "My Life",
+   "artist": "Mary J. Blige",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1450A88B.ogg",
+   "duration": 243.7,
+   "title": "Get It On Tonite",
+   "artist": "Montell Jordan",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1F6B8D8E.ogg",
+   "duration": 244.7,
+   "title": "Too Close",
+   "artist": "Next",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_0F1599B5.ogg",
+   "duration": 247.7,
+   "title": "Here We Go Again!",
+   "artist": "Portrait",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_06426FD5.ogg",
+   "duration": 228.7,
+   "title": "On the Hotline",
+   "artist": "Pretty Ricky",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1F32F407.ogg",
+   "duration": 263.7,
+   "title": "Freak Me",
+   "artist": "Silk",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_10F1BAA9.ogg",
+   "duration": 230.3,
+   "title": "Optimistic",
+   "artist": "Sounds of Blackness",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_12986C81.ogg",
+   "duration": 228.6,
+   "title": "Creep",
+   "artist": "TLC",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_019EB030.ogg",
+   "duration": 260.7,
+   "title": "What About Your Friends",
+   "artist": "TLC",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1F9D3C79.ogg",
+   "duration": 235.9,
+   "title": "You're Makin' Me High",
+   "artist": "Toni Braxton",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_08DC2BB9.ogg",
+   "duration": 229.1,
+   "title": "Hit The Freeway",
+   "artist": "Toni Braxton, Loon",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_148CE630.ogg",
+   "duration": 230.8,
+   "title": "Feels Good",
+   "artist": "Tony! Toni! Toné!",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1742E981.ogg",
+   "duration": 226.8,
+   "title": "Can't You See",
+   "artist": "Total, The Notorious B.I.G.",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_19FD833E.ogg",
+   "duration": 228.6,
+   "title": "Buy U a Drank (Shawty Snappin')",
+   "artist": "T-Pain, Yung Joc",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_07AE704A.ogg",
+   "duration": 260.4,
+   "title": "Bad Girl",
+   "artist": "Usher",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_07F35AC9.ogg",
+   "duration": 193.2,
+   "title": "No Letting Go",
+   "artist": "Wayne Wonder",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_19E711D1.ogg",
+   "duration": 243.2,
+   "title": "Hey Mr. D.J.",
+   "artist": "Zhané",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_17D3EDA3.ogg",
+   "duration": 248.9,
+   "title": "Sweet Love",
+   "artist": "Anita Baker",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1EF7DC81.ogg",
+   "duration": 302.4,
+   "title": "Solid",
+   "artist": "Ashford & Simpson",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_01483017.ogg",
+   "duration": 473.1,
+   "title": "Your Sweetness Is My Weakness",
+   "artist": "Barry White",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_10DCCF15.ogg",
+   "duration": 283.4,
+   "title": "The Vampire That Ate Miami",
+   "artist": "Blowfly",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1003E8C8.ogg",
+   "duration": 261.3,
+   "title": "After the Love Has Gone",
+   "artist": "Earth, Wind and Fire",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_0833A35D.ogg",
+   "duration": 289.4,
+   "title": "I Need A Freak",
+   "artist": "Egyptian Lover",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_099F785E.ogg",
+   "duration": 234.5,
+   "title": "Shake You Down",
+   "artist": "Gregory Abbott",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_09765CE6.ogg",
+   "duration": 218.0,
+   "title": "Birthday Sex",
+   "artist": "Jeremih",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_18242B0C.ogg",
+   "duration": 251.3,
+   "title": "Intimate Connection",
+   "artist": "Kleeer",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_015E6790.ogg",
+   "duration": 240.9,
+   "title": "Casanova",
+   "artist": "LeVert",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_16A7A9F6.ogg",
+   "duration": 286.5,
+   "title": "Slow Down",
+   "artist": "Loose Ends",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1AFA9B8B.ogg",
+   "duration": 202.5,
+   "title": "Vision of Love",
+   "artist": "Mariah Carey",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_19E32F34.ogg",
+   "duration": 231.3,
+   "title": "Slow Jam",
+   "artist": "Midnight Star",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_041DE259.ogg",
+   "duration": 225.5,
+   "title": "Handcuffs",
+   "artist": "Parliament",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_107C05C2.ogg",
+   "duration": 247.0,
+   "title": "She Blew My Mind (69 Times)",
+   "artist": "Rick James",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_16C2490A.ogg",
+   "duration": 229.8,
+   "title": "Love Don't Live Here Anymore",
+   "artist": "Rose Royce",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_1D1C2DFA.ogg",
+   "duration": 251.1,
+   "title": "I'm N Luv (Wit a Stripper)",
+   "artist": "T-Pain, Mike Jones",
+   "stations": [
+    "honey-fm"
+   ]
+  },
+  {
+   "file": "radio_12FF9437.ogg",
+   "duration": 198.4,
+   "title": "Cyclone",
+   "artist": "Baby Bash ft. T-Pain",
+   "stations": [
+    "honey-fm",
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_035822FC.ogg",
+   "duration": 229.7,
+   "title": "Say It Right",
+   "artist": "Alim Qasimov, Fargana Qasimova",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_1C769B69.ogg",
+   "duration": 206.2,
+   "title": "Tvoj Svijet",
+   "artist": "Brazil",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_0840DFC3.ogg",
+   "duration": 231.5,
+   "title": "T' Materiaal",
+   "artist": "Don Melody Club",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_12E18825.ogg",
+   "duration": 226.9,
+   "title": "Al Zman Saib",
+   "artist": "Fadoul",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_0399BAB7.ogg",
+   "duration": 272.5,
+   "title": "Gan Ai Gan Zuo",
+   "artist": "George Lam",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_093C02EB.ogg",
+   "duration": 201.0,
+   "title": "Lola",
+   "artist": "Heinz Rudolf Kunze",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_006B9F45.ogg",
+   "duration": 236.4,
+   "title": "Kumbia Dark",
+   "artist": "Kumbia Queers",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_0E79AC1E.ogg",
+   "duration": 250.6,
+   "title": "Geburt einer Nation",
+   "artist": "Laibach",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_1EDD2F0E.ogg",
+   "duration": 232.2,
+   "title": "Sinfonía Agridulce",
+   "artist": "Mexican Institute of Sound",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_042CAADE.ogg",
+   "duration": 231.5,
+   "title": "Gloria",
+   "artist": "Mona Carita",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_038240B4.ogg",
+   "duration": 179.2,
+   "title": "Rokkibaby",
+   "artist": "Rolf Bergström, Pyhimykset",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_0D2DBE9B.ogg",
+   "duration": 221.2,
+   "title": "Hai capito o no?",
+   "artist": "Ron",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_17CAB39C.ogg",
+   "duration": 225.3,
+   "title": "Danse ta vie",
+   "artist": "Sylvie Vartan",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_06E592E0.ogg",
+   "duration": 306.6,
+   "title": "Nobel",
+   "artist": "Touré Kunda",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_1CB1F245.ogg",
+   "duration": 258.0,
+   "title": "Stupid Girl",
+   "artist": "Trevor M. Simpson, Hi Lo Singers",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_05ABBFC4.ogg",
+   "duration": 284.1,
+   "title": "Ies Manziel",
+   "artist": "Wim Damri",
+   "stations": [
+    "kaleidoscope-fm"
+   ]
+  },
+  {
+   "file": "radio_09618186.ogg",
+   "duration": 132.4,
+   "title": "WHATUP",
+   "artist": "DOMi & JD BECK",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_15B157C6.ogg",
+   "duration": 301.4,
+   "title": "Stro Kyat",
+   "artist": "Kaidi Tatham ft. Stro Elliot",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0A49D668.ogg",
+   "duration": 255.4,
+   "title": "Rye Lane Shuffle",
+   "artist": "Moses Boyd",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_1470DB8D.ogg",
+   "duration": 158.5,
+   "title": "On My Way",
+   "artist": "The Kount, CARRTOONS",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_09A3BCBF.ogg",
+   "duration": 135.0,
+   "title": "Fleer Ultra",
+   "artist": "Thundercat",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0B290D0E.ogg",
+   "duration": 236.5,
+   "title": "Sicily' Box",
+   "artist": "Venna, Yussef Dayes, Marco Bernardis, Rocco Palladino",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_01DCF97C.ogg",
+   "duration": 205.2,
+   "title": "Águia não come mosca",
+   "artist": "Azymuth",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0A8D2B92.ogg",
+   "duration": 219.7,
+   "title": "Crosswind",
+   "artist": "Billy Cobham",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0C0BE34E.ogg",
+   "duration": 340.4,
+   "title": "Night Crawler",
+   "artist": "Bob James",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_15503284.ogg",
+   "duration": 357.8,
+   "title": "Maputo",
+   "artist": "Bob James, David Sanborn",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_1E7BB4E0.ogg",
+   "duration": 254.0,
+   "title": "Scrunch",
+   "artist": "The Brecker Brothers",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_142FAFFE.ogg",
+   "duration": 185.8,
+   "title": "Time Limit",
+   "artist": "Casiopea",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_1465542B.ogg",
+   "duration": 365.5,
+   "title": "Modaji",
+   "artist": "Dave Grusin",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_12503C94.ogg",
+   "duration": 308.8,
+   "title": "Friends and Strangers",
+   "artist": "Dave Grusin",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_142A5CF6.ogg",
+   "duration": 250.5,
+   "title": "Breaking Point",
+   "artist": "David Sanborn",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0FF603AA.ogg",
+   "duration": 192.5,
+   "title": "Valdez in the Country",
+   "artist": "Donny Hathaway",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0E68C70D.ogg",
+   "duration": 292.7,
+   "title": "Mr. Groove",
+   "artist": "Euge Groove",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_07C167F3.ogg",
+   "duration": 402.3,
+   "title": "Silk",
+   "artist": "Fuse One",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_11D0C510.ogg",
+   "duration": 411.8,
+   "title": "Mister Magic",
+   "artist": "Grover Washington Jr.",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_17DD4010.ogg",
+   "duration": 276.1,
+   "title": "Rotation",
+   "artist": "Herb Alpert",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_1F5ED20C.ogg",
+   "duration": 268.0,
+   "title": "Power",
+   "artist": "Marcus Miller",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0A299195.ogg",
+   "duration": 298.1,
+   "title": "Betcha Don't Know",
+   "artist": "Najee",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_14CA8B79.ogg",
+   "duration": 147.1,
+   "title": "Humpty Dumpty",
+   "artist": "Placebo",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_1E431137.ogg",
+   "duration": 366.6,
+   "title": "Sorceress",
+   "artist": "Return to Forever",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_004DAE8B.ogg",
+   "duration": 273.6,
+   "title": "Always There",
+   "artist": "Ronnie Laws",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_09A1A1C6.ogg",
+   "duration": 459.3,
+   "title": "School Days",
+   "artist": "Stanley Clarke",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_18F49C43.ogg",
+   "duration": 210.2,
+   "title": "Wild Dog",
+   "artist": "Stanley Clarke, George Duke",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_11551F81.ogg",
+   "duration": 300.5,
+   "title": "Funky Sea, Funky Dew",
+   "artist": "The Brecker Brothers",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0384536F.ogg",
+   "duration": 224.6,
+   "title": "Forever More",
+   "artist": "Tom Browne",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_0252D43C.ogg",
+   "duration": 355.5,
+   "title": "Birdland",
+   "artist": "Weather Report",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_1EF46FA0.ogg",
+   "duration": 235.1,
+   "title": "Blowin' Smoke",
+   "artist": "BADBADNOTGOOD, Randy Brecker",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_11D5C849.ogg",
+   "duration": 296.2,
+   "title": "Hotel Alphonso",
+   "artist": "Joe Armon-Jones",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_1B80C1FB.ogg",
+   "duration": 295.7,
+   "title": "Overtown Lights",
+   "artist": "Stanley Clarke, Yussef Dayes, Robert Glasper",
+   "stations": [
+    "leonida-jazz-radio"
+   ]
+  },
+  {
+   "file": "radio_120ADD19.ogg",
+   "duration": 279.7,
+   "title": "Que Viva Chango",
+   "artist": "Albita Rodríguez & Willy Chirino",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_0A00456E.ogg",
+   "duration": 285.4,
+   "title": "Sopa de Caracol (Original Caribe Mix)",
+   "artist": "Banda Blanca",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_02EA8A27.ogg",
+   "duration": 193.7,
+   "title": "Que Bueno Baila Usted",
+   "artist": "Benny Moré",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_03C83551.ogg",
+   "duration": 175.5,
+   "title": "Descarga Cubana",
+   "artist": "Cachao",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_1A5F52C0.ogg",
+   "duration": 206.7,
+   "title": "Bemba Colorá",
+   "artist": "Celia Cruz",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_12F288B8.ogg",
+   "duration": 263.4,
+   "title": "Besito de coco",
+   "artist": "Celia Cruz, Justo Betancourt, Johnny Pacheco & Papo Lucca",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_073D7FBD.ogg",
+   "duration": 270.1,
+   "title": "La Hija De Lola",
+   "artist": "Charlie Palmieri",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_02062F0B.ogg",
+   "duration": 250.0,
+   "title": "Anacaona",
+   "artist": "Cheo Feliciano",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_1040EB82.ogg",
+   "duration": 203.2,
+   "title": "Brujeria",
+   "artist": "El Gran Combo de Puerto Rico",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_1C9FD4F7.ogg",
+   "duration": 267.0,
+   "title": "No Hay Cama Pa' Tanta Gente",
+   "artist": "El Gran Combo de Puerto Rico",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_19713454.ogg",
+   "duration": 300.1,
+   "title": "Tú Con Él",
+   "artist": "Frankie Ruiz",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_096ED250.ogg",
+   "duration": 268.4,
+   "title": "Mi Tierra",
+   "artist": "Gloria Estefan",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_18138298.ogg",
+   "duration": 256.7,
+   "title": "Kuku-Cha Ku-Cha",
+   "artist": "Hansel y Raúl",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_1EAF7971.ogg",
+   "duration": 395.8,
+   "title": "Periódico de Ayer",
+   "artist": "Héctor Lavoe",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_0B9731C7.ogg",
+   "duration": 368.4,
+   "title": "Rebelión (No Le Pegue a la Negra)",
+   "artist": "Joe Arroyo y La Verdad",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_1B5D2DFC.ogg",
+   "duration": 230.1,
+   "title": "Pavo Real",
+   "artist": "José Luis Rodríguez",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_16D2EA2E.ogg",
+   "duration": 303.0,
+   "title": "El Tigueron",
+   "artist": "Jossie Esteban & La Patrulla 15",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_18F1C08F.ogg",
+   "duration": 384.7,
+   "title": "La Cartera",
+   "artist": "Orquesta Harlow, Larry Harlow, Junior Gonzalez",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_18D95943.ogg",
+   "duration": 220.4,
+   "title": "Llorarás",
+   "artist": "Oscar D'León",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_02CEFF16.ogg",
+   "duration": 310.0,
+   "title": "Catalina la O",
+   "artist": "Pete “El Conde” Rodríguez",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_05BF9E40.ogg",
+   "duration": 241.6,
+   "title": "Caballo Viejo",
+   "artist": "Roberto Torres",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_0FBB681B.ogg",
+   "duration": 350.8,
+   "title": "Ligia Elena",
+   "artist": "Rubén Blades, Willie Colón",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_083A4EDF.ogg",
+   "duration": 248.5,
+   "title": "Abusadora",
+   "artist": "Wilfrido Vargas",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_02A184FB.ogg",
+   "duration": 430.7,
+   "title": "Pedro Navaja",
+   "artist": "Willie Colón, Rubén Blades",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_1556737A.ogg",
+   "duration": 310.3,
+   "title": "Soy Guajiro",
+   "artist": "Willy Chirino",
+   "stations": [
+    "radio-la-ola"
+   ]
+  },
+  {
+   "file": "radio_0F1DEF1E.ogg",
+   "duration": 210.5,
+   "title": "Dub Inspector",
+   "artist": "Adrian Sherwood",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_0BD33601.ogg",
+   "duration": 260.2,
+   "title": "I'm So Sorry",
+   "artist": "Carroll Thompson",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_1D27110F.ogg",
+   "duration": 185.5,
+   "title": "Frontline Dub",
+   "artist": "Creation Rebel",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_136EFB08.ogg",
+   "duration": 185.4,
+   "title": "Big Ship",
+   "artist": "Freddie McGregor",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_1FCF69DE.ogg",
+   "duration": 224.7,
+   "title": "Mr. Cop",
+   "artist": "Gregory Isaacs",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_0226D144.ogg",
+   "duration": 168.7,
+   "title": "Skylarking",
+   "artist": "Horace Andy",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_158B5279.ogg",
+   "duration": 226.5,
+   "title": "Silly Games",
+   "artist": "Janet Kay",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_009E0C2F.ogg",
+   "duration": 315.6,
+   "title": "I Am in Love",
+   "artist": "Jennifer Lara",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_1D4ADEF4.ogg",
+   "duration": 224.0,
+   "title": "Everything I Own",
+   "artist": "Ken Boothe",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_18AF3CE5.ogg",
+   "duration": 247.5,
+   "title": "Black Panta",
+   "artist": "Lee Perry & The Upsetters",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_065A3BFE.ogg",
+   "duration": 256.0,
+   "title": "Caught You in a Lie",
+   "artist": "Louisa Mark",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_1533BA04.ogg",
+   "duration": 231.7,
+   "title": "Under Me Sleng Teng Version",
+   "artist": "King Jammy",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_18C4EA15.ogg",
+   "duration": 180.3,
+   "title": "Hurt So Good",
+   "artist": "Susan Cadogan",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_05CF6827.ogg",
+   "duration": 210.1,
+   "title": "Jah Jah Dub The Conqueror",
+   "artist": "The Aggrovators, Linval Thompson, Bunny Lee & Prince Fatty",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_11EA83E5.ogg",
+   "duration": 171.8,
+   "title": "Ragnampaiza Version",
+   "artist": "The Revolutionaries",
+   "stations": [
+    "radio-on-u"
+   ]
+  },
+  {
+   "file": "radio_0D705167.ogg",
+   "duration": 291.2,
+   "title": "All U Writers",
+   "artist": "!!!",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0351A055.ogg",
+   "duration": 218.0,
+   "title": "Off The Grid",
+   "artist": "!!! ft. Meah Pace",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_18B3979C.ogg",
+   "duration": 234.7,
+   "title": "Paradise",
+   "artist": "ANOTR",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0DFF35CC.ogg",
+   "duration": 255.9,
+   "title": "Inner Light",
+   "artist": "Elderbrook, Bob Moses",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_177963ED.ogg",
+   "duration": 264.5,
+   "title": "Never Come Back",
+   "artist": "Caribou",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1F7D066B.ogg",
+   "duration": 207.1,
+   "title": "No Stress",
+   "artist": "CMD/CTRL",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_078E35EC.ogg",
+   "duration": 173.3,
+   "title": "Space Invaders",
+   "artist": "Digitalism",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_17FFCA4A.ogg",
+   "duration": 229.1,
+   "title": "Emerge",
+   "artist": "Fischerspooner",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_00727A62.ogg",
+   "duration": 204.6,
+   "title": "STORM I",
+   "artist": "GENER8ION, Yung Lean",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1A5925CB.ogg",
+   "duration": 252.5,
+   "title": "Soon",
+   "artist": "Holy Ghost!",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0BF39566.ogg",
+   "duration": 205.0,
+   "title": "Hungry Child",
+   "artist": "Hot Chip",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_12945393.ogg",
+   "duration": 245.7,
+   "title": "Afterimage",
+   "artist": "Justice ft. RIMON",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_093B7B5B.ogg",
+   "duration": 259.8,
+   "title": "One Night/All Night",
+   "artist": "Justice, Tame Impala",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_18A305A1.ogg",
+   "duration": 246.1,
+   "title": "Time Machine",
+   "artist": "Kitty Ca$h, Thundercat & James Fauntleroy",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0F0413ED.ogg",
+   "duration": 308.1,
+   "title": "North American Scum",
+   "artist": "LCD Soundsystem",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_11FBB6BC.ogg",
+   "duration": 167.8,
+   "title": "I WANNA BE YOUR SLAVE",
+   "artist": "Måneskin",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_062B361B.ogg",
+   "duration": 250.6,
+   "title": "Monroe",
+   "artist": "Mount Kimbie",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_02D07534.ogg",
+   "duration": 298.2,
+   "title": "Across That Fine Line",
+   "artist": "Nation of Language",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1666160A.ogg",
+   "duration": 242.0,
+   "title": "You Move Me",
+   "artist": "Neil Frances",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_12771D12.ogg",
+   "duration": 261.0,
+   "title": "Even Angels Ghost",
+   "artist": "Overmono, Kindora",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_03BB96FB.ogg",
+   "duration": 161.5,
+   "title": "Good Lies",
+   "artist": "Overmono",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1407C712.ogg",
+   "duration": 150.1,
+   "title": "Illegal",
+   "artist": "PinkPantheress",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0C267477.ogg",
+   "duration": 228.9,
+   "title": "French Dip",
+   "artist": "Psychic Mirrors",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1C761CCE.ogg",
+   "duration": 281.5,
+   "title": "Overpowered",
+   "artist": "Róisín Murphy",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1CDFC332.ogg",
+   "duration": 137.6,
+   "title": "4eva",
+   "artist": "Shygirl, Empress Of & Kingdom",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_033802FE.ogg",
+   "duration": 155.0,
+   "title": "MILLION DOLLAR BABY",
+   "artist": "Tommy Richman",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1A773507.ogg",
+   "duration": 205.7,
+   "title": "Do It",
+   "artist": "underscores",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_13DE34F8.ogg",
+   "duration": 185.7,
+   "title": "mangetout (The Dare Remix)",
+   "artist": "Wet Leg, The Dare",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_14C45142.ogg",
+   "duration": 262.3,
+   "title": "Abu Simbel",
+   "artist": "WhoMadeWho, Rampa",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0A4E160F.ogg",
+   "duration": 218.0,
+   "title": "What Love Is",
+   "artist": "Zimmer90",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0E18DA83.ogg",
+   "duration": 264.8,
+   "title": "There Is Only Us",
+   "artist": "Favored Nations",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_07D61E75.ogg",
+   "duration": 144.5,
+   "title": "Only One",
+   "artist": "Fcukers",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0EDD692D.ogg",
+   "duration": 198.7,
+   "title": "Bring Me Down",
+   "artist": "Fred Jesse",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_01973C24.ogg",
+   "duration": 202.9,
+   "title": "NIGHTMARE",
+   "artist": "HEALTH",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_05217731.ogg",
+   "duration": 200.0,
+   "title": "internet $tar",
+   "artist": "Slayyyter",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_1F52A062.ogg",
+   "duration": 201.3,
+   "title": "Interesting",
+   "artist": "The Dare",
+   "stations": [
+    "stockyard-fm"
+   ]
+  },
+  {
+   "file": "radio_0C0CC22E.ogg",
+   "duration": 324.3,
+   "title": "Messiah, HWV 56: Pt. III: Aria. I know That my Redeemer liveth (Soprano)",
+   "artist": "George Frideric Handel",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_0D52F15B.ogg",
+   "duration": 740.7,
+   "title": "Symphony No. 5 in E Minor, Op. 64, TH 29: IV. Andante maestoso - Allegro vivace",
+   "artist": "Pyotr Il'yich Tchaikovsky",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_0CF24580.ogg",
+   "duration": 665.3,
+   "title": "Sinfonia concertante for Violin and Viola in E-Flat Major, K. 364: II. Andante",
+   "artist": "Wolfgang Amadeus Mozart",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_0F6685CC.ogg",
+   "duration": 316.7,
+   "title": "Mass in B Minor, BWV 232: Sanctus",
+   "artist": "Johann Sebastian Bach",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_12CF3980.ogg",
+   "duration": 349.0,
+   "title": "Symphony No. 3 in F Major, Op. 90: III. Poco allegretto (Goodbye Again)",
+   "artist": "Johannes Brahms",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_012302FA.ogg",
+   "duration": 391.4,
+   "title": "Sinfonietta, JW VI/18: V. Allegro",
+   "artist": "Leoš Janáček",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_1869CEC1.ogg",
+   "duration": 423.0,
+   "title": "Symphony No. 6 in A Minor \"Tragic\": I. Allegro energico, ma non troppo. Heftig, aber markig",
+   "artist": "Gustav Mahler",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_0B6792B5.ogg",
+   "duration": 628.3,
+   "title": "Piano Concerto No. 2 in G Minor, Op. 16: IV. Finale (Allegro tempestoso)",
+   "artist": "Sergei Prokofiev",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_1C17B734.ogg",
+   "duration": 698.0,
+   "title": "La valse, M. 72",
+   "artist": "Maurice Ravel",
+   "stations": [
+    "symphony-fm"
+   ]
+  },
+  {
+   "file": "radio_0341B224.ogg",
+   "duration": 138.6,
+   "title": "Players",
+   "artist": "Coi Leray",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_05BA4DC2.ogg",
+   "duration": 193.4,
+   "title": "BILLS PAID",
+   "artist": "DJ Khaled ft. Latto & City Girls",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1E6171CF.ogg",
+   "duration": 134.0,
+   "title": "Wassup Gway",
+   "artist": "Famous Sally & YB",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_15985DE6.ogg",
+   "duration": 229.1,
+   "title": "Unforgettable",
+   "artist": "French Montana, Swae Lee",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_15C72DA8.ogg",
+   "duration": 161.3,
+   "title": "Xanny Family",
+   "artist": "Future",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1F51EF2D.ogg",
+   "duration": 183.2,
+   "title": "All There",
+   "artist": "Jeezy ft. Bankroll Fresh",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_04FFEF1C.ogg",
+   "duration": 109.2,
+   "title": "Pound Town",
+   "artist": "Sexyy Red, Tay Keith",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1B742FDB.ogg",
+   "duration": 111.3,
+   "title": "Cookin",
+   "artist": "21 Savage",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0A823801.ogg",
+   "duration": 101.1,
+   "title": "Left Wrist",
+   "artist": "BossMan Dlow",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1A818966.ogg",
+   "duration": 161.4,
+   "title": "Don't Chart",
+   "artist": "Cardi B",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1A1D85F8.ogg",
+   "duration": 115.8,
+   "title": "Rock N Roll",
+   "artist": "Central Cee",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_04CD504E.ogg",
+   "duration": 182.0,
+   "title": "FLA Flow",
+   "artist": "Denzel Curry ft. 454",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0AD06CAC.ogg",
+   "duration": 184.6,
+   "title": "RCKSTRL!VING",
+   "artist": "HXG ft. Tana & Quavo",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1E9E446E.ogg",
+   "duration": 149.2,
+   "title": "Let's Rock",
+   "artist": "Kodak Black & Don Toliver",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0CFE3E2C.ogg",
+   "duration": 129.4,
+   "title": "I Just Came To Pop It",
+   "artist": "Offset",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0F6E2C29.ogg",
+   "duration": 104.8,
+   "title": "AHH YEA",
+   "artist": "Playboi Carti",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_10C0E60A.ogg",
+   "duration": 190.5,
+   "title": "Got Dat",
+   "artist": "Pooh Shiesty",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0063BDEC.ogg",
+   "duration": 86.4,
+   "title": "CASHOUT",
+   "artist": "SoFaygo",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1E3F0D7C.ogg",
+   "duration": 139.7,
+   "title": "IKYFL",
+   "artist": "Tee Grizzley",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1C958A52.ogg",
+   "duration": 163.0,
+   "title": "RHYNO",
+   "artist": "Travis Scott",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_06D8B9CB.ogg",
+   "duration": 198.5,
+   "title": "Don Da Da",
+   "artist": "Young Nudy",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_11DBFF0B.ogg",
+   "duration": 108.9,
+   "title": "WAKIN UP FLEX",
+   "artist": "Young Thug",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_17B8B866.ogg",
+   "duration": 157.9,
+   "title": "That's It",
+   "artist": "Yung Lean ft. Future & Metro Boomin",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1175D91E.ogg",
+   "duration": 151.1,
+   "title": "COUNT UP",
+   "artist": "Gunna",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1EA5A74A.ogg",
+   "duration": 181.9,
+   "title": "No Sucker",
+   "artist": "Lil Baby & Moneybagg Yo",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0855D9B2.ogg",
+   "duration": 151.6,
+   "title": "712PM",
+   "artist": "Future",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_17612A79.ogg",
+   "duration": 142.6,
+   "title": "Go Go Go",
+   "artist": "BunnaB",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0B1A72CD.ogg",
+   "duration": 236.6,
+   "title": "Nonstop",
+   "artist": "Drake",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_182C9D11.ogg",
+   "duration": 263.6,
+   "title": "Rake It Up",
+   "artist": "Yo Gotti, Nicki Minaj",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0AF74751.ogg",
+   "duration": 131.5,
+   "title": "Maybach Coupe",
+   "artist": "Key Glock & Tay Keith",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0773EA57.ogg",
+   "duration": 87.6,
+   "title": "ROBOCOP",
+   "artist": "Moreno ITF",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_095F0022.ogg",
+   "duration": 151.6,
+   "title": "7.62 God",
+   "artist": "Pooh Shiesty",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0EB7C8A8.ogg",
+   "duration": 97.4,
+   "title": "Back On The Road",
+   "artist": "Icewear Vezzo",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_17F22A14.ogg",
+   "duration": 179.2,
+   "title": "Blow a Check",
+   "artist": "Zoey Dollaz",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_17FDB1D5.ogg",
+   "duration": 205.3,
+   "title": "Outside",
+   "artist": "Cardi B",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0FBEC3B1.ogg",
+   "duration": 150.8,
+   "title": "WHATCHU KNOW ABOUT ME",
+   "artist": "GloRilla, Sexyy Red",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1BB5E555.ogg",
+   "duration": 186.8,
+   "title": "Shake Dat Ass (Twerk Song)",
+   "artist": "BossMan Dlow",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1838745B.ogg",
+   "duration": 136.2,
+   "title": "Boss Shit",
+   "artist": "RushDee, ATL Jacob, Big Boss Vette",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0E202DBC.ogg",
+   "duration": 101.1,
+   "title": "Bitcoin",
+   "artist": "Liro 100",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_046877EE.ogg",
+   "duration": 239.3,
+   "title": "Soak City",
+   "artist": "310babii ft. Mustard, Tyga, Blueface, OhGeesy & BlueBucksClan",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_11C4FA18.ogg",
+   "duration": 192.1,
+   "title": "One of Them Ones",
+   "artist": "Mustard ft. Quavo & Rob49",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1C6FDF78.ogg",
+   "duration": 226.3,
+   "title": "Type Shit",
+   "artist": "Future, Metro Boomin, Travis Scott & Playboi Carti",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_153E1E98.ogg",
+   "duration": 120.7,
+   "title": "GASS",
+   "artist": "Nemzzz ft. Travis Scott",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0BED6948.ogg",
+   "duration": 164.4,
+   "title": "All da Smoke",
+   "artist": "Future & Young Thug",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0A8D86C7.ogg",
+   "duration": 172.1,
+   "title": "Super Gremlin",
+   "artist": "Kodak Black",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1C74A46A.ogg",
+   "duration": 163.3,
+   "title": "Friend Do Remix",
+   "artist": "Belly Gang Kushington ft. YKNiece",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_109E3607.ogg",
+   "duration": 166.3,
+   "title": "Help Me",
+   "artist": "Real Boston Richey",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1D9647AA.ogg",
+   "duration": 121.3,
+   "title": "WHIM WHAMIEE",
+   "artist": "PLUTO & YKNIECE",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1B43EAEF.ogg",
+   "duration": 218.8,
+   "title": "Brokey",
+   "artist": "Latto",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_10C6740A.ogg",
+   "duration": 142.4,
+   "title": "Hoochie Coochie",
+   "artist": "Sexyy Red",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1726B214.ogg",
+   "duration": 137.5,
+   "title": "FLACKITO JODYE",
+   "artist": "A$AP Rocky ft. Tokischa",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_01B63439.ogg",
+   "duration": 147.5,
+   "title": "Dale",
+   "artist": "Bodega Flee ft. Chucky73 & DGLO73",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1B4AE975.ogg",
+   "duration": 112.8,
+   "title": "PA QUE LO BAILES (BAILALO ROCKY)",
+   "artist": "Lomiiel",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0B711465.ogg",
+   "duration": 158.3,
+   "title": "No Flockin’",
+   "artist": "Kodak Black",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1AD40413.ogg",
+   "duration": 311.0,
+   "title": "Bad and Boujee",
+   "artist": "Migos & Lil Uzi Vert",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1880EEA2.ogg",
+   "duration": 177.0,
+   "title": "She Make It Clap (Remix)",
+   "artist": "Soulja Boy & French Montana",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_020D604D.ogg",
+   "duration": 214.0,
+   "title": "2 Phones",
+   "artist": "Kevin Gates",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1AD3DD72.ogg",
+   "duration": 273.5,
+   "title": "CONTEST",
+   "artist": "Travis Scott & SoFaygo",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1E0EE608.ogg",
+   "duration": 158.7,
+   "title": "TGIF",
+   "artist": "GloRilla",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_190E189D.ogg",
+   "duration": 129.6,
+   "title": "I'm A Monster",
+   "artist": "ATL Jacob",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_15AFCA6F.ogg",
+   "duration": 168.3,
+   "title": "Digits",
+   "artist": "Young Thug",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_190ED9E9.ogg",
+   "duration": 222.6,
+   "title": "Dum, Dumb, and Dumber",
+   "artist": "Lil Baby, Young Thug, Future",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0A471171.ogg",
+   "duration": 241.0,
+   "title": "NOKIA",
+   "artist": "Drake",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0822CCE5.ogg",
+   "duration": 154.4,
+   "title": "Up",
+   "artist": "Cardi B",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_05FC6141.ogg",
+   "duration": 139.1,
+   "title": "BAND4BAND",
+   "artist": "Central Cee & Lil Baby",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_16D6476D.ogg",
+   "duration": 194.8,
+   "title": "Dior",
+   "artist": "Pop Smoke",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_1BC8CDEC.ogg",
+   "duration": 182.9,
+   "title": "Roll in Peace",
+   "artist": "Kodak Black, XXXTENTACION",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_02F6269A.ogg",
+   "duration": 236.0,
+   "title": "T-Shirt",
+   "artist": "Migos",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_13CF6775.ogg",
+   "duration": 86.6,
+   "title": "Big Mama (2nd Half Only)",
+   "artist": "Latto",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_06DCAE35.ogg",
+   "duration": 145.2,
+   "title": "DUMMY (Prod. Tay Keith)",
+   "artist": "Key Glock",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0569E5B4.ogg",
+   "duration": 299.6,
+   "title": "SICKO MODE",
+   "artist": "Travis Scott",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_19A458D8.ogg",
+   "duration": 127.2,
+   "title": "Mr. Pot Scraper",
+   "artist": "BossMan Dlow",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_15ED70DE.ogg",
+   "duration": 152.6,
+   "title": "SkeeYee",
+   "artist": "Sexyy Red",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_023549C8.ogg",
+   "duration": 111.7,
+   "title": "Just Wanna Rock",
+   "artist": "Lil Uzi Vert",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0DB74E1F.ogg",
+   "duration": 87.1,
+   "title": "OFF MY CHEST",
+   "artist": "Stevie J",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_08E87C36.ogg",
+   "duration": 172.3,
+   "title": "Mo Bamba",
+   "artist": "Sheck Wes",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_0E278307.ogg",
+   "duration": 196.5,
+   "title": "Fried (She a Vibe)",
+   "artist": "Future, Metro Boomin",
+   "stations": [
+    "vice-city-rap-radio"
+   ]
+  },
+  {
+   "file": "radio_02FF36A2.ogg",
+   "duration": 328.7,
+   "title": "Wishing (If I Had a Photograph of You)",
+   "artist": "A Flock Of Seagulls",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_09CC3401.ogg",
+   "duration": 209.2,
+   "title": "Vanity Kills",
+   "artist": "ABC",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1A36BA1E.ogg",
+   "duration": 219.0,
+   "title": "Fake",
+   "artist": "Alexander O'Neal",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0413FAAC.ogg",
+   "duration": 207.1,
+   "title": "Imagination",
+   "artist": "Belouis Some",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1FF07F2D.ogg",
+   "duration": 354.4,
+   "title": "E = MC2",
+   "artist": "Big Audio Dynamite",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_19F7E54F.ogg",
+   "duration": 271.2,
+   "title": "Flesh For Fantasy",
+   "artist": "Billy Idol",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_13F1BB2B.ogg",
+   "duration": 311.5,
+   "title": "Loverboy",
+   "artist": "Billy Ocean",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1F77813E.ogg",
+   "duration": 197.9,
+   "title": "Don't Tell Me",
+   "artist": "Blancmange",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0B5E8700.ogg",
+   "duration": 263.1,
+   "title": "Kiss and Tell",
+   "artist": "Bryan Ferry",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1712CF76.ogg",
+   "duration": 461.1,
+   "title": "Searching",
+   "artist": "Change",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1C7A9B02.ogg",
+   "duration": 214.9,
+   "title": "Working With Fire And Steel",
+   "artist": "China Crisis",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0D74CEFE.ogg",
+   "duration": 271.2,
+   "title": "Miss Me Blind",
+   "artist": "Culture Club",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_039C13B2.ogg",
+   "duration": 224.9,
+   "title": "Name and Number",
+   "artist": "Curiosity Killed The Cat",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_18463D74.ogg",
+   "duration": 246.1,
+   "title": "Crime Pays",
+   "artist": "Daryl Hall & John Oates",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0BCC752A.ogg",
+   "duration": 208.3,
+   "title": "People Are People",
+   "artist": "Depeche Mode",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_03F60307.ogg",
+   "duration": 339.5,
+   "title": "State of Independence",
+   "artist": "Donna Summer",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1C1A253B.ogg",
+   "duration": 307.8,
+   "title": "She Works Hard For The Money",
+   "artist": "Donna Summer",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_079A20BF.ogg",
+   "duration": 279.1,
+   "title": "Lips Like Sugar",
+   "artist": "Echo & the Bunnymen",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_14A81FDB.ogg",
+   "duration": 251.0,
+   "title": "Kiss The Bride",
+   "artist": "Elton John",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1ACA0880.ogg",
+   "duration": 205.9,
+   "title": "Sometimes",
+   "artist": "Erasure",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_081FF628.ogg",
+   "duration": 271.2,
+   "title": "A Good Heart",
+   "artist": "Feargal Sharkey",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0CB7BE53.ogg",
+   "duration": 188.0,
+   "title": "Good Thing",
+   "artist": "Fine Young Cannibals",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_16E10782.ogg",
+   "duration": 291.8,
+   "title": "Precious Little Diamond",
+   "artist": "Fox The Fox",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_099AF004.ogg",
+   "duration": 278.1,
+   "title": "Land Of Confusion",
+   "artist": "Genesis",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_02EB89F3.ogg",
+   "duration": 246.2,
+   "title": "Dr. Beat",
+   "artist": "Miami Sound Machine",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_011FB270.ogg",
+   "duration": 217.1,
+   "title": "Things Can Only Get Better",
+   "artist": "Howard Jones",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_18AD95E2.ogg",
+   "duration": 270.5,
+   "title": "What's On Your Mind (Pure Energy)",
+   "artist": "Information Society",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_179EE627.ogg",
+   "duration": 282.5,
+   "title": "Who Found Who",
+   "artist": "Jellybean ft. Elisa Fiorillo",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_121D5751.ogg",
+   "duration": 238.8,
+   "title": "We Don't Have To Take Our Clothes Off",
+   "artist": "Jermaine Stewart",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_18985DAE.ogg",
+   "duration": 242.0,
+   "title": "Steppin' Out",
+   "artist": "Joe Jackson",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1E90638D.ogg",
+   "duration": 193.0,
+   "title": "Shattered Dreams",
+   "artist": "Johnny Hates Jazz",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0E88E885.ogg",
+   "duration": 422.6,
+   "title": "Another Life",
+   "artist": "Kano",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_11737555.ogg",
+   "duration": 216.0,
+   "title": "I'm Alright",
+   "artist": "Kenny Loggins",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1ACC73A6.ogg",
+   "duration": 233.5,
+   "title": "White Horse",
+   "artist": "Laid Back",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_15FCDD2D.ogg",
+   "duration": 264.8,
+   "title": "Bakerman",
+   "artist": "Laid Back",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0975167C.ogg",
+   "duration": 257.5,
+   "title": "Dancing On The Ceiling",
+   "artist": "Lionel Richie",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0A816C78.ogg",
+   "duration": 369.6,
+   "title": "All Night Long (All Night)",
+   "artist": "Lionel Richie",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1296238F.ogg",
+   "duration": 253.0,
+   "title": "Blow the House Down",
+   "artist": "Living In A Box",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_122F8375.ogg",
+   "duration": 167.1,
+   "title": "Break My Stride",
+   "artist": "Matthew Wilder",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1660EEE7.ogg",
+   "duration": 245.0,
+   "title": "Words",
+   "artist": "Missing Persons",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_087D22A9.ogg",
+   "duration": 179.4,
+   "title": "When The Lights Go Out",
+   "artist": "Naked Eyes",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_11C2AA50.ogg",
+   "duration": 230.7,
+   "title": "Thieves Like Us",
+   "artist": "New Order",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0FB9F263.ogg",
+   "duration": 258.6,
+   "title": "If You Leave",
+   "artist": "Orchestral Manoeuvres in the Dark",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1E05C6AB.ogg",
+   "duration": 260.9,
+   "title": "Cars and Girls",
+   "artist": "Prefab Sprout",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_16DB933C.ogg",
+   "duration": 246.0,
+   "title": "Heartbeat",
+   "artist": "Red 7",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_02634359.ogg",
+   "duration": 199.0,
+   "title": "I Didn't Mean To Turn You On",
+   "artist": "Robert Palmer",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1EED0178.ogg",
+   "duration": 298.4,
+   "title": "Infatuation",
+   "artist": "Rod Stewart",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_020E0CB8.ogg",
+   "duration": 317.4,
+   "title": "Alive and Kicking",
+   "artist": "Simple Minds",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_128843E3.ogg",
+   "duration": 294.6,
+   "title": "Love Song",
+   "artist": "Simple Minds",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0A3AB725.ogg",
+   "duration": 257.0,
+   "title": "Money's Too Tight (To Mention)",
+   "artist": "Simply Red",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0C6A7E2E.ogg",
+   "duration": 232.5,
+   "title": "Winners",
+   "artist": "Stanley Clarke & George Duke",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0DD1DC60.ogg",
+   "duration": 246.0,
+   "title": "Valerie",
+   "artist": "Steve Winwood",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0B633FE6.ogg",
+   "duration": 358.3,
+   "title": "Wild Heart",
+   "artist": "Stevie Nicks",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_01BAAB36.ogg",
+   "duration": 247.1,
+   "title": "If You Love Somebody Set Them Free",
+   "artist": "Sting",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_045C5F28.ogg",
+   "duration": 183.1,
+   "title": "Talk Talk",
+   "artist": "Talk Talk",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_032B8171.ogg",
+   "duration": 245.3,
+   "title": "Head Over Heels",
+   "artist": "Tears For Fears",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_16BFB8D7.ogg",
+   "duration": 180.1,
+   "title": "You Might Think",
+   "artist": "The Cars",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0FFF398D.ogg",
+   "duration": 205.0,
+   "title": "Just Like Heaven",
+   "artist": "The Cure",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0B8A714B.ogg",
+   "duration": 297.3,
+   "title": "Passion",
+   "artist": "The Flirts",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_147CB507.ogg",
+   "duration": 202.1,
+   "title": "Suddenly Last Summer",
+   "artist": "The Motels",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0FBAF6DD.ogg",
+   "duration": 240.7,
+   "title": "Neutron Dance",
+   "artist": "The Pointer Sisters",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0971D1BF.ogg",
+   "duration": 246.0,
+   "title": "Hot Together",
+   "artist": "The Pointer Sisters",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0B66646F.ogg",
+   "duration": 298.5,
+   "title": "Walking On The Moon",
+   "artist": "The Police",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_032340CF.ogg",
+   "duration": 270.8,
+   "title": "Lucretia My Reflection",
+   "artist": "The Sisters Of Mercy",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_112A9C25.ogg",
+   "duration": 191.5,
+   "title": "Love On Your Side",
+   "artist": "The Thompson Twins",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_0C1E2AE4.ogg",
+   "duration": 259.5,
+   "title": "This Is the Day",
+   "artist": "The The",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_17F341FD.ogg",
+   "duration": 228.2,
+   "title": "Steamy Windows",
+   "artist": "Tina Turner",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_1AD9CAF4.ogg",
+   "duration": 241.3,
+   "title": "We Don't Need Another Hero (Thunderdome)",
+   "artist": "Tina Turner",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_03E5578E.ogg",
+   "duration": 269.3,
+   "title": "Everybody Have Fun Tonight",
+   "artist": "Wang Chung",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_12515FFE.ogg",
+   "duration": 234.8,
+   "title": "Bridge To Your Heart",
+   "artist": "Wax",
+   "stations": [
+    "vice-city-fm"
+   ]
+  },
+  {
+   "file": "radio_02979ABB.ogg",
+   "duration": 216.6,
+   "title": "Rockin' Into The Night",
+   "artist": "38 Special",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_139515F8.ogg",
+   "duration": 280.0,
+   "title": "Sin City",
+   "artist": "AC/DC",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0FC20147.ogg",
+   "duration": 262.8,
+   "title": "Livin' On The Edge",
+   "artist": "Aerosmith",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_01D730B8.ogg",
+   "duration": 257.0,
+   "title": "Roller",
+   "artist": "April Wine",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_02901899.ogg",
+   "duration": 192.1,
+   "title": "Rock ‘N' Roll Fantasy",
+   "artist": "Bad Company",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_184C76D4.ogg",
+   "duration": 208.8,
+   "title": "Everybody Wants You",
+   "artist": "Billy Squier",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_15E94355.ogg",
+   "duration": 407.8,
+   "title": "Shooting Shark",
+   "artist": "Blue Öyster Cult",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1240340B.ogg",
+   "duration": 223.5,
+   "title": "Shakedown",
+   "artist": "Bob Seger",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1EC812DF.ogg",
+   "duration": 223.4,
+   "title": "Runaway",
+   "artist": "Bon Jovi",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_14A6C230.ogg",
+   "duration": 252.0,
+   "title": "Ride Like the Wind",
+   "artist": "Christopher Cross",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0E03C915.ogg",
+   "duration": 243.7,
+   "title": "Just Like Paradise",
+   "artist": "David Lee Roth",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_07D42984.ogg",
+   "duration": 265.5,
+   "title": "Pour Some Sugar On Me",
+   "artist": "Def Leppard",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1F5BCFE0.ogg",
+   "duration": 249.1,
+   "title": "Comin' Under Fire",
+   "artist": "Def Leppard",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1CB8D927.ogg",
+   "duration": 213.4,
+   "title": "Money For Nothing",
+   "artist": "Dire Straits",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_07F0EF00.ogg",
+   "duration": 200.5,
+   "title": "Take Me Home Tonight",
+   "artist": "Eddie Money",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0905CE3F.ogg",
+   "duration": 202.4,
+   "title": "Cocaine",
+   "artist": "Eric Clapton",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_13577B7B.ogg",
+   "duration": 271.8,
+   "title": "Bad Love",
+   "artist": "Eric Clapton",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_12FD16BC.ogg",
+   "duration": 212.5,
+   "title": "Big Love",
+   "artist": "Fleetwood Mac",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_11651A55.ogg",
+   "duration": 255.8,
+   "title": "Urgent",
+   "artist": "Foreigner",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1F00F468.ogg",
+   "duration": 254.2,
+   "title": "Get It Right Next Time",
+   "artist": "Gerry Rafferty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_133F582D.ogg",
+   "duration": 254.2,
+   "title": "Right Down the Line",
+   "artist": "Gerry Rafferty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1FA0E928.ogg",
+   "duration": 183.6,
+   "title": "Black Cars",
+   "artist": "Gino Vannelli",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_15B74CB0.ogg",
+   "duration": 304.9,
+   "title": "Jump into the Fire",
+   "artist": "Harry Nilsson",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_10FA8E2F.ogg",
+   "duration": 265.9,
+   "title": "I Want a New Drug",
+   "artist": "Huey Lewis & The News",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0C2A0C1A.ogg",
+   "duration": 226.1,
+   "title": "Had a Dad",
+   "artist": "Jane's Addiction",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_00DADABA.ogg",
+   "duration": 219.6,
+   "title": "Thunder Island",
+   "artist": "Jay Ferguson",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_001F8735.ogg",
+   "duration": 237.3,
+   "title": "Find Your Way Back",
+   "artist": "Jefferson Starship",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_045ACCE7.ogg",
+   "duration": 239.8,
+   "title": "Jack & Diane",
+   "artist": "John Mellencamp",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1CE79393.ogg",
+   "duration": 204.6,
+   "title": "Naughty Naughty",
+   "artist": "John Parr",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0A6D95A5.ogg",
+   "duration": 314.2,
+   "title": "Heart To Heart",
+   "artist": "Kenny Loggins",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0354FBCD.ogg",
+   "duration": 223.3,
+   "title": "Sure Know Something",
+   "artist": "Kiss",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1D14F541.ogg",
+   "duration": 165.1,
+   "title": "Go Insane",
+   "artist": "Lindsey Buckingham",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0F3C2673.ogg",
+   "duration": 206.3,
+   "title": "Lovin' Every Minute of It",
+   "artist": "Loverboy",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_07D3D197.ogg",
+   "duration": 210.1,
+   "title": "I Gotta Try",
+   "artist": "Michael McDonald",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_02139BF1.ogg",
+   "duration": 270.2,
+   "title": "Dr. Feelgood",
+   "artist": "Mötley Crüe",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1DF4A3E7.ogg",
+   "duration": 147.4,
+   "title": "Let My Love Open The Door",
+   "artist": "Pete Townshend",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1EF6A138.ogg",
+   "duration": 223.0,
+   "title": "Nothin' But A Good Time",
+   "artist": "Poison",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_03CC4A6A.ogg",
+   "duration": 252.7,
+   "title": "Hammer To Fall",
+   "artist": "Queen",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_030C9443.ogg",
+   "duration": 211.1,
+   "title": "Lunatic Fringe",
+   "artist": "Red Rider",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_05E26860.ogg",
+   "duration": 235.4,
+   "title": "Take It On the Run",
+   "artist": "REO Speedwagon",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_049D118E.ogg",
+   "duration": 178.7,
+   "title": "Love the One You're With",
+   "artist": "Stephen Stills",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_16248D1D.ogg",
+   "duration": 171.1,
+   "title": "Stranger",
+   "artist": "Stephen Stills",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_181C2E17.ogg",
+   "duration": 262.8,
+   "title": "Rooms on Fire",
+   "artist": "Stevie Nicks",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_18EE6CB0.ogg",
+   "duration": 314.8,
+   "title": "Freedom Overspill",
+   "artist": "Steve Winwood",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_18A82329.ogg",
+   "duration": 250.9,
+   "title": "Too Much Time On My Hands",
+   "artist": "Styx",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_025E5836.ogg",
+   "duration": 210.1,
+   "title": "Rock The Casbah",
+   "artist": "The Clash",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1F1268B5.ogg",
+   "duration": 216.4,
+   "title": "Takin' It to the Streets",
+   "artist": "The Doobie Brothers",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0AA7C22E.ogg",
+   "duration": 239.8,
+   "title": "Living On A Thin Line",
+   "artist": "The Kinks",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0F40056D.ogg",
+   "duration": 197.9,
+   "title": "Driven To Tears",
+   "artist": "The Police",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1207D567.ogg",
+   "duration": 306.2,
+   "title": "Emotional Rescue",
+   "artist": "The Rolling Stones",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_08F6885D.ogg",
+   "duration": 216.3,
+   "title": "Talking In Your Sleep",
+   "artist": "The Romantics",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1E7519F1.ogg",
+   "duration": 157.9,
+   "title": "Take The Money And Run",
+   "artist": "The Steve Miller Band",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1B8BC811.ogg",
+   "duration": 313.0,
+   "title": "Bargain",
+   "artist": "The Who",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1E29953C.ogg",
+   "duration": 206.5,
+   "title": "Better Be Good to Me",
+   "artist": "Tina Turner",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1B78AE5B.ogg",
+   "duration": 168.6,
+   "title": "I Saw the Light",
+   "artist": "Todd Rundgren",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1DD97D5C.ogg",
+   "duration": 240.1,
+   "title": "Love Is A Long Road",
+   "artist": "Tom Petty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_022BD40B.ogg",
+   "duration": 195.2,
+   "title": "You Wreck Me",
+   "artist": "Tom Petty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0A482958.ogg",
+   "duration": 204.5,
+   "title": "Dogs on the Run",
+   "artist": "Tom Petty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1FCFFFDF.ogg",
+   "duration": 167.7,
+   "title": "The Wild One, Forever",
+   "artist": "Tom Petty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_18D6A30A.ogg",
+   "duration": 185.6,
+   "title": "Wildflowers",
+   "artist": "Tom Petty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1E10364F.ogg",
+   "duration": 278.7,
+   "title": "Between Two Worlds",
+   "artist": "Tom Petty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0A255BBC.ogg",
+   "duration": 216.8,
+   "title": "The Damage You've Done",
+   "artist": "Tom Petty",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_16CE2348.ogg",
+   "duration": 237.1,
+   "title": "Georgy Porgy",
+   "artist": "Toto",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1064E1D4.ogg",
+   "duration": 245.3,
+   "title": "The Unforgettable Fire",
+   "artist": "U2",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_18C29036.ogg",
+   "duration": 211.0,
+   "title": "Panama",
+   "artist": "Van Halen",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_02543F5B.ogg",
+   "duration": 190.5,
+   "title": "Cherry Pie",
+   "artist": "Warrant",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_1AB868F4.ogg",
+   "duration": 182.2,
+   "title": "Lawyers, Guns and Money",
+   "artist": "Warren Zevon",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0AAFAD6F.ogg",
+   "duration": 206.0,
+   "title": "Give Me All Your Love",
+   "artist": "Whitesnake",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_0D6069E0.ogg",
+   "duration": 276.4,
+   "title": "Rhythm of Love",
+   "artist": "Yes",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_072A4B8C.ogg",
+   "duration": 226.6,
+   "title": "Got Me Under Pressure",
+   "artist": "ZZ Top",
+   "stations": [
+    "v-rock"
+   ]
+  },
+  {
+   "file": "radio_09E6B5EE.ogg",
+   "duration": 294.0,
+   "title": "Star Chasers",
+   "artist": "4hero",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_102031C6.ogg",
+   "duration": 376.2,
+   "title": "Skhaftin' Saka Fonque",
+   "artist": "Atmos Blaq",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_13FAA9E6.ogg",
+   "duration": 144.0,
+   "title": "Maktoub",
+   "artist": "Alewya",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_19BDD6F3.ogg",
+   "duration": 259.2,
+   "title": "Hold Tight",
+   "artist": "Change",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_024ABDB5.ogg",
+   "duration": 174.0,
+   "title": "International Man",
+   "artist": "Champion, BAKEY, Jamakabi",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_00491567.ogg",
+   "duration": 336.4,
+   "title": "Glad To Know You (Todd Terje Re-Edit)",
+   "artist": "Chaz Jankel",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_118A57F9.ogg",
+   "duration": 553.7,
+   "title": "Atmosphere Strut",
+   "artist": "Cloud One",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_0B20F11D.ogg",
+   "duration": 411.5,
+   "title": "Moral Tem Hora (Ray Mang Edit)",
+   "artist": "Cristina Camargo",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_0ADD32F8.ogg",
+   "duration": 255.9,
+   "title": "Rebirth of Slick (Cool Like Dat)",
+   "artist": "Digable Planets",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_031EEAF6.ogg",
+   "duration": 234.5,
+   "title": "Yoppa Ratta",
+   "artist": "DONGURIZU",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_11FCB8FC.ogg",
+   "duration": 490.0,
+   "title": "Love From The Sun (Louie Vega's We Out Here Edit)",
+   "artist": "Elements Of Life ft. Rahsaan Patterson & Cindy Mizelle",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_12142C2E.ogg",
+   "duration": 232.4,
+   "title": "SLoPE VIP",
+   "artist": "Facta ft. Warrior Queen & Killa P",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_1FA24866.ogg",
+   "duration": 226.2,
+   "title": "Brasil da Capoeira",
+   "artist": "fejao & Samtheman",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_09B900A7.ogg",
+   "duration": 358.2,
+   "title": "Del Oro",
+   "artist": "Floating Points",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_053056F2.ogg",
+   "duration": 286.1,
+   "title": "Don't Send Me Away",
+   "artist": "Garfield Fleming",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_0BF724AA.ogg",
+   "duration": 180.3,
+   "title": "Japan Greatly",
+   "artist": "IZCO ft. Reek0 & S.I",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_04533B69.ogg",
+   "duration": 148.2,
+   "title": "Don't You Know",
+   "artist": "Jan Hammer Group",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_0847375F.ogg",
+   "duration": 310.7,
+   "title": "Smile",
+   "artist": "Jamiroquai",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_10E0A78A.ogg",
+   "duration": 455.4,
+   "title": "SAMURAI (Samba House Remix)",
+   "artist": "Jazztronik",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_1991A41A.ogg",
+   "duration": 334.5,
+   "title": "REBIRTH OF SLICK (COOL LIKE DAT)",
+   "artist": "Kassa Overall",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_1772AC81.ogg",
+   "duration": 179.5,
+   "title": "Lion",
+   "artist": "Lil Simz & Obongjayar",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_0ED35820.ogg",
+   "duration": 160.5,
+   "title": "Qué es lo que Hare para Amarte",
+   "artist": "Luis Antonio Diaz y Su Sol Banda",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_1673DAA0.ogg",
+   "duration": 152.2,
+   "title": "MILITANT DON",
+   "artist": "Mala & Magugu",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_009AEB65.ogg",
+   "duration": 209.3,
+   "title": "Do It For You",
+   "artist": "Moses Ideka & phil",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_178CE731.ogg",
+   "duration": 215.1,
+   "title": "Thank You Deeply",
+   "artist": "Mystery Tiime",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_11310B07.ogg",
+   "duration": 207.7,
+   "title": "Fanga",
+   "artist": "Narasimha",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_150577D1.ogg",
+   "duration": 226.6,
+   "title": "Ain't It Time",
+   "artist": "Queen Yahna",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_008A89E9.ogg",
+   "duration": 257.5,
+   "title": "The First Time Ever I Saw Your Face",
+   "artist": "Roberta Flack",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_18A99E52.ogg",
+   "duration": 473.1,
+   "title": "Aaj Shanibar",
+   "artist": "Rupa",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_1C41E1C1.ogg",
+   "duration": 304.3,
+   "title": "Si Phan Don Lovers Rock",
+   "artist": "Srirajah Sound System ft. Molam Inteng Keawbuala",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_1D9A289F.ogg",
+   "duration": 349.0,
+   "title": "I'm a Sucker For Your Love",
+   "artist": "Teena Marie",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_0E5AD1D5.ogg",
+   "duration": 340.6,
+   "title": "Free As The Wind",
+   "artist": "The Crusaders",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_01F96469.ogg",
+   "duration": 359.7,
+   "title": "MY LOVE YOUR LOVE",
+   "artist": "ZENA",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_01C0657A.ogg",
+   "duration": 279.7,
+   "title": "If There Are Health Food Stores, Then What Is Everything Else",
+   "artist": "Food Courts",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_06772CC4.ogg",
+   "duration": 129.2,
+   "title": "NO ME BUSQUES",
+   "artist": "Omar Apollo",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_0C72B882.ogg",
+   "duration": 202.3,
+   "title": "McDonalds Drug Money",
+   "artist": "Roy Ayers, Thundercat, Om'Mas Keith",
+   "stations": [
+    "worldwide-fm"
+   ]
+  },
+  {
+   "file": "radio_14C0DAE8.ogg",
+   "duration": 299.4,
+   "title": "Kanpe devan'm",
+   "artist": "5Lan featuring TonyMix",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_0510FF44.ogg",
+   "duration": 323.5,
+   "title": "Chokola",
+   "artist": "Alan Cavé",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_03A734C7.ogg",
+   "duration": 253.7,
+   "title": "Ou Paka Gangster",
+   "artist": "Barikad Crew",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_056EB850.ogg",
+   "duration": 211.3,
+   "title": "Fresh From Head To Toe",
+   "artist": "Billy Blue",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_1F025DCE.ogg",
+   "duration": 234.6,
+   "title": "Imma Zoe",
+   "artist": "Black Dada",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_050EB9D9.ogg",
+   "duration": 320.9,
+   "title": "Are You Ready",
+   "artist": "Carimi",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_11CD3165.ogg",
+   "duration": 333.1,
+   "title": "Ou Pa Ka Fè Sa",
+   "artist": "DJ Platinum D",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_07255F74.ogg",
+   "duration": 416.7,
+   "title": "La Familia",
+   "artist": "Djakout",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_1D3C56EE.ogg",
+   "duration": 286.5,
+   "title": "Flanm",
+   "artist": "Emeline Michel",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_0835DD77.ogg",
+   "duration": 213.9,
+   "title": "Haiti",
+   "artist": "John Wicks ft. Kodak Black",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_0FCBCF3E.ogg",
+   "duration": 479.2,
+   "title": "Koul Non",
+   "artist": "King Posse",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_0925B51E.ogg",
+   "duration": 133.7,
+   "title": "Haitian Scarface",
+   "artist": "Kodak Black",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_0E696363.ogg",
+   "duration": 178.0,
+   "title": "Jessica",
+   "artist": "Michaël Brun w/ J Balvin, SAINt JHN, Charly Black & J Perry",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_1943E5DE.ogg",
+   "duration": 228.2,
+   "title": "Magic Gouyad #6",
+   "artist": "R Dydy",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_17F0BBDF.ogg",
+   "duration": 229.9,
+   "title": "Tranble",
+   "artist": "Roody Roodboy",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_0F8E2414.ogg",
+   "duration": 276.5,
+   "title": "Ville",
+   "artist": "Top Adlerman",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_0A28A975.ogg",
+   "duration": 436.6,
+   "title": "Tu Me Touches",
+   "artist": "T-Vice",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_1165998E.ogg",
+   "duration": 265.1,
+   "title": "Guantanamera",
+   "artist": "Wyclef Jean ft. Ms. Lauryn Hill, Celia Cruz & Jeni Fujita",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_196D6E76.ogg",
+   "duration": 289.1,
+   "title": "Child Support",
+   "artist": "Zenglen",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  },
+  {
+   "file": "radio_01C851E5.ogg",
+   "duration": 206.1,
+   "title": "Tèt Kale Bobis",
+   "artist": "Kodak Black & Michaël Brun",
+   "stations": [
+    "the-sniper-of-la-perle"
+   ]
+  }
+ ]
+}

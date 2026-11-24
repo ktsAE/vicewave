@@ -1,0 +1,522 @@
+{
+  "wktt": [
+    {
+      "title": "Station ID",
+      "artist": "WKTT",
+      "kind": "ident",
+      "start": 0
+    },
+    {
+      "title": "Vice City Police Department",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 14
+    },
+    {
+      "title": "The Richard Bastion Show",
+      "artist": "Richard Bastion",
+      "kind": "show",
+      "start": 68
+    },
+    {
+      "title": "Frankie calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 97
+    },
+    {
+      "title": "Real Intelligence",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 291
+    },
+    {
+      "title": "The American dream",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 336
+    },
+    {
+      "title": "Delights Cabaret",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 608
+    },
+    {
+      "title": "Billy calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 643
+    },
+    {
+      "title": "The Johnsons",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 798
+    },
+    {
+      "title": "Pete calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 825
+    },
+    {
+      "title": "Boone's Speedway",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 999
+    },
+    {
+      "title": "The American dream: closing calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 1037
+    },
+    {
+      "title": "Bravado Bison",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1155
+    },
+    {
+      "title": "Patriot Beer",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1226
+    },
+    {
+      "title": "The Manatees",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 1264
+    },
+    {
+      "title": "Vice City Animal Rescue",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1580
+    },
+    {
+      "title": "Listeners weigh in",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 1617
+    },
+    {
+      "title": "Bricks Picks",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 1876
+    },
+    {
+      "title": "Leonida Highway Patrol",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1966
+    },
+    {
+      "title": "Ambrosia Raceway",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 2008
+    },
+    {
+      "title": "The Richard Bastion Show",
+      "artist": "Richard Bastion",
+      "kind": "show",
+      "start": 2045
+    },
+    {
+      "title": "Time Jackers: Rewind",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 2163
+    },
+    {
+      "title": "American history",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 2215
+    },
+    {
+      "title": "Dougie calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 2306
+    },
+    {
+      "title": "John Samuels Whiskey",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 2464
+    },
+    {
+      "title": "Cheryl calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 2498
+    },
+    {
+      "title": "Eager Beaver",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 2649
+    },
+    {
+      "title": "Bryce McNaughton visits",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 2695
+    },
+    {
+      "title": "Bet Junkie",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 3317
+    },
+    {
+      "title": "Gumbo and Tanya call",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 3353
+    },
+    {
+      "title": "Ticket Surgeon",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 3497
+    },
+    {
+      "title": "Richard signs off",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 3527
+    },
+    {
+      "title": "Station ID",
+      "artist": "WKTT",
+      "kind": "ident",
+      "start": 3609
+    },
+    {
+      "title": "Pee Wee's",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 3619
+    },
+    {
+      "title": "Griffin's Shooting Range",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 3683
+    },
+    {
+      "title": "The Anthony Ross scandal",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 3722
+    },
+    {
+      "title": "Station ID",
+      "artist": "WKTT",
+      "kind": "ident",
+      "start": 4154
+    },
+    {
+      "title": "Richardson Hunting Supplies",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 4168
+    },
+    {
+      "title": "Listener calls",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 4202
+    },
+    {
+      "title": "Marie calls",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 4520
+    },
+    {
+      "title": "Ben calls",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 4678
+    },
+    {
+      "title": "Bricks Picks",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 4858
+    },
+    {
+      "title": "Leonida Pest Control",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 4920
+    },
+    {
+      "title": "Narcodone",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 4953
+    },
+    {
+      "title": "The Richard Bastion Show",
+      "artist": "Richard Bastion",
+      "kind": "show",
+      "start": 4999
+    },
+    {
+      "title": "Right Wing",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 5111
+    },
+    {
+      "title": "The Richard Bastion Show",
+      "artist": "Richard Bastion",
+      "kind": "show",
+      "start": 5144
+    },
+    {
+      "title": "Natalie calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 5319
+    },
+    {
+      "title": "Fuel Tank",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 5484
+    },
+    {
+      "title": "Dixie calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 5542
+    },
+    {
+      "title": "Whirlwind Insurance",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 5689
+    },
+    {
+      "title": "The American dream, rebroadcast",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 5721
+    },
+    {
+      "title": "Crib Crash",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 5951
+    },
+    {
+      "title": "Curtis calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 5992
+    },
+    {
+      "title": "Global Energy Workers Union",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 6266
+    },
+    {
+      "title": "Billy calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 6319
+    },
+    {
+      "title": "Farmer Scrumpy's Orchard",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 6461
+    },
+    {
+      "title": "Pete calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 6516
+    },
+    {
+      "title": "Uncle Jack's Liquor Store",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 6681
+    },
+    {
+      "title": "The American dream: closing calls",
+      "artist": "The Richard Bastion Show",
+      "kind": "show",
+      "start": 6729
+    },
+    {
+      "title": "Station ID",
+      "artist": "WKTT",
+      "kind": "ident",
+      "start": 6849
+    },
+    {
+      "title": "BuckMe",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 6859
+    },
+    {
+      "title": "Wonder Whale Artist Village",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 6902
+    },
+    {
+      "title": "The Manatees, rebroadcast",
+      "artist": "Hit the Bricks",
+      "kind": "show",
+      "start": 6939
+    },
+    {
+      "title": "Station ID",
+      "artist": "WKTT",
+      "kind": "ident",
+      "start": 7244
+    }
+  ],
+  "the-wipe": [
+    {
+      "title": "Jonathan Hauser visits",
+      "artist": "She Got Assets",
+      "kind": "show",
+      "start": 0
+    },
+    {
+      "title": "Station ID",
+      "artist": "The Wipe",
+      "kind": "ident",
+      "start": 455
+    },
+    {
+      "title": "Tropical Tan Studio",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 468
+    },
+    {
+      "title": "Dr. Ricardo",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 503
+    },
+    {
+      "title": "El Otro Lado",
+      "artist": "Enrique Romero",
+      "kind": "show",
+      "start": 549
+    },
+    {
+      "title": "Nicolas calls",
+      "artist": "El Otro Lado",
+      "kind": "show",
+      "start": 588
+    },
+    {
+      "title": "Enrique takes a call in Spanish",
+      "artist": "El Otro Lado",
+      "kind": "show",
+      "start": 677
+    },
+    {
+      "title": "Station ID",
+      "artist": "The Wipe",
+      "kind": "ident",
+      "start": 724
+    },
+    {
+      "title": "Vice City True Stories",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 732
+    },
+    {
+      "title": "Eris",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 761
+    },
+    {
+      "title": "Ask Dr. Nita",
+      "artist": "Dr. Nita",
+      "kind": "show",
+      "start": 796
+    },
+    {
+      "title": "Madeline calls",
+      "artist": "Ask Dr. Nita",
+      "kind": "show",
+      "start": 919
+    },
+    {
+      "title": "Ask Dr. Nita promo",
+      "artist": "The Wipe",
+      "kind": "ident",
+      "start": 1288
+    },
+    {
+      "title": "Dignity Lager",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1297
+    },
+    {
+      "title": "X Marks the Spot",
+      "artist": "Ask Dr. Nita",
+      "kind": "show",
+      "start": 1334
+    },
+    {
+      "title": "Station ID",
+      "artist": "The Wipe",
+      "kind": "ident",
+      "start": 1587
+    },
+    {
+      "title": "Drunk Kings Podcast",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1590
+    },
+    {
+      "title": "Poco",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1629
+    },
+    {
+      "title": "Strip Club Economic Report",
+      "artist": "She Got Assets",
+      "kind": "show",
+      "start": 1663
+    },
+    {
+      "title": "She Got Assets promo",
+      "artist": "The Wipe",
+      "kind": "ident",
+      "start": 1942
+    },
+    {
+      "title": "Wildland Zoo",
+      "artist": "Commercial break",
+      "kind": "ad",
+      "start": 1956
+    }
+  ]
+}

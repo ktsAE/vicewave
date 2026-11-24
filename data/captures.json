@@ -1,0 +1,38 @@
+[
+  {
+    "stationId": "kaleidoscope-fm",
+    "title": "Kaleidoscope FM · 18-track station reconstruction",
+    "videoId": "vSgT06Fwrb4",
+    "source": "https://www.youtube.com/watch?v=vSgT06Fwrb4",
+    "duration": 5265,
+    "kind": "reconstruction",
+    "note": "GTA 6 Radio attributes this sequence to the game files. Its 18 chapters cover the station’s credited songs. DJ and commercial coverage is unverified. The embedded video was unavailable in our playback test. Radio mix is available on this station."
+  },
+  {
+    "stationId": "symphony-fm",
+    "title": "Symphony FM · 16-work station reconstruction",
+    "videoId": "adG_RoLgOfo",
+    "source": "https://www.youtube.com/watch?v=adG_RoLgOfo",
+    "duration": 8230,
+    "kind": "reconstruction",
+    "note": "GTA 6 Radio attributes this sequence to the game files. The uploader labels one chapter “Track 1307.” DJ and commercial coverage is unverified. The embedded video was unavailable in our playback test. Radio mix is available on this station."
+  },
+  {
+    "stationId": "wktt",
+    "title": "WKTT · talk station reconstruction",
+    "videoId": "Yo0JCZsmN4E",
+    "source": "https://www.youtube.com/watch?v=Yo0JCZsmN4E",
+    "duration": 6306,
+    "kind": "reconstruction",
+    "note": "GTA 6 Radio attributes this sequence to the game files and marks 18 talk segments after the opening. Original broadcast order and commercial coverage are unverified."
+  },
+  {
+    "stationId": "the-wipe",
+    "title": "The Wipe · talk station reconstruction",
+    "videoId": "ur_PsGA1D4U",
+    "source": "https://www.youtube.com/watch?v=ur_PsGA1D4U",
+    "duration": 12019,
+    "kind": "reconstruction",
+    "note": "GTA 6 Radio attributes this sequence to the game files and marks 28 talk segments after the opening. Original broadcast order and commercial coverage are unverified."
+  }
+]

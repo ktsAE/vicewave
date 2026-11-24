@@ -1,0 +1,30 @@
+const genres = {
+  'flash-fm': 'Pop',
+  'cocoteo-fm': 'Modern Latin',
+  'back-country-radio': 'Country',
+  'the-chamber-106-6': 'Heavy metal',
+  'dirty-south-classics': 'Southern hip-hop',
+  'afrobank-fm': 'African music',
+  'circoloco-records-radio': 'Electronic',
+  'emotion-98-3': 'Soft rock',
+  'vice-city-fm': '80s pop & new wave',
+  'v-rock': 'Classic rock',
+  'vice-city-rap-radio': 'Hip-hop',
+  'honey-fm': 'R&B',
+  'stockyard-fm': 'Dance & club',
+  'worldwide-fm': 'Eclectic & jazz',
+  'kaleidoscope-fm': 'Psychedelic rock',
+  'gloriana-blues-radio': 'Blues',
+  'leonida-jazz-radio': 'Jazz',
+  'radio-on-u': 'Dub & reggae',
+  'radio-la-ola': 'Latin classics',
+  'symphony-fm': 'Classical',
+  'the-vault-radio': 'Club • Unlockable',
+  'the-sniper-of-la-perle': 'Hip-hop • Unlockable',
+  wktt: 'Talk radio',
+  'the-wipe': 'Talk radio',
+  'thrillbilly-mud-club-radio': 'Rock • Local signal',
+};
+export function genre(station) {
+  return genres[station.id] || (station.local ? 'Local signal' : 'Music');
+}

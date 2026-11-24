@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#19151b" />
+    <meta
+      name="description"
+      content="Slide through the radio stations of Grand Theft Auto VI. Tune into the music, voices and commercials of Leonida."
+    />
+    <title>Vicewave • Leonida Radio</title>
+    <link rel="icon" href="assets/mark.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scenery" aria-hidden="true"></div>
+    <header class="mast">
+      <div class="mast-inner">
+        <a class="brand" href="#radio" aria-label="Vicewave radio"
+          ><img src="assets/mark.svg" alt="" /><strong>VICEWAVE</strong></a
+        >
+        <nav aria-label="Main navigation">
+          <a id="nav-radio" href="#radio"><span data-icon="antenna"></span>Radio</a
+          ><a id="nav-demand" href="#on-demand">On Demand</a
+          ><a id="nav-guide" href="#tracklists"><span data-icon="list"></span>Tracklists</a>
+        </nav>
+        <button class="power" id="power" aria-label="Turn radio on" aria-pressed="false">
+          <span data-icon="power"></span><span id="power-text">Radio off</span>
+        </button>
+      </div>
+    </header>
+    <main id="radio-view" class="receiver">
+      <div class="horizon">
+        <span><span data-icon="pin"></span> VICE CITY, LEONIDA</span
+        ><span><span class="clock-glyph" data-icon="clock"></span><time id="clock"></time> ET</span>
+      </div>
+      <div class="tuner-body">
+        <div class="tune-heading">
+          <span class="tiny-rule"></span> STATION SELECT <span class="tiny-rule"></span>
+        </div>
+        <div
+          class="strip"
+          id="strip"
+          tabindex="0"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Radio stations. Swipe, use the arrow keys, or select a station."
+        >
+          <div id="sleeves"></div>
+          <button class="step left" id="previous" aria-label="Previous station" title="Previous station">
+            <span data-icon="chevron"></span>
+          </button>
+          <button class="step right" id="next" aria-label="Next station" title="Next station">
+            <span data-icon="chevron"></span>
+          </button>
+        </div>
+        <div class="station-info" aria-live="polite" aria-atomic="true">
+          <div class="id-line"><span class="ch" id="channel">CH 08</span><span id="genre"></span></div>
+          <h1 id="station-title">Flash FM</h1>
+          <p id="hosts"></p>
+        </div>
+        <div class="on-air" id="on-air" role="status">
+          <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <div><small id="air-label">RECEIVER</small><strong id="air-title">Tuning the dial…</strong></div>
+        </div>
+      </div>
+      <div class="scale-panel">
+        <div class="scale-heading"><span>STATION BAND</span><span id="scale-count">08 / 25</span></div>
+        <div id="scale" class="scale" role="group" aria-label="Select a channel"></div>
+        <div class="scale-foot">
+          <span class="desktop-tip"><kbd>←</kbd><kbd>→</kbd> Switch station</span
+          ><span class="touch-tip">Swipe to switch station</span
+          ><a href="#tracklists" id="station-guide">Station tracklist <span data-icon="list"></span></a>
+        </div>
+      </div>
+    </main>
+    <main id="demand-view" class="guide" hidden>
+      <header class="guide-heading">
+        <h1>On Demand</h1>
+        <a href="#radio" class="guide-live" id="demand-back">Back to radio</a>
+      </header>
+      <section id="episode-panel" class="episode-panel" hidden aria-labelledby="episode-title">
+        <div class="episode-copy">
+          <p class="kicker" id="episode-kind"></p>
+          <h2 id="episode-title" tabindex="-1"></h2>
+          <p id="episode-status" role="status"></p>
+          <div class="links"><a href="#radio">Return to live radio</a><a id="episode-source"></a></div>
+        </div>
+      </section>
+      <div class="demand-groups">
+        <section>
+          <h2>Podcasts</h2>
+          <p id="podcast-count" class="podcast-count"></p>
+          <div id="podcasts"></div>
+        </section>
+        <section>
+          <h2>Talk-radio specials</h2>
+          <div id="specials"></div>
+        </section>
+      </div>
+      <section class="special-stations">
+        <h2>Special stations</h2>
+        <div id="special-stations"></div>
+      </section>
+    </main>
+    <main id="guide-view" class="guide" hidden>
+      <header class="guide-heading">
+        <div>
+          <div class="kicker">LEONIDA RADIO</div>
+          <h1>Tracklists</h1>
+        </div>
+        <div class="guide-live"><span></span><a href="#radio" id="back-to-station">Back to radio</a></div>
+      </header>
+      <div class="guide-columns">
+        <section class="catalog">
+          <div class="toolbar">
+            <label class="sr" for="station-select">Filter by station</label
+            ><select id="station-select"></select
+            ><label class="search"
+              ><span data-icon="search"></span
+              ><input
+                type="search"
+                id="search"
+                aria-label="Search the catalog"
+                placeholder="Find a track, artist or ad"
+            /></label>
+          </div>
+          <div class="filters" id="filters" aria-label="Catalog sections"></div>
+          <div class="result-summary" id="count"></div>
+          <div id="results"></div>
+          <button id="more" class="plain-btn" hidden>Show more</button>
+        </section>
+        <aside class="guide-aside">
+          <div id="station-card"></div>
+          <details class="local">
+            <summary>My recordings</summary>
+            <p>
+              Use your own station capture or match an audio folder to the station credits. Files stay in this
+              browser.
+            </p>
+            <button id="capture-import" class="plain-btn">Add station recording</button
+            ><button class="plain-btn" id="folder-import">Match a music folder</button>
+            <p>
+              Have the
+              <a href="https://www.youtube.com/watch?v=hGZ3ocHlRk4" target="_blank" rel="noopener"
+                >indexed commercial reel</a
+              >? Its 2h 23m 35s recording supplies all 170 breaks.
+            </p>
+            <button id="reel-import" class="plain-btn">Add commercial reel</button>
+            <span id="import-status" role="status"></span>
+          </details>
+          <p class="credits">
+            Station credits and DJ previews from
+            <a href="https://www.rockstargames.com/VI/music" target="_blank" rel="noopener">Rockstar Games</a
+            >. Independent fan radio.
+          </p>
+        </aside>
+      </div>
+    </main>
+    <dialog id="details">
+      <div class="dialog-head">
+        <div class="kicker" id="detail-kind"></div>
+        <button id="close" aria-label="Close details" data-icon="close"></button>
+      </div>
+      <h2 id="detail-title"></h2>
+      <div id="detail-content"></div>
+    </dialog>
+    <input
+      id="audio-file"
+      type="file"
+      accept="audio/*,.mp3,.m4a,.aac,.opus,.flac,.wav,.ogg,.mp4,.webm"
+      hidden
+    /><input id="folder" type="file" webkitdirectory multiple hidden />
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
