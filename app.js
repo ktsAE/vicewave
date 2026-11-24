@@ -176,7 +176,7 @@ async function init() {
     receiver.emit(true);
   }
   demand = onDemandView(programs, {
-    runtime, stations, changed: () => receiver.emit(true),
+    runtime, stations, acceptsOpus: sources.acceptsGameAudio, changed: () => receiver.emit(true),
     takeOver: () => {
       receiver.unlock();
       receiver.power(false);

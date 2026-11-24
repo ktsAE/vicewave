@@ -4,17 +4,23 @@ import { dial } from './dial.js';
 const slug = (value) => norm(value).replaceAll(' ', '-');
 const stamp = (seconds) => Math.floor(seconds / 60) + ':' + String(Math.floor(seconds % 60)).padStart(2, '0');
 
-export function onDemandItems(programs, runtime) {
+export function onDemandItems(programs, runtime, acceptsOpus = true) {
   return programs
     .filter((p) => ['podcast', 'show'].includes(p.kind) && p.audioUrl && p.endSeconds > p.startSeconds)
-    .map((p) => ({
-      ...p,
-      id: p.id || slug(p.title),
-      duration: p.endSeconds - p.startSeconds,
-      url: p.kind === 'podcast'
-        ? runtime.podcasts.includes(p.id) ? p.audioUrl : p.source
-        : runtime.proxy ? '/signal/talk/' + slug(p.station) : p.audioUrl,
-    }));
+    .map((p) => {
+      const item = { ...p, id: p.id || slug(p.title), duration: p.endSeconds - p.startSeconds };
+      if (p.kind === 'show') {
+        item.url = runtime.proxy ? '/signal/talk/' + slug(p.station) : p.audioUrl;
+      } else {
+        const mp3 = runtime.podcasts.includes(p.id) ? p.audioUrl : null;
+        item.url = mp3 || p.source;
+        if (acceptsOpus && runtime.opusPodcasts?.includes(p.id)) {
+          item.url = 'assets/podcasts/' + p.id + '.ogg';
+          item.fallback = mp3;
+        }
+      }
+      return item;
+    });
 }
 
 export function savedPosition(item) {
@@ -30,8 +36,8 @@ export function savedPosition(item) {
   return Number.isFinite(value) && value > 1 && value < item.duration - 2 ? value : 0;
 }
 
-export function onDemandView(programs, { runtime, stations, takeOver, release, changed }) {
-  const items = onDemandItems(programs, runtime);
+export function onDemandView(programs, { runtime, stations, acceptsOpus, takeOver, release, changed }) {
+  const items = onDemandItems(programs, runtime, acceptsOpus);
   const collections = [];
   for (const item of items) {
     const name = item.series || item.station;
@@ -96,7 +102,7 @@ export function onDemandView(programs, { runtime, stations, takeOver, release, c
     return Math.max(0, Math.min(s.item.duration, s.audio.currentTime - s.item.startSeconds));
   }
   function remember(s, force = false) {
-    if (!s.played || s.audio.seeking) return;
+    if (!s.played || s.audio.seeking || (s.audio.error && s.audio.currentTime === 0)) return;
     const n = position(s);
     if (!Number.isFinite(n) || (!force && Math.abs(n - s.saved) < 3)) return;
     save('episode:' + s.item.id, n);
@@ -135,25 +141,32 @@ export function onDemandView(programs, { runtime, stations, takeOver, release, c
     changed();
     s.audio.play().catch((error) => {
       if (active !== s || error.name === 'AbortError') return;
+      if ((error.name === 'NotSupportedError' || s.audio.error) && retryFallback(s)) return;
       s.paused = true;
       updateRow(s.item);
       status(s, 'Select the episode again to retry, or open its source.');
       changed();
     });
   }
-  function listen(id, startPaused = false) {
+  function retryFallback(s) {
+    if (!s.fallback) return false;
+    listen(s.item.id, s.paused, s.fallback);
+    return true;
+  }
+  function listen(id, startPaused = false, fallbackUrl = null) {
     const item = items.find((x) => x.id === id);
     if (!item) return;
     const index = collections.findIndex((g) => g.episodes?.includes(item));
     if (index !== browsing) carousel.jump(index);
-    if (active?.item === item && !active.audio.error) {
+    if (!fallbackUrl && active?.item === item && !active.audio.error) {
       if (active.paused) requestPlay(active);
       return;
     }
     stop();
     const pos = savedPosition(item);
     const a = new Audio();
-    const s = (active = { item, group: collections[index], audio: a, saved: pos, played: false, paused: startPaused });
+    const s = (active = { item, group: collections[index], audio: a, saved: pos, played: false, paused: startPaused,
+      fallback: fallbackUrl ? null : item.fallback });
     takeOver();
     el('episode-panel').hidden = false;
     el('episode-title').textContent = item.title;
@@ -184,15 +197,15 @@ export function onDemandView(programs, { runtime, stations, takeOver, release, c
     a.addEventListener('timeupdate', () => progress(s));
     a.addEventListener('seeked', () => { if (active === s) changed(); });
     a.addEventListener('pause', () => {
-      if (active === s && a.paused && !a.ended) pause();
+      if (active === s && a.paused && !a.ended && !a.error) pause();
     });
     a.addEventListener('ended', () => finish(s));
     a.addEventListener('error', () => {
-      if (active !== s) return;
+      if (active !== s || retryFallback(s)) return;
       pause();
       status(s, 'The recording could not load. Select it again to retry, or open its source.');
     });
-    a.src = item.kind === 'show' ? item.url + '#t=' + start + ',' + item.endSeconds : item.url;
+    a.src = item.kind === 'show' ? item.url + '#t=' + start + ',' + item.endSeconds : fallbackUrl || item.url;
     if (startPaused) {
       status(s, 'Paused');
       updateRow(item);

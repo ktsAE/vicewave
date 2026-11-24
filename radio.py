@@ -41,7 +41,8 @@ class ReceiverHandler(SimpleHTTPRequestHandler):
     def _serve_podcast(self, path, head):
         directory = ROOT / "assets" / "podcasts"
         local = (directory / path.removeprefix("/assets/podcasts/")).resolve()
-        if local.parent != directory or local.suffix != ".mp3" or not local.is_file():
+        content_types = {".mp3": "audio/mpeg", ".ogg": "audio/ogg"}
+        if local.parent != directory or local.suffix not in content_types or not local.is_file():
             self.send_error(404)
             return
         with local.open("rb") as audio:
@@ -56,7 +57,7 @@ class ReceiverHandler(SimpleHTTPRequestHandler):
                 self.end_headers()
                 return
             self.send_response(206 if requested else 200)
-            self.send_header("Content-Type", "audio/mpeg")
+            self.send_header("Content-Type", content_types[local.suffix])
             self.send_header("Content-Length", str(end - start + 1))
             self.send_header("Accept-Ranges", "bytes")
             self.send_header("Cache-Control", "private, max-age=86400")
@@ -84,6 +85,7 @@ class ReceiverHandler(SimpleHTTPRequestHandler):
             config = {
                 "proxy": True,
                 "podcasts": sorted(p.stem for p in (assets / "podcasts").glob("*.mp3") if p.is_file()),
+                "opusPodcasts": sorted(p.stem for p in (assets / "podcasts").glob("*.ogg") if p.is_file()),
                 "covers": sorted(p.stem for p in (assets / "covers").glob("*.webp") if p.is_file()),
                 "localScene": (assets / "scenes" / "vice-city-dusk.webp").is_file(),
             }

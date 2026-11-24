@@ -35,6 +35,18 @@ test('the launcher prefers only the episodes installed on this machine', () => {
   assert.ok(local.filter((p) => p.kind === 'show').every((p) => p.url.startsWith('/signal/talk/')));
 });
 
+test('local podcasts prefer the original Opus and keep the installed MP3 as fallback', () => {
+  const runtime = { proxy: true, podcasts: ['final-act-1'], opusPodcasts: ['final-act-1', 'final-act-2'] };
+  const select = (opus, id) => onDemandItems(programs, runtime, opus).find((p) => p.id === id);
+  const both = select(true, 'final-act-1');
+  assert.equal(both.url, 'assets/podcasts/final-act-1.ogg');
+  assert.equal(both.fallback, 'assets/podcasts/final-act-1.mp3');
+  assert.equal(select(false, 'final-act-1').url, both.fallback);
+  const originalOnly = select(true, 'final-act-2');
+  assert.equal(originalOnly.url, 'assets/podcasts/final-act-2.ogg');
+  assert.ok(!originalOnly.fallback);
+});
+
 test('a bookmark from the older compilation follows the episode it belonged to', (t) => {
   const saved = new Map([['vicewave:episode:final-act', '935']]);
   const previous = globalThis.localStorage;

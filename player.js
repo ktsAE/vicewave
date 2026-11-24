@@ -4,6 +4,7 @@ import { locate, songAt, stationOrigin } from './broadcast.js';
 import { recording } from './recordings.js';
 
 const JOIN = 0.12;
+const JOIN_TOLERANCE = 0.72;
 const PRELOAD = 12;
 const SWITCH_GRACE_MS = 250;
 const BUFFER_GRACE_MS = 350;
@@ -262,7 +263,7 @@ export class Receiver {
       held.stamp = performance.now();
       held.target = cue;
       if (held !== this.live && !held.queued && !held.retired) {
-        const tolerance = wanted ? 0.72 : ready(held) ? 1.1 : 5;
+        const tolerance = wanted ? JOIN_TOLERANCE : ready(held) ? 1.1 : 5;
         this.seek(held, cue.time, tolerance);
       }
       return held;
@@ -321,7 +322,7 @@ export class Receiver {
   }
   activate(b, cue) {
     if (b.queued || !ready(b)) return;
-    this.seek(b, cue.time, 0.72);
+    this.seek(b, cue.time, JOIN_TOLERANCE);
     if (b.audio.seeking) return;
     if (b.retired) {
       b.retired = false;
@@ -490,10 +491,12 @@ export class Receiver {
       } else {
         const mix = this.banks.find((b) => b.key === scheduled.key);
         const song = this.banks.find((b) => b.key === alternate.key);
-        // Give the song already on the dial first use of the connection. Race
-        // the archive if it stalls, or use the station mix if it is ready now.
-        if (!ready(mix) && song && (ready(song) || performance.now() - this.switchedAt < 450))
-          cue = alternate;
+        // Choose the game file over a ready mix only when the edit length
+        // matches and it can join the broadcast without another seek.
+        const alignedOriginal = alternate.sameLength && ready(song) && !song.waiting &&
+          Math.abs(song.audio.currentTime - alternate.time) <= JOIN_TOLERANCE;
+        const warmingSong = !ready(mix) && song && (ready(song) || performance.now() - this.switchedAt < 450);
+        if (alignedOriginal || warmingSong) cue = alternate;
         else if (!ready(this.prepare(scheduled, true)) && this.prepare(alternate, true)) cue = alternate;
       }
     }

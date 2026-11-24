@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { Receiver } from '../player.js';
+import { locate, songAt } from '../broadcast.js';
 
 class TestAudio extends EventTarget {
   currentTime = 0;
@@ -177,6 +178,27 @@ const singleCut = (id, url = '/' + id) => ({
   length: 300,
   cuts: [{ kind: 'track', title: id, at: 0, start: 0, duration: 300, url }],
 });
+
+for (const [condition, expected] of [
+  ['aligned original', '/game'],
+  ['different edit', '/mix'],
+  ['seek required', '/mix'],
+]) {
+  test('a fresh tune with both sources buffered chooses ' + expected + ' for ' + condition, async (t) => {
+    const next = structuredClone(station('next', '/mix'));
+    if (condition === 'different edit') next.cuts[0].chapters[0].game.duration = 17;
+    const { r } = receiver(t, [singleCut('initial'), next]);
+    await settle();
+    const cue = locate(next, r.elapsed());
+    const song = r.prepare(songAt(cue), false);
+    r.prepare(cue, false);
+    if (condition === 'seek required') song.audio.currentTime += 3;
+    r.tune(1);
+    await settle();
+    assert.equal(r.live.audio.src, expected);
+    assert.equal(r.phase, 'live');
+  });
+}
 
 test('neighbors and a pointed-at station buffer silently during a cold tune', async (t) => {
   const plans = ['slow', 'one', 'two', 'three', 'four'].map((id) => singleCut(id));

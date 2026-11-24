@@ -203,8 +203,8 @@ export function firstTuneElapsed(station, random = Math.random) {
   return Math.max(0, block.at + song.start - block.start + inside - station.offset);
 }
 
-// While a long reconstruction buffers, the same credited game recording can
-// supply the song at its current position. Its handoff ends at the chapter,
+// The matching game recording can supply the song at its current position
+// during tuning or buffering. Its handoff ends at the chapter,
 // the source recording's end or the advertising cut, whichever arrives first.
 export function songAt(cue) {
   const chapters = cue?.cut.chapters;
@@ -214,16 +214,15 @@ export function songAt(cue) {
     song = chapter?.game;
   if (!song) return null;
   const time = cue.time - chapter.start;
-  const duration = Math.min(
-    song.duration,
-    (chapters[i + 1]?.start ?? Infinity) - chapter.start,
-    time + cue.left,
-  );
+  const chapterEnd = chapters[i + 1]?.start ?? (cue.cut.start || 0) + cue.cut.duration;
+  const span = chapterEnd - chapter.start;
+  const duration = Math.min(song.duration, span, time + cue.left);
   if (time >= duration) return null;
   return {
     id: cue.id,
     key: cue.key + '/song/' + i,
     cut: { ...song, start: 0, duration },
+    sameLength: Math.abs(span - song.duration) <= 2,
     time,
     left: duration - time,
   };
